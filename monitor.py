@@ -19,6 +19,32 @@ SNAPSHOT_FILE = "leadership_snapshot.json"
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; PSEIntelBot/1.0)"}
 
 
+def is_person_name(text):
+    """Return True only if the text looks like a real person's name."""
+    import re
+    # Must have at least two words
+    words = text.split()
+    if len(words) < 2:
+        return False
+    # Reject ALL-CAPS strings (nav items, section headers)
+    if text == text.upper():
+        return False
+    # Reject strings with digits
+    if any(ch.isdigit() for ch in text):
+        return False
+    # Reject obvious nav/page keywords
+    junk = {"links", "rates", "planning", "licensing", "confirmation",
+            "contact", "menu", "navigation", "search", "home", "about",
+            "services", "resources", "careers", "news", "events", "login",
+            "sign", "privacy", "terms", "cookie", "submit", "apply"}
+    if any(w.lower() in junk for w in words):
+        return False
+    # Must be mostly title-case letters (allow hyphens, periods, apostrophes)
+    if not re.match(r"^[A-Za-z][A-Za-z\s\-\.']+$", text):
+        return False
+    return True
+
+
 def scrape_people(url, source_label):
     """Scrape name+title pairs from a PSE leadership/board page."""
     try:
@@ -33,12 +59,20 @@ def scrape_people(url, source_label):
 
     for h4 in soup.find_all("h4"):
         name = h4.get_text(strip=True)
-        if not name:
+        if not name or not is_person_name(name):
             continue
-        sibling = h4.find_next_sibling()
+        # Try next sibling <p> for title; also check parent container
         title = ""
+        sibling = h4.find_next_sibling()
         if sibling and sibling.name == "p":
             title = sibling.get_text(strip=True)
+        # If title still empty, walk up and look for a nearby <p>
+        if not title:
+            parent = h4.parent
+            if parent:
+                p = parent.find("p")
+                if p:
+                    title = p.get_text(strip=True)
         people[name] = {"title": title, "source": source_label}
 
     return people
@@ -103,9 +137,18 @@ def main():
 
     changes = diff_people(old_people, current) if existing else []
 
+    # Sort: leadership first, then board; within each group alphabetically by last name
+    def sort_key(item):
+        name, info = item
+        source_order = 0 if info["source"] == "leadership" else 1
+        last = name.split()[-1].lower()
+        return (source_order, last)
+
+    sorted_people = dict(sorted(current.items(), key=sort_key))
+
     snapshot = {
         "checked_at": datetime.now(timezone.utc).isoformat(),
-        "people": current,
+        "people": sorted_people,
         "changes": changes,
     }
 

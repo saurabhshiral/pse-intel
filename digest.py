@@ -159,11 +159,17 @@ def build_html_email(sections_html, leadership_data, changes):
     # Leadership table
     leadership_table = ""
     if leadership_data:
+        def row_sort(item):
+            name, info = item
+            source_order = 0 if info.get("source") == "leadership" else 1
+            return (source_order, name.split()[-1].lower())
+
+        people_sorted = sorted(leadership_data.get("people", {}).items(), key=row_sort)
         rows = "".join(
             f"<tr><td style='padding:9px 14px;border-bottom:1px solid #e5e8ec;font-weight:600;color:#0a0f1e'>{name}</td>"
             f"<td style='padding:9px 14px;border-bottom:1px solid #e5e8ec;color:#6b7280'>{info['title']}</td>"
-            f"<td style='padding:9px 14px;border-bottom:1px solid #e5e8ec;color:#9ca3af;font-size:11px;text-transform:uppercase;letter-spacing:.05em'>{info['source']}</td></tr>"
-            for name, info in leadership_data.get("people", {}).items()
+            f"<td style='padding:9px 14px;border-bottom:1px solid #e5e8ec;color:#9ca3af;font-size:11px;text-transform:uppercase;letter-spacing:.05em'>{info.get('source','')}</td></tr>"
+            for name, info in people_sorted
         )
         leadership_table = f"""
         <div style="margin-bottom:32px;">
