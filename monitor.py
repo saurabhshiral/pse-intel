@@ -161,12 +161,22 @@ def main():
     changes = diff_people(old_people, current) if existing else []
     checked_at = datetime.now(timezone.utc).isoformat()
 
-    # Sort: leadership first, then board; within each group alphabetically by last name
+    def title_rank(title):
+        t = (title or "").lower()
+        if "president and chief" in t or "chief executive" in t: return 0
+        if "president" in t: return 1
+        if t.startswith("svp") or "senior vice president" in t: return 2
+        if t.startswith("chief") or "cio" in t or "cfo" in t or "coo" in t: return 3
+        if t.startswith("vp") or "vice president" in t: return 4
+        return 5
+
+    # Sort: leadership (by seniority rank, then last name), then board (alphabetical)
     def sort_key(item):
         name, info = item
-        source_order = 0 if info["source"] == "leadership" else 1
         last = name.split()[-1].lower()
-        return (source_order, last)
+        if info["source"] == "leadership":
+            return (0, title_rank(info["title"]), last)
+        return (1, 0, last)
 
     sorted_people = dict(sorted(current.items(), key=sort_key))
 

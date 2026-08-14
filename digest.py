@@ -159,33 +159,47 @@ def build_html_email(sections_html, leadership_data, changes):
           <div style="font-size:14px;line-height:1.7;color:#374151;">{content}</div>
         </div>"""
 
-    # Leadership table
+    # Leadership table — split into two sections, leadership sorted by seniority
     leadership_table = ""
     if leadership_data:
-        def row_sort(item):
-            name, info = item
-            return (0 if info.get("source") == "leadership" else 1, name.split()[-1].lower())
+        def title_rank(title):
+            t = (title or "").lower()
+            if "president and chief" in t or "chief executive" in t: return 0
+            if "president" in t: return 1
+            if t.startswith("svp") or "senior vice president" in t: return 2
+            if t.startswith("chief") or "cio" in t or "cfo" in t or "coo" in t: return 3
+            if t.startswith("vp") or "vice president" in t: return 4
+            return 5
 
-        people_sorted = sorted(leadership_data.get("people", {}).items(), key=row_sort)
-        rows = "".join(
-            f"<tr>"
-            f"<td style='padding:9px 14px;border-bottom:1px solid #e5e8ec;font-weight:600;color:#0a0f1e'>{name}</td>"
-            f"<td style='padding:9px 14px;border-bottom:1px solid #e5e8ec;color:#6b7280'>{info.get('title','')}</td>"
-            f"<td style='padding:9px 14px;border-bottom:1px solid #e5e8ec;color:#9ca3af;font-size:11px;text-transform:uppercase;letter-spacing:.05em'>{info.get('source','')}</td>"
-            f"</tr>"
-            for name, info in people_sorted
+        all_people = leadership_data.get("people", {}).items()
+        lteam = sorted(
+            [(n, i) for n, i in all_people if i.get("source") == "leadership"],
+            key=lambda x: (title_rank(x[1].get("title", "")), x[0].split()[-1].lower())
         )
+        board = sorted(
+            [(n, i) for n, i in leadership_data.get("people", {}).items() if i.get("source") == "board"],
+            key=lambda x: x[0].split()[-1].lower()
+        )
+
+        def make_rows(people_list):
+            return "".join(
+                f"<tr>"
+                f"<td style='padding:9px 14px;border-bottom:1px solid #e5e8ec;font-weight:600;color:#0a0f1e'>{name}</td>"
+                f"<td style='padding:9px 14px;border-bottom:1px solid #e5e8ec;color:#6b7280'>{info.get('title','—')}</td>"
+                f"</tr>"
+                for name, info in people_list
+            )
+
+        thead = "<thead><tr style='background:#f8f9fb;'><th style='padding:9px 14px;text-align:left;font-weight:600;color:#374151'>Name</th><th style='padding:9px 14px;text-align:left;font-weight:600;color:#374151'>Title</th></tr></thead>"
+        table_style = "width:100%;border-collapse:collapse;font-size:13px;background:#fff;border:1px solid #e5e8ec;margin-bottom:16px;"
+
         leadership_table = f"""
         <div style="margin-bottom:32px;">
-          <h2 style="color:{teal};border-bottom:2px solid {teal};padding-bottom:6px;margin:0 0 16px;font-size:17px;">Current PSE Leadership</h2>
-          <table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border:1px solid #e5e8ec;">
-            <thead><tr style="background:#f8f9fb;">
-              <th style="padding:9px 14px;text-align:left;font-weight:600;color:#374151">Name</th>
-              <th style="padding:9px 14px;text-align:left;font-weight:600;color:#374151">Title</th>
-              <th style="padding:9px 14px;text-align:left;font-weight:600;color:#374151">Role</th>
-            </tr></thead>
-            <tbody>{rows}</tbody>
-          </table>
+          <h2 style="color:{teal};border-bottom:2px solid {teal};padding-bottom:6px;margin:0 0 16px;font-size:17px;">Current PSE Team</h2>
+          <p style="font-size:11px;color:#9ca3af;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;font-family:monospace">Leadership Team</p>
+          <table style="{table_style}">{thead}<tbody>{make_rows(lteam)}</tbody></table>
+          <p style="font-size:11px;color:#9ca3af;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;font-family:monospace">Board of Directors</p>
+          <table style="{table_style}">{thead}<tbody>{make_rows(board)}</tbody></table>
         </div>"""
 
     return f"""<!DOCTYPE html>
