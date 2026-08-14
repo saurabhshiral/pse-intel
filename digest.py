@@ -20,10 +20,10 @@ import requests
 CONFIG = {
     "groq_api_key": os.getenv("GROQ_API_KEY"),
     "groq_model": "llama3-70b-8192",
-    "smtp_host": "smtp.office365.com",
+    "smtp_host": "smtp.gmail.com",
     "smtp_port": 587,
-    "smtp_user": os.getenv("OUTLOOK_EMAIL"),
-    "smtp_password": os.getenv("OUTLOOK_PASSWORD"),
+    "smtp_user": os.getenv("GMAIL_EMAIL"),
+    "smtp_password": os.getenv("GMAIL_APP_PASSWORD"),
     "recipients": ["your-leader@accenture.com"],
     "lookback_days": 7,
 }
@@ -219,7 +219,7 @@ def main():
         print("ERROR: GROQ_API_KEY environment variable not set", file=sys.stderr)
         sys.exit(1)
     if not CONFIG["smtp_user"] or not CONFIG["smtp_password"]:
-        print("ERROR: OUTLOOK_EMAIL / OUTLOOK_PASSWORD environment variables not set", file=sys.stderr)
+        print("ERROR: GMAIL_EMAIL / GMAIL_APP_PASSWORD environment variables not set", file=sys.stderr)
         sys.exit(1)
 
     # Load leadership snapshot
