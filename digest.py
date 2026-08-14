@@ -19,7 +19,7 @@ import requests
 
 CONFIG = {
     "groq_api_key": os.getenv("GROQ_API_KEY"),
-    "groq_model": "llama3-70b-8192",
+    "groq_model": "llama-3.3-70b-versatile",
     "smtp_host": "smtp.gmail.com",
     "smtp_port": 587,
     "smtp_user": os.getenv("GMAIL_EMAIL"),
@@ -114,8 +114,13 @@ def call_groq(section_name, articles_text):
         resp.raise_for_status()
         return resp.json()["choices"][0]["message"]["content"]
     except Exception as e:
-        print(f"  WARNING: Groq call failed for {section_name}: {e}", file=sys.stderr)
-        return "<p><em>Summary unavailable — check Groq API key and quota.</em></p>"
+        detail = ""
+        try:
+            detail = resp.text[:400]
+        except Exception:
+            pass
+        print(f"  ERROR: Groq call failed for '{section_name}': {e} | Response: {detail}", file=sys.stderr)
+        return f"<p><em>Summary unavailable — Groq error: {e}</em></p>"
 
 
 def build_html_email(sections_html, leadership_data, changes):
