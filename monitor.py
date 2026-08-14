@@ -118,6 +118,25 @@ def diff_people(old_people, new_people):
     return changes
 
 
+HISTORY_FILE = "leadership_history.json"
+
+
+def append_history(changes, checked_at):
+    """Append change events with timestamps to leadership_history.json."""
+    if not changes:
+        return
+    path = Path(HISTORY_FILE)
+    history = []
+    if path.exists():
+        with open(path, encoding="utf-8") as f:
+            history = json.load(f)
+    for c in changes:
+        history.append({**c, "date": checked_at})
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(history, f, indent=2, ensure_ascii=False)
+    print(f"  Appended {len(changes)} event(s) to {HISTORY_FILE}")
+
+
 def main():
     print("PSE Intel — Leadership Monitor")
     print(f"  Fetching {LEADERSHIP_URL}")
@@ -136,6 +155,7 @@ def main():
     old_people = existing.get("people", {}) if existing else {}
 
     changes = diff_people(old_people, current) if existing else []
+    checked_at = datetime.now(timezone.utc).isoformat()
 
     # Sort: leadership first, then board; within each group alphabetically by last name
     def sort_key(item):
@@ -147,7 +167,7 @@ def main():
     sorted_people = dict(sorted(current.items(), key=sort_key))
 
     snapshot = {
-        "checked_at": datetime.now(timezone.utc).isoformat(),
+        "checked_at": checked_at,
         "people": sorted_people,
         "changes": changes,
     }
@@ -156,6 +176,9 @@ def main():
         json.dump(snapshot, f, indent=2, ensure_ascii=False)
 
     print(f"\nSnapshot saved to {SNAPSHOT_FILE}")
+
+    # Persist change events to history file with date
+    append_history(changes, checked_at)
 
     if changes:
         print(f"\n{'=' * 40}")

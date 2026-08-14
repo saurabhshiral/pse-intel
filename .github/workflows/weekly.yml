@@ -30,7 +30,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add leadership_snapshot.json
+          git add leadership_snapshot.json leadership_history.json
           git diff --staged --quiet || git commit -m "chore: update leadership snapshot [skip ci]"
           git push
 

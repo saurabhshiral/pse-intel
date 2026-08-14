@@ -498,6 +498,7 @@ function refreshActive() {
     loadLeadershipSnapshot(true);
   } else {
     delete cache[activeTab];
+    recentCache = null; // force re-fetch of news_recent.json
     renderTab(activeTab);
   }
 }
@@ -552,6 +553,40 @@ function byDate(articles) {
 }
 
 // ================================================================
+// NEWS_RECENT.JSON — primary source (written by daily_fetch.py)
+// ================================================================
+const SECTION_KEYS = ['leadership', 'company', 'sector'];
+let recentCache = null; // null = not loaded, false = failed, array = loaded
+
+async function loadRecentJson(force = false) {
+  if (!force && recentCache !== null) return recentCache;
+  try {
+    const res = await fetch('./news_recent.json?_=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    recentCache = data.articles || [];
+    return recentCache;
+  } catch {
+    recentCache = false;
+    return false;
+  }
+}
+
+function articlesFromRecent(recentArticles, tabIdx) {
+  const key = SECTION_KEYS[tabIdx];
+  return recentArticles
+    .filter(a => a.section === key)
+    .map(a => ({
+      title:   a.headline || '',
+      link:    a.url || '',
+      pubDate: a.pub_date || '',
+      source:  a.source || '',
+      snippet: a.snippet || '',
+      utility: a.utility || '',
+    }));
+}
+
+// ================================================================
 // RENDER TABS 0–2
 // ================================================================
 async function renderTab(idx) {
@@ -565,15 +600,22 @@ async function renderTab(idx) {
   if (cache[idx]) {
     articles = cache[idx];
   } else {
-    const feeds = FEEDS[idx];
-    if (idx === 2) {
-      const results = await Promise.allSettled(
-        feeds.map(f => fetchFeed(f.url).then(arts => arts.map(a => ({ ...a, utility: f.name }))))
-      );
-      articles = byDate(dedup(results.flatMap(r => r.status === 'fulfilled' ? r.value : [])));
+    // Try news_recent.json first
+    const recent = await loadRecentJson();
+    if (recent && recent.length) {
+      articles = articlesFromRecent(recent, idx);
     } else {
-      const results = await Promise.allSettled(feeds.map(fetchFeed));
-      articles = byDate(dedup(results.flatMap(r => r.status === 'fulfilled' ? r.value : [])));
+      // Fallback: fetch live RSS
+      const feeds = FEEDS[idx];
+      if (idx === 2) {
+        const results = await Promise.allSettled(
+          feeds.map(f => fetchFeed(f.url).then(arts => arts.map(a => ({ ...a, utility: f.name }))))
+        );
+        articles = byDate(dedup(results.flatMap(r => r.status === 'fulfilled' ? r.value : [])));
+      } else {
+        const results = await Promise.allSettled(feeds.map(fetchFeed));
+        articles = byDate(dedup(results.flatMap(r => r.status === 'fulfilled' ? r.value : [])));
+      }
     }
     cache[idx] = articles;
   }

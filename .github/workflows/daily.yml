@@ -1,0 +1,33 @@
+name: PSE Intel Daily Fetch
+
+on:
+  schedule:
+    - cron: "0 14 * * *"  # Every day at 6 AM Pacific (UTC-8)
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install feedparser
+
+      - name: Fetch today's articles
+        run: python daily_fetch.py
+
+      - name: Commit updated news history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add news_history.csv
+          git diff --staged --quiet || git commit -m "chore: daily news fetch $(date -u +%Y-%m-%d) [skip ci]"
+          git push
