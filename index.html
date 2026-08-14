@@ -65,6 +65,21 @@
     .refresh-btn:hover { background: #0c5c47; }
     .refresh-btn:disabled { background: #d1d5db; cursor: not-allowed; }
 
+    .copy-btn {
+      background: transparent;
+      color: #6b7280;
+      border: 1px solid #e5e8ec;
+      border-radius: 6px;
+      padding: 7px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .copy-btn:hover { border-color: #9ca3af; color: #374151; }
+    .copy-btn.copied { background: #0f6e56; color: #fff; border-color: #0f6e56; }
+
     /* ── Layout ──────────────────────────────────────────────── */
     .layout {
       display: flex;
@@ -223,6 +238,30 @@
       font-family: 'JetBrains Mono', monospace;
       font-size: 11px;
       color: #9ca3af;
+      white-space: nowrap;
+    }
+
+    .new-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      font-weight: 700;
+      background: #0f6e56;
+      color: #fff;
+      padding: 2px 7px;
+      border-radius: 3px;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      vertical-align: middle;
+      margin-left: 7px;
+    }
+
+    .article-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      padding: 2px 8px;
+      border-radius: 4px;
+      color: #fff;
       white-space: nowrap;
     }
 
@@ -639,6 +678,46 @@
       line-height: 1.4;
     }
     .brief-article-link:hover .brief-article-title { color: #0f6e56; }
+
+    /* ── Mobile ──────────────────────────────────────────────── */
+    @media (max-width: 680px) {
+      body { overflow: auto; }
+      .layout { flex-direction: column; overflow: visible; }
+      .main { overflow: visible; padding: 16px; }
+
+      .sidebar {
+        width: 100%;
+        flex-direction: row;
+        padding: 0;
+        overflow-x: auto;
+        flex-shrink: 0;
+      }
+      .sidebar-label { display: none; }
+      .nav-item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        padding: 10px 14px;
+        border-left: none;
+        border-bottom: 3px solid transparent;
+        font-size: 11px;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+      .nav-item.active { border-left-color: transparent; border-bottom-color: #0f6e56; }
+      .nav-badge { font-size: 9px; }
+
+      .brief-grid { grid-template-columns: 1fr; }
+      .lw-panel   { grid-template-columns: 1fr; }
+      .modal-body { grid-template-columns: 1fr; }
+      .modal-overlay { padding: 0; align-items: flex-end; }
+      .modal { border-radius: 12px 12px 0 0; max-height: 88vh; }
+      .modal-section + .modal-section { border-left: none; border-top: 1px solid #e5e8ec; }
+
+      .header { padding: 0 14px; }
+      .copy-btn { display: none; }
+    }
   </style>
 </head>
 <body>
@@ -646,8 +725,11 @@
 <!-- ── Header ──────────────────────────────────────────────────── -->
 <header class="header">
   <div class="wordmark">PSE<em>Intel</em></div>
-  <div class="header-ts" id="lastRefreshed">Not yet refreshed</div>
-  <button class="refresh-btn" id="refreshBtn" onclick="refreshActive()">Refresh</button>
+  <div class="header-ts" id="lastRefreshed">Loading&hellip;</div>
+  <div style="display:flex;gap:8px;align-items:center;">
+    <button class="copy-btn" id="copyBtn" onclick="copyBrief()">Copy Brief</button>
+    <button class="refresh-btn" id="refreshBtn" onclick="refreshActive()">Refresh</button>
+  </div>
 </header>
 
 <!-- ── Change Banner (hidden until changes detected) ───────────── -->
@@ -698,6 +780,16 @@
 // CONFIG
 // ================================================================
 const PROXY = 'https://api.allorigins.win/get?url=';
+
+// ── Last-visit tracking (new-since-last-visit badges) ────────────
+const LAST_VISIT_KEY = 'pse_intel_last_visit';
+const lastVisit = localStorage.getItem(LAST_VISIT_KEY) || null;
+localStorage.setItem(LAST_VISIT_KEY, new Date().toISOString());
+
+function isNew(dateStr) {
+  if (!lastVisit || !dateStr) return false;
+  try { return new Date(dateStr) > new Date(lastVisit); } catch { return false; }
+}
 
 const FEEDS = [
   // Tab 0 — PSE Leadership & People
@@ -811,6 +903,35 @@ function fmtDate(str) {
   try {
     return new Date(str).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
   } catch { return str; }
+}
+
+function relDate(str) {
+  if (!str) return '';
+  const d = new Date(str);
+  if (isNaN(d)) return str;
+  const diffMs = Date.now() - d.getTime();
+  const h = diffMs / 3600000;
+  const days = diffMs / 86400000;
+  if (h < 1)    return 'Just now';
+  if (h < 24)   return Math.floor(h) + 'h ago';
+  if (days < 2) return 'Yesterday';
+  if (days < 7) return Math.floor(days) + 'd ago';
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+const TAG_RULES = [
+  { re: /rate case|commission|wutc|tariff|regulatory|filing|permit|approval/i, label: 'Regulatory', bg: '#7c3aed' },
+  { re: /earnings|revenue|dividend|quarterly|profit|bond|invest|rate increase|financial/i, label: 'Financial', bg: '#0369a1' },
+  { re: /grid|transmission|substation|solar|wind|renewable|clean energy|battery|storage|ev\b/i, label: 'Grid',       bg: '#059669' },
+  { re: /appoint|promot|resign|depart|named|hire|exec|president|director|officer/i,            label: 'People',    bg: '#d97706' },
+];
+
+function articleTag(headline, snippet) {
+  const hay = (headline || '') + ' ' + (snippet || '');
+  for (const rule of TAG_RULES) {
+    if (rule.re.test(hay)) return rule;
+  }
+  return null;
 }
 
 function dedup(articles) {
@@ -987,18 +1108,37 @@ function makeCard(article, colorClass) {
     src.textContent = article.source;
     right.appendChild(src);
   }
+  // Article tag (category) — shown for company news (no utility label)
+  if (!article.utility) {
+    const tag = articleTag(article.title, article.snippet);
+    if (tag) {
+      const tagEl = document.createElement('span');
+      tagEl.className = 'article-tag';
+      tagEl.style.background = tag.bg;
+      tagEl.textContent = tag.label;
+      badges.appendChild(tagEl);
+    }
+  }
+
   const dateEl = document.createElement('span');
   dateEl.className = 'card-date';
-  dateEl.textContent = fmtDate(article.pubDate);
+  dateEl.title = fmtDate(article.pubDate);
+  dateEl.textContent = relDate(article.pubDate);
   right.appendChild(dateEl);
 
   meta.appendChild(badges);
   meta.appendChild(right);
 
-  // Headline
+  // Headline + NEW badge
   const hl = document.createElement('div');
   hl.className = 'card-headline';
   hl.textContent = article.title;
+  if (isNew(article.pubDate)) {
+    const nb = document.createElement('span');
+    nb.className = 'new-badge';
+    nb.textContent = 'New';
+    hl.appendChild(nb);
+  }
 
   // Snippet
   const snip = document.createElement('div');
@@ -1360,6 +1500,56 @@ function rankBadge(title) {
   return '';
 }
 
+
+// ================================================================
+// COPY BRIEF
+// ================================================================
+async function copyBrief() {
+  const btn = document.getElementById('copyBtn');
+  const today = new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+  const lines = [`PSE Intel Brief — ${today}`, ''];
+
+  if (activeTab === 0 && briefsData && briefsData.briefs) {
+    const covered = Object.entries(briefsData.briefs).filter(([, b]) => b.article_count > 0);
+    if (covered.length) {
+      lines.push('PSE Leadership & People');
+      lines.push('─'.repeat(30));
+      covered.forEach(([name, b]) => {
+        lines.push(`${name} (${b.title})`);
+        if (b.briefing) lines.push(`  ${b.briefing}`);
+        lines.push('');
+      });
+    } else {
+      lines.push('No leadership coverage this week.');
+    }
+  } else {
+    const articles = (cache[activeTab] || []).slice(0, 7);
+    const tabNames = ['PSE Leadership & People', 'PSE Company News', 'US Utilities Pulse'];
+    lines.push(tabNames[activeTab] || '');
+    lines.push('─'.repeat(30));
+    if (!articles.length) {
+      lines.push('No articles loaded — try refreshing first.');
+    } else {
+      articles.forEach(a => {
+        const label = a.utility ? `[${a.utility}] ` : '';
+        lines.push(`• ${label}${a.title}`);
+        lines.push(`  ${relDate(a.pubDate)}${a.source ? ' · ' + a.source : ''}`);
+        if (a.snippet) lines.push(`  ${a.snippet.slice(0, 140)}`);
+        lines.push('');
+      });
+    }
+  }
+
+  try {
+    await navigator.clipboard.writeText(lines.join('\n'));
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy Brief'; btn.classList.remove('copied'); }, 2200);
+  } catch {
+    btn.textContent = 'Failed — check clipboard permissions';
+    setTimeout(() => { btn.textContent = 'Copy Brief'; }, 2500);
+  }
+}
 
 function esc(str) {
   return String(str)
