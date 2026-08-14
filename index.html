@@ -402,6 +402,111 @@
       color: #9ca3af;
     }
 
+    /* ── Change Banner ───────────────────────────────────────── */
+    .change-banner {
+      display: none;
+      align-items: center;
+      gap: 10px;
+      background: #fffbeb;
+      border-bottom: 1px solid #fbbf24;
+      padding: 0 24px;
+      height: 36px;
+      flex-shrink: 0;
+    }
+    .change-banner.visible { display: flex; }
+
+    .banner-icon { font-size: 13px; flex-shrink: 0; }
+
+    .banner-text {
+      font-size: 13px;
+      color: #92400e;
+      flex: 1;
+    }
+
+    .banner-link {
+      font-size: 12px;
+      font-weight: 600;
+      color: #d97706;
+      cursor: pointer;
+      text-decoration: none;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .banner-link:hover { text-decoration: underline; }
+
+    /* ── Modal ───────────────────────────────────────────────── */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(10,15,30,0.45);
+      z-index: 100;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 48px 24px;
+    }
+    .modal-overlay.open { display: flex; }
+
+    .modal {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+      width: 100%;
+      max-width: 860px;
+      max-height: calc(100vh - 96px);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 24px;
+      border-bottom: 1px solid #e5e8ec;
+      flex-shrink: 0;
+    }
+    .modal-title { font-size: 16px; font-weight: 700; color: #0a0f1e; }
+    .modal-ts { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #9ca3af; }
+
+    .modal-close {
+      background: none;
+      border: none;
+      font-size: 18px;
+      color: #9ca3af;
+      cursor: pointer;
+      line-height: 1;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .modal-close:hover { background: #f3f4f6; color: #374151; }
+
+    .modal-body {
+      overflow-y: auto;
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+
+    .modal-section {
+      padding: 20px 24px;
+    }
+    .modal-section + .modal-section {
+      border-left: 1px solid #e5e8ec;
+    }
+
+    .modal-section-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #9ca3af;
+      margin-bottom: 14px;
+    }
+
     /* ── Leadership Briefs (Tab 0) ───────────────────────────── */
     .briefs-meta {
       font-family: 'JetBrains Mono', monospace;
@@ -545,6 +650,13 @@
   <button class="refresh-btn" id="refreshBtn" onclick="refreshActive()">Refresh</button>
 </header>
 
+<!-- ── Change Banner (hidden until changes detected) ───────────── -->
+<div class="change-banner" id="changeBanner">
+  <span class="banner-icon">⚠</span>
+  <span class="banner-text" id="bannerText"></span>
+  <a class="banner-link" onclick="openChangesModal()">View details &rarr;</a>
+</div>
+
 <div class="layout">
 
   <!-- ── Sidebar ────────────────────────────────────────────────── -->
@@ -562,15 +674,23 @@
       <span class="nav-text">US Utilities Pulse</span>
       <span class="nav-badge" id="badge-2">—</span>
     </div>
-    <div class="nav-item" data-tab="3" onclick="switchTab(3)">
-      <span class="nav-text">Leadership Watch</span>
-      <span class="nav-badge" id="badge-3">—</span>
-    </div>
   </nav>
 
   <!-- ── Main content ───────────────────────────────────────────── -->
   <main class="main" id="mainContent"></main>
 
+</div>
+
+<!-- ── Leadership Changes Modal ────────────────────────────────── -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeChangesModal()">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div class="modal-header">
+      <span class="modal-title">Leadership Watch</span>
+      <span class="modal-ts" id="modalTs"></span>
+      <button class="modal-close" onclick="closeChangesModal()">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
 </div>
 
 <script>
@@ -643,17 +763,11 @@ function switchTab(idx) {
   document.querySelectorAll('.nav-item').forEach((el, i) => {
     el.classList.toggle('active', i === idx);
   });
-  if (idx === 3) {
-    renderLeadershipWatch();
-  } else {
-    renderTab(idx);
-  }
+  renderTab(idx);
 }
 
 function refreshActive() {
-  if (activeTab === 3) {
-    loadLeadershipSnapshot(true);
-  } else if (activeTab === 0) {
+  if (activeTab === 0) {
     briefsData = null;
     recentCache = null;
     renderTab(0);
@@ -1090,13 +1204,10 @@ function briefSkeletonHTML() {
 }
 
 // ================================================================
-// LEADERSHIP WATCH (TAB 3)
+// LEADERSHIP WATCH — banner + modal
 // ================================================================
 async function loadLeadershipSnapshot(force = false) {
-  if (!force && leadershipData) {
-    if (activeTab === 3) renderLeadershipWatch();
-    return;
-  }
+  if (!force && leadershipData) return;
   try {
     const res = await fetch('./leadership_snapshot.json?_=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
@@ -1104,8 +1215,130 @@ async function loadLeadershipSnapshot(force = false) {
   } catch {
     leadershipData = null;
   }
-  if (activeTab === 3) renderLeadershipWatch();
+  updateChangeBanner();
 }
+
+function updateChangeBanner() {
+  const banner = document.getElementById('changeBanner');
+  const textEl = document.getElementById('bannerText');
+  if (!leadershipData) { banner.classList.remove('visible'); return; }
+
+  const changes = leadershipData.changes || [];
+  if (!changes.length) { banner.classList.remove('visible'); return; }
+
+  let summary;
+  if (changes.length === 1) {
+    const c = changes[0];
+    const action = c.type === 'added' ? 'joined the team'
+                 : c.type === 'removed' ? 'departed'
+                 : 'title updated';
+    summary = `Leadership change detected — ${c.name} ${action}.`;
+  } else {
+    summary = `${changes.length} leadership changes detected since last check.`;
+  }
+
+  textEl.textContent = summary;
+  banner.classList.add('visible');
+}
+
+function openChangesModal() {
+  if (!leadershipData) return;
+  const overlay  = document.getElementById('modalOverlay');
+  const body     = document.getElementById('modalBody');
+  const tsEl     = document.getElementById('modalTs');
+  const checkedAt = leadershipData.checked_at ? fmtDate(leadershipData.checked_at) : '—';
+  tsEl.textContent = 'As of ' + checkedAt;
+
+  body.innerHTML = '';
+
+  const people  = leadershipData.people  || {};
+  const changes = leadershipData.changes || [];
+
+  // ── Left: Changes ───────────────────────────────────────────
+  const changesSec = document.createElement('div');
+  changesSec.className = 'modal-section';
+  changesSec.innerHTML = `<div class="modal-section-title">Changes Detected (${changes.length})</div>`;
+
+  if (!changes.length) {
+    changesSec.innerHTML += '<div class="no-changes">No changes detected since last check</div>';
+  } else {
+    const cl = document.createElement('div');
+    cl.className = 'changes-list';
+    changes.forEach(c => {
+      let desc = '';
+      if (c.type === 'added')   desc = `Added as: ${esc(c.new_title || '')}`;
+      if (c.type === 'removed') desc = `Removed — was: ${esc(c.old_title || '')}`;
+      if (c.type === 'changed') desc = `${esc(c.old_title || '')} &rarr; ${esc(c.new_title || '')}`;
+      const item = document.createElement('div');
+      item.className = 'change-item';
+      item.innerHTML = `
+        <span class="change-pill ${c.type}">${c.type}</span>
+        <div>
+          <div class="change-name">${esc(c.name)}</div>
+          <div class="change-desc">${desc}</div>
+        </div>`;
+      cl.appendChild(item);
+    });
+    changesSec.appendChild(cl);
+  }
+
+  // ── Right: Full roster ───────────────────────────────────────
+  const rosterSec = document.createElement('div');
+  rosterSec.className = 'modal-section';
+  rosterSec.innerHTML = '<div class="modal-section-title">PSE Team</div>';
+
+  const lw = document.createElement('div');
+  lw.className = 'lw-list';
+
+  const leadership = Object.entries(people)
+    .filter(([, info]) => info.source === 'leadership')
+    .sort((a, b) => {
+      const d = titleRank(a[1].title) - titleRank(b[1].title);
+      return d !== 0 ? d : a[0].split(' ').pop().localeCompare(b[0].split(' ').pop());
+    });
+
+  const board = Object.entries(people)
+    .filter(([, info]) => info.source === 'board')
+    .sort((a, b) => a[0].split(' ').pop().localeCompare(b[0].split(' ').pop()));
+
+  if (leadership.length) {
+    const sub = document.createElement('div');
+    sub.className = 'lw-subheader';
+    sub.textContent = `Leadership Team — ${leadership.length} members`;
+    lw.appendChild(sub);
+    leadership.forEach(([name, info]) => {
+      const p = document.createElement('div');
+      p.className = 'lw-person';
+      p.innerHTML = `<div class="lw-name">${esc(name)}${rankBadge(info.title)}</div><div class="lw-role">${esc(info.title)}</div>`;
+      lw.appendChild(p);
+    });
+  }
+
+  if (board.length) {
+    const sub = document.createElement('div');
+    sub.className = 'lw-subheader';
+    sub.textContent = `Board of Directors — ${board.length} members`;
+    lw.appendChild(sub);
+    board.forEach(([name, info]) => {
+      const p = document.createElement('div');
+      p.className = 'lw-person';
+      p.innerHTML = `<div class="lw-name">${esc(name)}</div>${info.title ? `<div class="lw-role">${esc(info.title)}</div>` : ''}`;
+      lw.appendChild(p);
+    });
+  }
+
+  rosterSec.appendChild(lw);
+  body.appendChild(changesSec);
+  body.appendChild(rosterSec);
+  overlay.classList.add('open');
+}
+
+function closeChangesModal() {
+  document.getElementById('modalOverlay').classList.remove('open');
+}
+
+// Close on Escape key
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeChangesModal(); });
 
 // Returns 0–4 rank for leadership title sorting (lower = more senior)
 function titleRank(title) {
@@ -1127,128 +1360,6 @@ function rankBadge(title) {
   return '';
 }
 
-function renderLeadershipWatch() {
-  const main = document.getElementById('mainContent');
-  main.innerHTML = '';
-
-  const badge = document.getElementById('badge-3');
-
-  if (!leadershipData) {
-    const sec = document.createElement('div');
-    sec.className = 'lw-section';
-    sec.style.maxWidth = '520px';
-    sec.innerHTML = `
-      <div class="lw-header"><span class="lw-title">Leadership Watch</span></div>
-      <div class="lw-error">Run <code>monitor.py</code> to generate leadership_snapshot.json, then reload.</div>`;
-    main.appendChild(sec);
-    badge.textContent = '—';
-    return;
-  }
-
-  const people  = leadershipData.people  || {};
-  const changes = leadershipData.changes || [];
-  const checkedAt = leadershipData.checked_at ? fmtDate(leadershipData.checked_at) : '—';
-  badge.textContent = changes.length;
-
-  const panel = document.createElement('div');
-  panel.className = 'lw-panel';
-
-  // ── Split and sort people ─────────────────────────────────────
-  const leadership = Object.entries(people)
-    .filter(([, info]) => info.source === 'leadership')
-    .sort((a, b) => {
-      const rankDiff = titleRank(a[1].title) - titleRank(b[1].title);
-      if (rankDiff !== 0) return rankDiff;
-      return a[0].split(' ').pop().localeCompare(b[0].split(' ').pop());
-    });
-
-  const board = Object.entries(people)
-    .filter(([, info]) => info.source === 'board')
-    .sort((a, b) => a[0].split(' ').pop().localeCompare(b[0].split(' ').pop()));
-
-  // ── People panel (left) ───────────────────────────────────────
-  const currSec = document.createElement('div');
-  currSec.className = 'lw-section';
-  currSec.innerHTML = `
-    <div class="lw-header">
-      <span class="lw-title">PSE Team</span>
-      <span class="lw-ts">As of ${esc(checkedAt)}</span>
-    </div>`;
-
-  const list = document.createElement('div');
-  list.className = 'lw-list';
-
-  // Leadership sub-section
-  if (leadership.length) {
-    const sub = document.createElement('div');
-    sub.className = 'lw-subheader';
-    sub.textContent = `Leadership Team — ${leadership.length} members`;
-    list.appendChild(sub);
-    leadership.forEach(([name, info]) => {
-      const p = document.createElement('div');
-      p.className = 'lw-person';
-      p.innerHTML = `
-        <div class="lw-name">${esc(name)}${rankBadge(info.title)}</div>
-        <div class="lw-role">${esc(info.title)}</div>`;
-      list.appendChild(p);
-    });
-  }
-
-  // Board sub-section
-  if (board.length) {
-    const sub = document.createElement('div');
-    sub.className = 'lw-subheader';
-    sub.textContent = `Board of Directors — ${board.length} members`;
-    list.appendChild(sub);
-    board.forEach(([name, info]) => {
-      const p = document.createElement('div');
-      p.className = 'lw-person';
-      p.innerHTML = `
-        <div class="lw-name">${esc(name)}</div>
-        ${info.title ? `<div class="lw-role">${esc(info.title)}</div>` : ''}`;
-      list.appendChild(p);
-    });
-  }
-
-  currSec.appendChild(list);
-
-  // ── Changes detected ──────────────────────────────────────────
-  const changeSec = document.createElement('div');
-  changeSec.className = 'lw-section';
-  changeSec.innerHTML = `
-    <div class="lw-header">
-      <span class="lw-title">Changes Detected</span>
-      <span class="lw-ts">Last checked ${esc(checkedAt)}</span>
-    </div>`;
-
-  if (!changes.length) {
-    changeSec.innerHTML += '<div class="no-changes">No changes detected since last check</div>';
-  } else {
-    const cl = document.createElement('div');
-    cl.className = 'changes-list';
-    changes.forEach(c => {
-      let desc = '';
-      if (c.type === 'added')   desc = `Added as: ${esc(c.new_title || '')}`;
-      if (c.type === 'removed') desc = `Removed — was: ${esc(c.old_title || '')}`;
-      if (c.type === 'changed') desc = `${esc(c.old_title || '')} &rarr; ${esc(c.new_title || '')}`;
-
-      const item = document.createElement('div');
-      item.className = 'change-item';
-      item.innerHTML = `
-        <span class="change-pill ${c.type}">${c.type}</span>
-        <div>
-          <div class="change-name">${esc(c.name)}</div>
-          <div class="change-desc">${desc}</div>
-        </div>`;
-      cl.appendChild(item);
-    });
-    changeSec.appendChild(cl);
-  }
-
-  panel.appendChild(currSec);
-  panel.appendChild(changeSec);
-  main.appendChild(panel);
-}
 
 function esc(str) {
   return String(str)
