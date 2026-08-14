@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-08-13T00:00:00Z",
+  "changes": [],
+  "people": {
+    "Mary E. Kipp": { "title": "President and Chief Executive Officer", "source": "leadership" },
+    "Aaron August": { "title": "SVP, Chief Customer and Transformation Officer", "source": "leadership" },
+    "Kim Collier": { "title": "VP, Chief Human Resources Officer", "source": "leadership" },
+    "Josh Jacobs": { "title": "VP, Clean Energy Strategy and Planning", "source": "leadership" },
+    "Lorna Luebbe": { "title": "SVP, Chief Sustainability Officer and General Counsel", "source": "leadership" },
+    "Jamie Martin": { "title": "SVP and Chief Financial Officer", "source": "leadership" },
+    "Ryan Murphy": { "title": "VP, Gas and Electric Operations", "source": "leadership" },
+    "Jon Piliaris": { "title": "VP, Regulatory Affairs", "source": "leadership" },
+    "Craig Pospisil": { "title": "SVP and Chief Development Officer", "source": "leadership" },
+    "Matt Steuerwalt": { "title": "SVP, External Affairs", "source": "leadership" },
+    "Simon Upton": { "title": "Chief Information Officer", "source": "leadership" },
+    "Michelle Vargo": { "title": "SVP, Energy Operations", "source": "leadership" }
+  }
+}

@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSE Intel — Utility Sector Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8f9fb;
+      color: #1a1a2e;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* ── Header ─────────────────────────────────────────────── */
+    .header {
+      background: #fff;
+      border-bottom: 1px solid #e5e8ec;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      flex-shrink: 0;
+      z-index: 10;
+    }
+
+    .wordmark {
+      font-size: 18px;
+      font-weight: 700;
+      color: #0a0f1e;
+      letter-spacing: -0.4px;
+    }
+    .wordmark em {
+      font-style: normal;
+      color: #0f6e56;
+    }
+
+    .header-ts {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #9ca3af;
+    }
+
+    .refresh-btn {
+      background: #0f6e56;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .refresh-btn:hover { background: #0c5c47; }
+    .refresh-btn:disabled { background: #d1d5db; cursor: not-allowed; }
+
+    /* ── Layout ──────────────────────────────────────────────── */
+    .layout {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    /* ── Sidebar ─────────────────────────────────────────────── */
+    .sidebar {
+      width: 228px;
+      background: #0a0f1e;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0 16px;
+    }
+
+    .sidebar-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #374151;
+      padding: 0 18px 10px;
+    }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 11px 18px;
+      cursor: pointer;
+      color: #6b7280;
+      font-size: 13px;
+      font-weight: 500;
+      border-left: 3px solid transparent;
+      transition: color 0.12s, background 0.12s, border-color 0.12s;
+      user-select: none;
+      gap: 8px;
+    }
+    .nav-item:hover {
+      color: #d1d5db;
+      background: rgba(255,255,255,0.04);
+    }
+    .nav-item.active {
+      color: #fff;
+      border-left-color: #0f6e56;
+      background: rgba(15,110,86,0.13);
+    }
+
+    .nav-text { flex: 1; line-height: 1.3; }
+
+    .nav-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      background: rgba(255,255,255,0.08);
+      color: #6b7280;
+      border-radius: 10px;
+      padding: 2px 8px;
+      min-width: 28px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .nav-item.active .nav-badge {
+      background: #0f6e56;
+      color: #fff;
+    }
+
+    /* ── Main panel ──────────────────────────────────────────── */
+    .main {
+      flex: 1;
+      overflow-y: auto;
+      padding: 24px 28px;
+    }
+
+    /* ── Filter row ──────────────────────────────────────────── */
+    .filter-row {
+      display: flex;
+      gap: 7px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .filter-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 4px 13px;
+      border-radius: 20px;
+      border: 1px solid #e5e8ec;
+      background: #fff;
+      color: #6b7280;
+      cursor: pointer;
+      transition: all 0.12s;
+    }
+    .filter-pill:hover { border-color: #9ca3af; color: #374151; }
+    .filter-pill.active {
+      background: #0f6e56;
+      border-color: #0f6e56;
+      color: #fff;
+    }
+
+    /* ── Cards ───────────────────────────────────────────────── */
+    .cards-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #e5e8ec;
+      border-left: 4px solid #e5e8ec;
+      border-radius: 8px;
+      padding: 16px 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      transition: box-shadow 0.15s;
+    }
+    .card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.09); }
+    .card.teal  { border-left-color: #0f6e56; }
+    .card.amber { border-left-color: #d97706; }
+    .card.blue  { border-left-color: #2563eb; }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 9px;
+      gap: 8px;
+    }
+    .card-badges { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+
+    .utility-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      padding: 2px 9px;
+      border-radius: 4px;
+      color: #fff;
+      white-space: nowrap;
+    }
+
+    .card-right {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .card-source {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #6b7280;
+    }
+    .card-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #9ca3af;
+      white-space: nowrap;
+    }
+
+    .card-headline {
+      font-size: 15px;
+      font-weight: 700;
+      color: #0a0f1e;
+      line-height: 1.4;
+      margin-bottom: 6px;
+    }
+
+    .card-snippet {
+      font-size: 13px;
+      color: #6b7280;
+      line-height: 1.55;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 11px;
+    }
+
+    .card-footer { display: flex; justify-content: flex-end; }
+    .read-link {
+      font-size: 12px;
+      font-weight: 600;
+      color: #0f6e56;
+      text-decoration: none;
+    }
+    .read-link:hover { text-decoration: underline; }
+
+    /* ── Skeleton ────────────────────────────────────────────── */
+    @keyframes shimmer {
+      0%   { background-position: -600px 0; }
+      100% { background-position:  600px 0; }
+    }
+
+    .skeleton-card {
+      background: #fff;
+      border: 1px solid #e5e8ec;
+      border-left: 4px solid #e5e8ec;
+      border-radius: 8px;
+      padding: 16px 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+
+    .sk {
+      border-radius: 4px;
+      background: linear-gradient(90deg, #f0f2f5 25%, #e4e7eb 50%, #f0f2f5 75%);
+      background-size: 600px 100%;
+      animation: shimmer 1.5s ease-in-out infinite;
+    }
+    .sk-meta  { height: 12px; width: 55%; margin-bottom: 12px; }
+    .sk-h1    { height: 20px; width: 88%; margin-bottom: 9px; }
+    .sk-body  { height: 13px; width: 100%; margin-bottom: 6px; }
+    .sk-body2 { height: 13px; width: 68%; }
+
+    /* ── Empty / error states ────────────────────────────────── */
+    .empty-state {
+      text-align: center;
+      padding: 64px 24px;
+      color: #9ca3af;
+      font-size: 14px;
+    }
+
+    /* ── Leadership Watch ────────────────────────────────────── */
+    .lw-panel {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .lw-section {
+      background: #fff;
+      border: 1px solid #e5e8ec;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .lw-header {
+      padding: 14px 20px;
+      border-bottom: 1px solid #e5e8ec;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .lw-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #0a0f1e;
+    }
+    .lw-ts {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: #9ca3af;
+    }
+
+    .lw-list {
+      overflow-y: auto;
+      max-height: 520px;
+      flex: 1;
+    }
+
+    .lw-person {
+      padding: 11px 20px;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    .lw-person:last-child { border-bottom: none; }
+    .lw-name  { font-size: 14px; font-weight: 600; color: #0a0f1e; margin-bottom: 2px; }
+    .lw-role  { font-size: 12px; color: #6b7280; }
+    .lw-src   {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: #d1d5db;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin-top: 2px;
+    }
+
+    .changes-list { padding: 14px 20px; display: flex; flex-direction: column; gap: 12px; }
+
+    .change-item { display: flex; align-items: flex-start; gap: 10px; }
+
+    .change-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 600;
+      padding: 3px 9px;
+      border-radius: 4px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .change-pill.added   { background: #dcfce7; color: #16a34a; }
+    .change-pill.removed { background: #fee2e2; color: #dc2626; }
+    .change-pill.changed { background: #fef3c7; color: #d97706; }
+
+    .change-name { font-size: 14px; font-weight: 600; color: #0a0f1e; }
+    .change-desc { font-size: 12px; color: #6b7280; margin-top: 3px; line-height: 1.4; }
+
+    .no-changes {
+      padding: 48px 20px;
+      text-align: center;
+      color: #9ca3af;
+      font-size: 13px;
+    }
+
+    .lw-error {
+      padding: 20px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Header ──────────────────────────────────────────────────── -->
+<header class="header">
+  <div class="wordmark">PSE<em>Intel</em></div>
+  <div class="header-ts" id="lastRefreshed">Not yet refreshed</div>
+  <button class="refresh-btn" id="refreshBtn" onclick="refreshActive()">Refresh</button>
+</header>
+
+<div class="layout">
+
+  <!-- ── Sidebar ────────────────────────────────────────────────── -->
+  <nav class="sidebar">
+    <div class="sidebar-label">Intelligence</div>
+    <div class="nav-item active" data-tab="0" onclick="switchTab(0)">
+      <span class="nav-text">PSE Leadership &amp; People</span>
+      <span class="nav-badge" id="badge-0">—</span>
+    </div>
+    <div class="nav-item" data-tab="1" onclick="switchTab(1)">
+      <span class="nav-text">PSE Company News</span>
+      <span class="nav-badge" id="badge-1">—</span>
+    </div>
+    <div class="nav-item" data-tab="2" onclick="switchTab(2)">
+      <span class="nav-text">US Utilities Pulse</span>
+      <span class="nav-badge" id="badge-2">—</span>
+    </div>
+    <div class="nav-item" data-tab="3" onclick="switchTab(3)">
+      <span class="nav-text">Leadership Watch</span>
+      <span class="nav-badge" id="badge-3">—</span>
+    </div>
+  </nav>
+
+  <!-- ── Main content ───────────────────────────────────────────── -->
+  <main class="main" id="mainContent"></main>
+
+</div>
+
+<script>
+// ================================================================
+// CONFIG
+// ================================================================
+const PROXY = 'https://api.allorigins.win/get?url=';
+
+const FEEDS = [
+  // Tab 0 — PSE Leadership & People
+  [
+    'https://news.google.com/rss/search?q=Puget+Sound+Energy+leadership+executive+director&hl=en-US&gl=US&ceid=US:en',
+    'https://news.google.com/rss/search?q=Puget+Sound+Energy+appointed+promoted+resigned&hl=en-US&gl=US&ceid=US:en',
+  ],
+  // Tab 1 — PSE Company News
+  [
+    'https://news.google.com/rss/search?q=%22Puget+Sound+Energy%22+news&hl=en-US&gl=US&ceid=US:en',
+    'https://news.google.com/rss/search?q=PSE+utility+Washington+rate+grid+renewable&hl=en-US&gl=US&ceid=US:en',
+  ],
+  // Tab 2 — US Utilities Pulse (objects with utility name)
+  [
+    { name: 'PacifiCorp',            url: 'https://news.google.com/rss/search?q=PacifiCorp+OR+%22Pacific+Power%22+utility&hl=en-US&gl=US&ceid=US:en' },
+    { name: 'Portland General',      url: 'https://news.google.com/rss/search?q=%22Portland+General+Electric%22+news&hl=en-US&gl=US&ceid=US:en' },
+    { name: 'Avangrid',              url: 'https://news.google.com/rss/search?q=Avangrid+utility+news&hl=en-US&gl=US&ceid=US:en' },
+    { name: 'NV Energy',             url: 'https://news.google.com/rss/search?q=%22NV+Energy%22+utility+news&hl=en-US&gl=US&ceid=US:en' },
+    { name: 'Arizona Public Service', url: 'https://news.google.com/rss/search?q=%22Arizona+Public+Service%22+APS+utility&hl=en-US&gl=US&ceid=US:en' },
+    { name: 'Xcel Energy',           url: 'https://news.google.com/rss/search?q=%22Xcel+Energy%22+utility+news&hl=en-US&gl=US&ceid=US:en' },
+    { name: 'Evergy',                url: 'https://news.google.com/rss/search?q=Evergy+utility+news&hl=en-US&gl=US&ceid=US:en' },
+    { name: 'Idaho Power',           url: 'https://news.google.com/rss/search?q=%22Idaho+Power%22+utility+news&hl=en-US&gl=US&ceid=US:en' },
+  ],
+];
+
+const UTILITY_COLORS = {
+  'PacifiCorp':             '#7c3aed',
+  'Portland General':       '#0369a1',
+  'Avangrid':               '#0891b2',
+  'NV Energy':              '#d97706',
+  'Arizona Public Service': '#dc2626',
+  'Xcel Energy':            '#059669',
+  'Evergy':                 '#db2777',
+  'Idaho Power':            '#6366f1',
+};
+
+const TAB_COLOR = ['amber', 'teal', 'blue'];
+
+// ================================================================
+// STATE
+// ================================================================
+let activeTab = 0;
+let cache = {};          // cache[tabIdx] = articles[]
+let leadershipData = null;
+let activeFilter = 'All';
+
+// ================================================================
+// BOOT
+// ================================================================
+window.addEventListener('DOMContentLoaded', () => {
+  renderTab(0);
+  loadLeadershipSnapshot();
+});
+
+// ================================================================
+// NAVIGATION
+// ================================================================
+function switchTab(idx) {
+  activeTab = idx;
+  activeFilter = 'All';
+  document.querySelectorAll('.nav-item').forEach((el, i) => {
+    el.classList.toggle('active', i === idx);
+  });
+  if (idx === 3) {
+    renderLeadershipWatch();
+  } else {
+    renderTab(idx);
+  }
+}
+
+function refreshActive() {
+  if (activeTab === 3) {
+    loadLeadershipSnapshot(true);
+  } else {
+    delete cache[activeTab];
+    renderTab(activeTab);
+  }
+}
+
+// ================================================================
+// RSS HELPERS
+// ================================================================
+async function fetchFeed(url) {
+  try {
+    const res = await fetch(PROXY + encodeURIComponent(url));
+    if (!res.ok) return [];
+    const data = await res.json();
+    const xml = data.contents;
+    if (!xml) return [];
+    const doc = new DOMParser().parseFromString(xml, 'application/xml');
+    return Array.from(doc.querySelectorAll('item')).map(item => ({
+      title:   getText(item, 'title'),
+      link:    getText(item, 'link'),
+      pubDate: getText(item, 'pubDate'),
+      source:  getText(item, 'source') || domain(getText(item, 'link')),
+      snippet: (getText(item, 'description') || '').replace(/<[^>]+>/g, '').trim(),
+    }));
+  } catch { return []; }
+}
+
+function getText(el, tag) {
+  return el.querySelector(tag)?.textContent?.trim() || '';
+}
+
+function domain(url) {
+  try { return new URL(url).hostname.replace(/^www\./, ''); } catch { return ''; }
+}
+
+function fmtDate(str) {
+  try {
+    return new Date(str).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  } catch { return str; }
+}
+
+function dedup(articles) {
+  const seen = new Set();
+  return articles.filter(a => {
+    const k = a.title.toLowerCase().slice(0, 64);
+    if (seen.has(k)) return false;
+    seen.add(k);
+    return true;
+  });
+}
+
+function byDate(articles) {
+  return [...articles].sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+}
+
+// ================================================================
+// RENDER TABS 0–2
+// ================================================================
+async function renderTab(idx) {
+  const main = document.getElementById('mainContent');
+  main.innerHTML = skeletonHTML();
+
+  const btn = document.getElementById('refreshBtn');
+  btn.disabled = true;
+
+  let articles;
+  if (cache[idx]) {
+    articles = cache[idx];
+  } else {
+    const feeds = FEEDS[idx];
+    if (idx === 2) {
+      const results = await Promise.allSettled(
+        feeds.map(f => fetchFeed(f.url).then(arts => arts.map(a => ({ ...a, utility: f.name }))))
+      );
+      articles = byDate(dedup(results.flatMap(r => r.status === 'fulfilled' ? r.value : [])));
+    } else {
+      const results = await Promise.allSettled(feeds.map(fetchFeed));
+      articles = byDate(dedup(results.flatMap(r => r.status === 'fulfilled' ? r.value : [])));
+    }
+    cache[idx] = articles;
+  }
+
+  document.getElementById(`badge-${idx}`).textContent = articles.length || '0';
+  document.getElementById('lastRefreshed').textContent =
+    'Last refreshed ' + new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+  btn.disabled = false;
+  main.innerHTML = '';
+
+  if (idx === 2) {
+    renderSectorTab(articles, main);
+  } else {
+    renderFeedTab(articles, TAB_COLOR[idx], main);
+  }
+}
+
+function renderFeedTab(articles, colorClass, container) {
+  if (!articles.length) {
+    container.innerHTML = '<div class="empty-state">No articles found — try refreshing</div>';
+    return;
+  }
+  const grid = document.createElement('div');
+  grid.className = 'cards-grid';
+  articles.forEach(a => grid.appendChild(makeCard(a, colorClass)));
+  container.appendChild(grid);
+}
+
+function renderSectorTab(articles, container) {
+  const filterRow = document.createElement('div');
+  filterRow.className = 'filter-row';
+  filterRow.id = 'filterRow';
+
+  ['All', ...Object.keys(UTILITY_COLORS)].forEach(u => {
+    const pill = document.createElement('button');
+    pill.className = 'filter-pill' + (u === 'All' ? ' active' : '');
+    pill.textContent = u;
+    pill.onclick = () => {
+      activeFilter = u;
+      document.querySelectorAll('.filter-pill').forEach(p => p.classList.toggle('active', p.textContent === u));
+      applyFilter(articles);
+    };
+    filterRow.appendChild(pill);
+  });
+
+  container.appendChild(filterRow);
+
+  const grid = document.createElement('div');
+  grid.className = 'cards-grid';
+  grid.id = 'sectorGrid';
+  container.appendChild(grid);
+
+  applyFilter(articles);
+}
+
+function applyFilter(articles) {
+  const grid = document.getElementById('sectorGrid');
+  if (!grid) return;
+  grid.innerHTML = '';
+  const filtered = activeFilter === 'All' ? articles : articles.filter(a => a.utility === activeFilter);
+  if (!filtered.length) {
+    grid.innerHTML = '<div class="empty-state">No articles found — try refreshing</div>';
+    return;
+  }
+  filtered.forEach(a => grid.appendChild(makeCard(a, 'blue')));
+}
+
+function makeCard(article, colorClass) {
+  const card = document.createElement('div');
+  card.className = `card ${colorClass}`;
+
+  // Meta row
+  const meta = document.createElement('div');
+  meta.className = 'card-meta';
+
+  const badges = document.createElement('div');
+  badges.className = 'card-badges';
+  if (article.utility && UTILITY_COLORS[article.utility]) {
+    const badge = document.createElement('span');
+    badge.className = 'utility-badge';
+    badge.style.background = UTILITY_COLORS[article.utility];
+    badge.textContent = article.utility;
+    badges.appendChild(badge);
+  }
+
+  const right = document.createElement('div');
+  right.className = 'card-right';
+  if (article.source) {
+    const src = document.createElement('span');
+    src.className = 'card-source';
+    src.textContent = article.source;
+    right.appendChild(src);
+  }
+  const dateEl = document.createElement('span');
+  dateEl.className = 'card-date';
+  dateEl.textContent = fmtDate(article.pubDate);
+  right.appendChild(dateEl);
+
+  meta.appendChild(badges);
+  meta.appendChild(right);
+
+  // Headline
+  const hl = document.createElement('div');
+  hl.className = 'card-headline';
+  hl.textContent = article.title;
+
+  // Snippet
+  const snip = document.createElement('div');
+  snip.className = 'card-snippet';
+  snip.textContent = article.snippet || '';
+
+  // Footer
+  const footer = document.createElement('div');
+  footer.className = 'card-footer';
+  const link = document.createElement('a');
+  link.className = 'read-link';
+  link.href = article.link;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  link.textContent = 'Read →';
+  footer.appendChild(link);
+
+  card.appendChild(meta);
+  card.appendChild(hl);
+  if (article.snippet) card.appendChild(snip);
+  card.appendChild(footer);
+  return card;
+}
+
+function skeletonHTML() {
+  const sk = () => `
+    <div class="skeleton-card">
+      <div class="sk sk-meta"></div>
+      <div class="sk sk-h1"></div>
+      <div class="sk sk-body"></div>
+      <div class="sk sk-body2"></div>
+    </div>`;
+  return `<div class="cards-grid">${sk()}${sk()}${sk()}</div>`;
+}
+
+// ================================================================
+// LEADERSHIP WATCH (TAB 3)
+// ================================================================
+async function loadLeadershipSnapshot(force = false) {
+  if (!force && leadershipData) {
+    if (activeTab === 3) renderLeadershipWatch();
+    return;
+  }
+  try {
+    const res = await fetch('./leadership_snapshot.json?_=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    leadershipData = await res.json();
+  } catch {
+    leadershipData = null;
+  }
+  if (activeTab === 3) renderLeadershipWatch();
+}
+
+function renderLeadershipWatch() {
+  const main = document.getElementById('mainContent');
+  main.innerHTML = '';
+
+  const badge = document.getElementById('badge-3');
+
+  if (!leadershipData) {
+    const sec = document.createElement('div');
+    sec.className = 'lw-section';
+    sec.style.maxWidth = '520px';
+    sec.innerHTML = `
+      <div class="lw-header"><span class="lw-title">Leadership Watch</span></div>
+      <div class="lw-error">Run <code>monitor.py</code> to generate leadership_snapshot.json, then reload.</div>`;
+    main.appendChild(sec);
+    badge.textContent = '—';
+    return;
+  }
+
+  const people  = leadershipData.people  || {};
+  const changes = leadershipData.changes || [];
+  const checkedAt = leadershipData.checked_at ? fmtDate(leadershipData.checked_at) : '—';
+  badge.textContent = changes.length;
+
+  const panel = document.createElement('div');
+  panel.className = 'lw-panel';
+
+  // ── Current leadership ────────────────────────────────────────
+  const currSec = document.createElement('div');
+  currSec.className = 'lw-section';
+  currSec.innerHTML = `
+    <div class="lw-header">
+      <span class="lw-title">Current Leadership</span>
+      <span class="lw-ts">As of ${esc(checkedAt)}</span>
+    </div>`;
+
+  const list = document.createElement('div');
+  list.className = 'lw-list';
+  Object.entries(people).forEach(([name, info]) => {
+    const p = document.createElement('div');
+    p.className = 'lw-person';
+    p.innerHTML = `
+      <div class="lw-name">${esc(name)}</div>
+      <div class="lw-role">${esc(info.title)}</div>
+      <div class="lw-src">${esc(info.source)}</div>`;
+    list.appendChild(p);
+  });
+  currSec.appendChild(list);
+
+  // ── Changes detected ──────────────────────────────────────────
+  const changeSec = document.createElement('div');
+  changeSec.className = 'lw-section';
+  changeSec.innerHTML = `
+    <div class="lw-header">
+      <span class="lw-title">Changes Detected</span>
+      <span class="lw-ts">Last checked ${esc(checkedAt)}</span>
+    </div>`;
+
+  if (!changes.length) {
+    changeSec.innerHTML += '<div class="no-changes">No changes detected since last check</div>';
+  } else {
+    const cl = document.createElement('div');
+    cl.className = 'changes-list';
+    changes.forEach(c => {
+      let desc = '';
+      if (c.type === 'added')   desc = `Added as: ${esc(c.new_title || '')}`;
+      if (c.type === 'removed') desc = `Removed — was: ${esc(c.old_title || '')}`;
+      if (c.type === 'changed') desc = `${esc(c.old_title || '')} &rarr; ${esc(c.new_title || '')}`;
+
+      const item = document.createElement('div');
+      item.className = 'change-item';
+      item.innerHTML = `
+        <span class="change-pill ${c.type}">${c.type}</span>
+        <div>
+          <div class="change-name">${esc(c.name)}</div>
+          <div class="change-desc">${desc}</div>
+        </div>`;
+      cl.appendChild(item);
+    });
+    changeSec.appendChild(cl);
+  }
+
+  panel.appendChild(currSec);
+  panel.appendChild(changeSec);
+  main.appendChild(panel);
+}
+
+function esc(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+</script>
+</body>
+</html>
