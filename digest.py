@@ -24,7 +24,7 @@ CONFIG = {
     "smtp_port": 587,
     "smtp_user": os.getenv("GMAIL_EMAIL"),
     "smtp_password": os.getenv("GMAIL_APP_PASSWORD"),
-    "recipients": ["your-leader@accenture.com"],
+    "recipients": ["sourabh.shiral@gmail.com", "saurabh.s.shiral@accenture.com"],
     "lookback_days": 7,
 }
 
