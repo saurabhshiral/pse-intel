@@ -152,6 +152,12 @@ def main():
     current = {**board, **leadership}
     print(f"  Total unique people: {len(current)}")
 
+    # Safety guard: if both pages returned almost nothing, a scrape failure
+    # would mark every known person as removed. Abort rather than corrupt data.
+    if len(current) < 5:
+        print("  ERROR: fewer than 5 people found — likely a scrape failure. Aborting.", file=sys.stderr)
+        sys.exit(2)
+
     existing = load_snapshot(SNAPSHOT_FILE)
     old_people = existing.get("people", {}) if existing else {}
 

@@ -2,7 +2,7 @@ name: PSE Intel Weekly
 
 on:
   schedule:
-    - cron: "0 15 * * 1"  # Monday 7 AM Pacific (UTC-8)
+    - cron: "0 15 * * 1"  # Monday ~7 AM PST / 8 AM PDT (Pacific time)
   workflow_dispatch:       # Manual trigger from GitHub UI
 
 jobs:

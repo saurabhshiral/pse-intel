@@ -839,7 +839,7 @@
 <div class="change-banner" id="changeBanner">
   <span class="banner-icon">⚠</span>
   <span class="banner-text" id="bannerText"></span>
-  <a class="banner-link" onclick="openChangesModal()">View details &rarr;</a>
+  <button class="banner-link" onclick="openChangesModal()">View details &rarr;</button>
 </div>
 
 <div class="layout">
@@ -1602,7 +1602,7 @@ function titleRank(title) {
   if (t.includes('president and chief') || t.includes('president and ceo') || t.includes('chief executive')) return 0;
   if (t.includes('president')) return 1;
   if (t.startsWith('svp') || t.includes('senior vice president')) return 2;
-  if (t.startsWith('chief') || /\bci[of]\b/.test(t)) return 3; // CIO, CFO, COO
+  if (t.startsWith('chief') || /\b(cio|cfo|coo)\b/.test(t)) return 3;
   if (t.startsWith('vp') || t.includes('vice president')) return 4;
   return 5;
 }
@@ -1612,7 +1612,7 @@ function rankBadge(title) {
   if (t.includes('president and chief') || t.includes('chief executive')) return '<span class="lw-rank-badge rank-ceo">CEO</span>';
   if (t.startsWith('svp') || t.includes('senior vice president'))         return '<span class="lw-rank-badge rank-svp">SVP</span>';
   if (t.startsWith('vp') || t.includes('vice president'))                 return '<span class="lw-rank-badge rank-vp">VP</span>';
-  if (t.startsWith('chief') || /\bci[of]\b/.test(t))                     return '<span class="lw-rank-badge rank-chief">C-Suite</span>';
+  if (t.startsWith('chief') || /\b(cio|cfo|coo)\b/.test(t))              return '<span class="lw-rank-badge rank-chief">C-Suite</span>';
   return '';
 }
 
