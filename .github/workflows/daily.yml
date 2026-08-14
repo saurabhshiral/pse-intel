@@ -19,15 +19,17 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install feedparser
+        run: pip install feedparser requests
 
-      - name: Fetch today's articles
+      - name: Fetch articles and generate leadership briefs
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python daily_fetch.py
 
-      - name: Commit updated news history
+      - name: Commit updated files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add news_history.csv news_recent.json
+          git add news_history.csv news_recent.json leadership_briefs.json
           git diff --staged --quiet || git commit -m "chore: daily news fetch $(date -u +%Y-%m-%d) [skip ci]"
           git push

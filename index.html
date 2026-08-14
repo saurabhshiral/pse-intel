@@ -401,6 +401,139 @@
       font-size: 12px;
       color: #9ca3af;
     }
+
+    /* ── Leadership Briefs (Tab 0) ───────────────────────────── */
+    .briefs-meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #9ca3af;
+      margin-bottom: 16px;
+    }
+
+    .brief-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 14px;
+    }
+
+    .brief-card {
+      background: #fff;
+      border: 1px solid #e5e8ec;
+      border-left: 4px solid #e5e8ec;
+      border-radius: 8px;
+      padding: 16px 18px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.15s;
+    }
+    .brief-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.09); }
+    .brief-card.sentiment-positive { border-left-color: #10b981; }
+    .brief-card.sentiment-negative { border-left-color: #ef4444; }
+    .brief-card.sentiment-neutral  { border-left-color: #f59e0b; }
+    .brief-card.no-coverage        { border-left-color: #e5e8ec; opacity: 0.65; }
+
+    .brief-card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    .brief-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #0a0f1e;
+      line-height: 1.3;
+    }
+    .brief-card.no-coverage .brief-name { color: #6b7280; }
+
+    .sentiment-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .sentiment-pill-positive { background: #dcfce7; color: #15803d; }
+    .sentiment-pill-negative { background: #fee2e2; color: #dc2626; }
+    .sentiment-pill-neutral  { background: #fef3c7; color: #d97706; }
+    .sentiment-pill-none     { background: #f3f4f6; color: #9ca3af; }
+
+    .brief-title {
+      font-size: 12px;
+      color: #6b7280;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .brief-text {
+      font-size: 13.5px;
+      color: #374151;
+      line-height: 1.6;
+      flex: 1;
+      margin-bottom: 12px;
+    }
+    .brief-text-empty { color: #9ca3af; font-style: italic; }
+
+    .brief-footer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #f3f4f6;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+    }
+    .brief-count { font-weight: 600; color: #0f6e56; }
+    .brief-daterange { color: #9ca3af; flex: 1; }
+
+    .brief-toggle {
+      background: none;
+      border: none;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: #6b7280;
+      cursor: pointer;
+      padding: 2px 0;
+    }
+    .brief-toggle:hover { color: #0f6e56; }
+
+    .brief-articles {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid #f3f4f6;
+    }
+
+    .brief-article-link {
+      display: flex;
+      gap: 8px;
+      align-items: baseline;
+      text-decoration: none;
+      padding: 4px 6px;
+      border-radius: 4px;
+      transition: background 0.1s;
+    }
+    .brief-article-link:hover { background: #f8f9fb; }
+
+    .brief-article-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: #9ca3af;
+      flex-shrink: 0;
+    }
+    .brief-article-title {
+      font-size: 12px;
+      color: #374151;
+      line-height: 1.4;
+    }
+    .brief-article-link:hover .brief-article-title { color: #0f6e56; }
   </style>
 </head>
 <body>
@@ -489,6 +622,7 @@ const TAB_COLOR = ['amber', 'teal', 'blue'];
 let activeTab = 0;
 let cache = {};          // cache[tabIdx] = articles[]
 let leadershipData = null;
+let briefsData = null;   // null = not loaded, false = failed, object = loaded
 let activeFilter = 'All';
 
 // ================================================================
@@ -497,6 +631,7 @@ let activeFilter = 'All';
 window.addEventListener('DOMContentLoaded', () => {
   renderTab(0);
   loadLeadershipSnapshot();
+  loadBriefs();
 });
 
 // ================================================================
@@ -518,9 +653,13 @@ function switchTab(idx) {
 function refreshActive() {
   if (activeTab === 3) {
     loadLeadershipSnapshot(true);
+  } else if (activeTab === 0) {
+    briefsData = null;
+    recentCache = null;
+    renderTab(0);
   } else {
     delete cache[activeTab];
-    recentCache = null; // force re-fetch of news_recent.json
+    recentCache = null;
     renderTab(activeTab);
   }
 }
@@ -612,6 +751,8 @@ function articlesFromRecent(recentArticles, tabIdx) {
 // RENDER TABS 0–2
 // ================================================================
 async function renderTab(idx) {
+  if (idx === 0) { renderLeadershipBriefs(); return; }
+
   const main = document.getElementById('mainContent');
   main.innerHTML = skeletonHTML();
 
@@ -777,6 +918,175 @@ function skeletonHTML() {
       <div class="sk sk-body2"></div>
     </div>`;
   return `<div class="cards-grid">${sk()}${sk()}${sk()}</div>`;
+}
+
+// ================================================================
+// LEADERSHIP BRIEFS (TAB 0)
+// ================================================================
+async function loadBriefs(force = false) {
+  if (!force && briefsData !== null) return briefsData;
+  try {
+    const res = await fetch('./leadership_briefs.json?_=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    briefsData = await res.json();
+  } catch {
+    briefsData = false;
+  }
+  return briefsData;
+}
+
+async function renderLeadershipBriefs() {
+  const main = document.getElementById('mainContent');
+  const btn  = document.getElementById('refreshBtn');
+
+  main.innerHTML = briefSkeletonHTML();
+  btn.disabled = true;
+
+  const data = await loadBriefs();
+  btn.disabled = false;
+
+  document.getElementById('lastRefreshed').textContent =
+    'Last refreshed ' + new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+
+  if (!data || !data.briefs) {
+    main.innerHTML = '<div class="empty-state">No briefings available yet.<br>The daily workflow generates this file each morning.</div>';
+    document.getElementById('badge-0').textContent = '0';
+    return;
+  }
+
+  const briefs = data.briefs;
+  const names  = Object.keys(briefs);
+  const covered = names.filter(n => briefs[n].article_count > 0).length;
+  document.getElementById('badge-0').textContent = covered + '/' + names.length;
+
+  const genAt = data.generated_at
+    ? new Date(data.generated_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+    : '';
+
+  main.innerHTML = '';
+
+  const meta = document.createElement('div');
+  meta.className = 'briefs-meta';
+  meta.textContent = (covered + ' of ' + names.length + ' leaders with coverage this week'
+    + (genAt ? ' · Updated ' + genAt : ''));
+  main.appendChild(meta);
+
+  const grid = document.createElement('div');
+  grid.className = 'brief-grid';
+  names.forEach(name => grid.appendChild(makeBriefCard(name, briefs[name])));
+  main.appendChild(grid);
+}
+
+function makeBriefCard(name, b) {
+  const hasCoverage = b.article_count > 0;
+  const sentiment   = b.sentiment || 'none';
+
+  const card = document.createElement('div');
+  card.className = 'brief-card ' + (hasCoverage ? 'has-coverage' : 'no-coverage') + ' sentiment-' + sentiment;
+
+  // Header: name + sentiment pill
+  const hdr = document.createElement('div');
+  hdr.className = 'brief-card-header';
+
+  const nameEl = document.createElement('div');
+  nameEl.className = 'brief-name';
+  nameEl.textContent = name;
+
+  const pill = document.createElement('span');
+  pill.className = 'sentiment-pill sentiment-pill-' + sentiment;
+  pill.textContent = sentiment === 'none' ? 'No coverage' : sentiment.charAt(0).toUpperCase() + sentiment.slice(1);
+
+  hdr.appendChild(nameEl);
+  hdr.appendChild(pill);
+
+  const titleEl = document.createElement('div');
+  titleEl.className = 'brief-title';
+  titleEl.textContent = b.title || '';
+
+  const textEl = document.createElement('div');
+  textEl.className = 'brief-text' + (hasCoverage && b.briefing ? '' : ' brief-text-empty');
+  textEl.textContent = (hasCoverage && b.briefing) ? b.briefing : 'No coverage since last Monday.';
+
+  card.appendChild(hdr);
+  card.appendChild(titleEl);
+  card.appendChild(textEl);
+
+  if (hasCoverage && b.articles && b.articles.length) {
+    const footer = document.createElement('div');
+    footer.className = 'brief-footer';
+
+    const dates = b.articles.map(a => a.pub_date).filter(Boolean).sort();
+    const dateRange = dates.length > 1
+      ? fmtDate(dates[0]) + ' – ' + fmtDate(dates[dates.length - 1])
+      : dates.length ? fmtDate(dates[0]) : '';
+
+    const countEl = document.createElement('span');
+    countEl.className = 'brief-count';
+    countEl.textContent = b.article_count + (b.article_count === 1 ? ' article' : ' articles');
+    footer.appendChild(countEl);
+
+    if (dateRange) {
+      const drEl = document.createElement('span');
+      drEl.className = 'brief-daterange';
+      drEl.textContent = dateRange;
+      footer.appendChild(drEl);
+    }
+
+    const toggle = document.createElement('button');
+    toggle.className = 'brief-toggle';
+    toggle.textContent = 'Show ▾';
+
+    const articleList = document.createElement('div');
+    articleList.className = 'brief-articles';
+    articleList.style.display = 'none';
+
+    b.articles.forEach(a => {
+      const lnk = document.createElement('a');
+      lnk.className = 'brief-article-link';
+      lnk.href = a.url || '#';
+      lnk.target = '_blank';
+      lnk.rel = 'noopener noreferrer';
+
+      const dateSpan = document.createElement('span');
+      dateSpan.className = 'brief-article-date';
+      dateSpan.textContent = a.pub_date || '';
+
+      const titleSpan = document.createElement('span');
+      titleSpan.className = 'brief-article-title';
+      titleSpan.textContent = a.headline || '';
+
+      lnk.appendChild(dateSpan);
+      lnk.appendChild(titleSpan);
+      articleList.appendChild(lnk);
+    });
+
+    toggle.onclick = () => {
+      const open = articleList.style.display !== 'none';
+      articleList.style.display = open ? 'none' : 'flex';
+      toggle.textContent = open ? 'Show ▾' : 'Hide ▴';
+    };
+
+    footer.appendChild(toggle);
+    card.appendChild(footer);
+    card.appendChild(articleList);
+  }
+
+  return card;
+}
+
+function briefSkeletonHTML() {
+  const sk = () => `
+    <div class="brief-card has-coverage" style="gap:8px;">
+      <div style="display:flex;justify-content:space-between;gap:8px;">
+        <div class="sk" style="height:18px;width:150px;border-radius:4px;"></div>
+        <div class="sk" style="height:18px;width:65px;border-radius:10px;"></div>
+      </div>
+      <div class="sk" style="height:12px;width:220px;border-radius:4px;margin-bottom:4px;"></div>
+      <div class="sk" style="height:13px;width:100%;border-radius:4px;"></div>
+      <div class="sk" style="height:13px;width:88%;border-radius:4px;"></div>
+      <div class="sk" style="height:13px;width:74%;border-radius:4px;"></div>
+    </div>`;
+  return `<div class="brief-grid">${sk()}${sk()}${sk()}${sk()}${sk()}${sk()}</div>`;
 }
 
 // ================================================================
