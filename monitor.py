@@ -20,28 +20,25 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; PSEIntelBot/1.0)"}
 
 
 def is_person_name(text):
-    """Return True only if the text looks like a real person's name."""
+    """Return True only if text looks like a real person name.
+
+    Strategy: require 2-5 words, each starting with a capital, and no
+    multi-letter word is ALL-CAPS (catches QUICK LINKS, HYDRO LICENSING, etc.)
+    """
     import re
-    # Must have at least two words
     words = text.split()
-    if len(words) < 2:
+    if not (2 <= len(words) <= 5):
         return False
-    # Reject ALL-CAPS strings (nav items, section headers)
-    if text == text.upper():
-        return False
-    # Reject strings with digits
-    if any(ch.isdigit() for ch in text):
-        return False
-    # Reject obvious nav/page keywords
-    junk = {"links", "rates", "planning", "licensing", "confirmation",
-            "contact", "menu", "navigation", "search", "home", "about",
-            "services", "resources", "careers", "news", "events", "login",
-            "sign", "privacy", "terms", "cookie", "submit", "apply"}
-    if any(w.lower() in junk for w in words):
-        return False
-    # Must be mostly title-case letters (allow hyphens, periods, apostrophes)
-    if not re.match(r"^[A-Za-z][A-Za-z\s\-\.']+$", text):
-        return False
+    for w in words:
+        core = w.rstrip(".,")
+        if not core or not core[0].isupper():
+            return False
+        # A word with 2+ letters must NOT be all-uppercase (nav/section headers are all-caps)
+        if len(core) > 1 and core == core.upper():
+            return False
+        # Only letters, hyphens, apostrophes, with optional trailing period
+        if not re.match(r"^[A-Za-z][A-Za-z\-']*\.?$", w):
+            return False
     return True
 
 

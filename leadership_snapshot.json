@@ -1,122 +1,30 @@
 {
-  "checked_at": "2026-08-14T04:38:51.547537+00:00",
+  "checked_at": "2026-08-13T00:00:00Z",
+  "changes": [],
   "people": {
-    "Bertrand Valdman": {
-      "title": "",
-      "source": "board"
-    },
-    "Jerry Divoky": {
-      "title": "",
-      "source": "board"
-    },
-    "Adam Friedrichsen": {
-      "title": "",
-      "source": "board"
-    },
-    "Christine Gregoire": {
-      "title": "",
-      "source": "board"
-    },
-    "Julia Hamm": {
-      "title": "",
-      "source": "board"
-    },
-    "Grant Hodgkins": {
-      "title": "",
-      "source": "board"
-    },
-    "Tom King": {
-      "title": "",
-      "source": "board"
-    },
-    "Mary E. Kipp": {
-      "title": "",
-      "source": "leadership"
-    },
-    "Stuart Lee": {
-      "title": "",
-      "source": "board"
-    },
-    "Chris Parker": {
-      "title": "",
-      "source": "board"
-    },
-    "Diana Birkett Rakow": {
-      "title": "",
-      "source": "board"
-    },
-    "Aaron Rubin": {
-      "title": "",
-      "source": "board"
-    },
-    "Steven Zucchet": {
-      "title": "",
-      "source": "board"
-    },
-    "Confirmation": {
-      "title": "",
-      "source": "leadership"
-    },
-    "QUICK LINKS": {
-      "title": "",
-      "source": "leadership"
-    },
-    "RATES": {
-      "title": "",
-      "source": "leadership"
-    },
-    "RESOURCE PLANNING": {
-      "title": "",
-      "source": "leadership"
-    },
-    "HYDRO LICENSING": {
-      "title": "",
-      "source": "leadership"
-    },
-    "Aaron August": {
-      "title": "",
-      "source": "leadership"
-    },
-    "Kim Collier": {
-      "title": "",
-      "source": "leadership"
-    },
-    "Josh Jacobs": {
-      "title": "",
-      "source": "leadership"
-    },
-    "Lorna Luebbe": {
-      "title": "",
-      "source": "leadership"
-    },
-    "Jamie Martin": {
-      "title": "",
-      "source": "leadership"
-    },
-    "Ryan Murphy": {
-      "title": "",
-      "source": "leadership"
-    },
-    "Jon Piliaris": {
-      "title": "",
-      "source": "leadership"
-    },
-    "Craig Pospisil": {
-      "title": "",
-      "source": "leadership"
-    },
-    "Matt Steuerwalt": {
-      "title": "",
-      "source": "leadership"
-    },
-    "Simon Upton": {
-      "title": "",
-      "source": "leadership"
-    },
-    "Michelle Vargo": {
-      "title": "",
-      "source": "leadership"
-    }
-  },
-  "changes": []
+    "Mary E. Kipp": { "title": "President and Chief Executive Officer", "source": "leadership" },
+    "Jamie Martin": { "title": "SVP and Chief Financial Officer", "source": "leadership" },
+    "Aaron August": { "title": "SVP, Chief Customer and Transformation Officer", "source": "leadership" },
+    "Lorna Luebbe": { "title": "SVP, Chief Sustainability Officer and General Counsel", "source": "leadership" },
+    "Craig Pospisil": { "title": "SVP and Chief Development Officer", "source": "leadership" },
+    "Matt Steuerwalt": { "title": "SVP, External Affairs", "source": "leadership" },
+    "Michelle Vargo": { "title": "SVP, Energy Operations", "source": "leadership" },
+    "Simon Upton": { "title": "Chief Information Officer", "source": "leadership" },
+    "Kim Collier": { "title": "VP, Chief Human Resources Officer", "source": "leadership" },
+    "Josh Jacobs": { "title": "VP, Clean Energy Strategy and Planning", "source": "leadership" },
+    "Ryan Murphy": { "title": "VP, Gas and Electric Operations", "source": "leadership" },
+    "Jon Piliaris": { "title": "VP, Regulatory Affairs", "source": "leadership" },
+    "Jerry Divoky": { "title": "", "source": "board" },
+    "Adam Friedrichsen": { "title": "", "source": "board" },
+    "Christine Gregoire": { "title": "", "source": "board" },
+    "Julia Hamm": { "title": "", "source": "board" },
+    "Grant Hodgkins": { "title": "", "source": "board" },
+    "Tom King": { "title": "", "source": "board" },
+    "Stuart Lee": { "title": "", "source": "board" },
+    "Chris Parker": { "title": "", "source": "board" },
+    "Diana Birkett Rakow": { "title": "", "source": "board" },
+    "Aaron Rubin": { "title": "", "source": "board" },
+    "Bertrand Valdman": { "title": "", "source": "board" },
+    "Steven Zucchet": { "title": "", "source": "board" }
+  }
 }
