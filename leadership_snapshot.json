@@ -1,30 +1,102 @@
 {
-  "checked_at": "2026-08-13T00:00:00Z",
-  "changes": [],
+  "checked_at": "2026-08-14T06:25:17.938465+00:00",
   "people": {
-    "Mary E. Kipp": { "title": "President and Chief Executive Officer", "source": "leadership" },
-    "Jamie Martin": { "title": "SVP and Chief Financial Officer", "source": "leadership" },
-    "Aaron August": { "title": "SVP, Chief Customer and Transformation Officer", "source": "leadership" },
-    "Lorna Luebbe": { "title": "SVP, Chief Sustainability Officer and General Counsel", "source": "leadership" },
-    "Craig Pospisil": { "title": "SVP and Chief Development Officer", "source": "leadership" },
-    "Matt Steuerwalt": { "title": "SVP, External Affairs", "source": "leadership" },
-    "Michelle Vargo": { "title": "SVP, Energy Operations", "source": "leadership" },
-    "Simon Upton": { "title": "Chief Information Officer", "source": "leadership" },
-    "Kim Collier": { "title": "VP, Chief Human Resources Officer", "source": "leadership" },
-    "Josh Jacobs": { "title": "VP, Clean Energy Strategy and Planning", "source": "leadership" },
-    "Ryan Murphy": { "title": "VP, Gas and Electric Operations", "source": "leadership" },
-    "Jon Piliaris": { "title": "VP, Regulatory Affairs", "source": "leadership" },
-    "Jerry Divoky": { "title": "", "source": "board" },
-    "Adam Friedrichsen": { "title": "", "source": "board" },
-    "Christine Gregoire": { "title": "", "source": "board" },
-    "Julia Hamm": { "title": "", "source": "board" },
-    "Grant Hodgkins": { "title": "", "source": "board" },
-    "Tom King": { "title": "", "source": "board" },
-    "Stuart Lee": { "title": "", "source": "board" },
-    "Chris Parker": { "title": "", "source": "board" },
-    "Diana Birkett Rakow": { "title": "", "source": "board" },
-    "Aaron Rubin": { "title": "", "source": "board" },
-    "Bertrand Valdman": { "title": "", "source": "board" },
-    "Steven Zucchet": { "title": "", "source": "board" }
-  }
+    "Mary E. Kipp": {
+      "title": "President and Chief Executive Officer",
+      "source": "leadership"
+    },
+    "Aaron August": {
+      "title": "Senior Vice President, Chief Customer and Transformation Officer",
+      "source": "leadership"
+    },
+    "Kim Collier": {
+      "title": "Vice President, Chief Human Resources Officer",
+      "source": "leadership"
+    },
+    "Josh Jacobs": {
+      "title": "Vice President, Clean Energy Strategy and Planning",
+      "source": "leadership"
+    },
+    "Ryan Murphy": {
+      "title": "Vice President, Gas and Electric Operations",
+      "source": "leadership"
+    },
+    "Jon Piliaris": {
+      "title": "Vice President, Regulatory Affairs",
+      "source": "leadership"
+    },
+    "Matt Steuerwalt": {
+      "title": "Senior Vice President, External Affairs",
+      "source": "leadership"
+    },
+    "Michelle Vargo": {
+      "title": "Senior Vice President of Energy Operations",
+      "source": "leadership"
+    },
+    "Lorna Luebbe": {
+      "title": "SVP, Chief Sustainability Officer and General Counsel",
+      "source": "leadership"
+    },
+    "Craig Pospisil": {
+      "title": "SVP and Chief Development Officer",
+      "source": "leadership"
+    },
+    "Simon Upton": {
+      "title": "Chief Information Officer",
+      "source": "leadership"
+    },
+    "Jamie Martin": {
+      "title": "Senior VP and Chief Financial Officer",
+      "source": "leadership"
+    },
+    "Jerry Divoky": {
+      "title": "Board member",
+      "source": "board"
+    },
+    "Adam Friedrichsen": {
+      "title": "Board member",
+      "source": "board"
+    },
+    "Christine Gregoire": {
+      "title": "Board member",
+      "source": "board"
+    },
+    "Julia Hamm": {
+      "title": "Board member",
+      "source": "board"
+    },
+    "Grant Hodgkins": {
+      "title": "Board member",
+      "source": "board"
+    },
+    "Tom King": {
+      "title": "Board member",
+      "source": "board"
+    },
+    "Stuart Lee": {
+      "title": "Board member",
+      "source": "board"
+    },
+    "Chris Parker": {
+      "title": "Board member",
+      "source": "board"
+    },
+    "Diana Birkett Rakow": {
+      "title": "Board member",
+      "source": "board"
+    },
+    "Aaron Rubin": {
+      "title": "Board member",
+      "source": "board"
+    },
+    "Bertrand Valdman": {
+      "title": "Chairperson",
+      "source": "board"
+    },
+    "Steven Zucchet": {
+      "title": "Board member",
+      "source": "board"
+    }
+  },
+  "changes": []
 }

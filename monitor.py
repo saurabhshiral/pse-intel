@@ -58,18 +58,18 @@ def scrape_people(url, source_label):
         name = h4.get_text(strip=True)
         if not name or not is_person_name(name):
             continue
-        # Try next sibling <p> for title; also check parent container
         title = ""
-        sibling = h4.find_next_sibling()
-        if sibling and sibling.name == "p":
-            title = sibling.get_text(strip=True)
-        # If title still empty, walk up and look for a nearby <p>
+        parent = h4.parent
+        if parent:
+            # PSE leadership page uses <div class="h7"> for title
+            h7 = parent.find("div", class_="h7")
+            if h7:
+                title = h7.get_text(strip=True)
+        # Fallback: next sibling <p>
         if not title:
-            parent = h4.parent
-            if parent:
-                p = parent.find("p")
-                if p:
-                    title = p.get_text(strip=True)
+            sib = h4.find_next_sibling()
+            if sib and sib.name == "p":
+                title = sib.get_text(strip=True)
         people[name] = {"title": title, "source": source_label}
 
     return people
