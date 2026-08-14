@@ -113,10 +113,10 @@ def main():
             new_rows.append(build_row(entry, "sector", utility, today))
             existing_urls.add(link)
 
-    # Append new rows to CSV
+    # Append new rows to CSV (write header if file is new or empty)
     if new_rows:
         path = Path(HISTORY_FILE)
-        write_header = not path.exists()
+        write_header = not path.exists() or path.stat().st_size == 0
         with open(path, "a", encoding="utf-8", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=COLUMNS)
             if write_header:
@@ -129,7 +129,7 @@ def main():
     # Rewrite news_recent.json (last RECENT_DAYS days, newest first)
     cutoff = (datetime.now(timezone.utc) - timedelta(days=RECENT_DAYS)).strftime("%Y-%m-%d")
     all_rows = existing_rows + new_rows
-    recent = [r for r in all_rows if r.get("pub_date", "9999") >= cutoff]
+    recent = [r for r in all_rows if (r.get("pub_date") or r.get("fetched_date", "")) >= cutoff]
     recent.sort(key=lambda r: (r.get("pub_date", ""), r.get("fetched_date", "")), reverse=True)
 
     with open(RECENT_FILE, "w", encoding="utf-8") as f:

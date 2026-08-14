@@ -128,8 +128,12 @@ def append_history(changes, checked_at):
     path = Path(HISTORY_FILE)
     history = []
     if path.exists():
-        with open(path, encoding="utf-8") as f:
-            history = json.load(f)
+        try:
+            with open(path, encoding="utf-8") as f:
+                history = json.load(f)
+        except (json.JSONDecodeError, OSError) as e:
+            print(f"  WARNING: {HISTORY_FILE} unreadable ({e}), starting fresh", file=sys.stderr)
+            history = []
     for c in changes:
         history.append({**c, "date": checked_at})
     with open(path, "w", encoding="utf-8") as f:

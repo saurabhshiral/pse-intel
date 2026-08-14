@@ -600,10 +600,11 @@ async function renderTab(idx) {
   if (cache[idx]) {
     articles = cache[idx];
   } else {
-    // Try news_recent.json first
+    // Try news_recent.json first; fall back per-section if that section has no articles
     const recent = await loadRecentJson();
-    if (recent && recent.length) {
-      articles = articlesFromRecent(recent, idx);
+    const fromJson = recent ? articlesFromRecent(recent, idx) : [];
+    if (fromJson.length) {
+      articles = fromJson;
     } else {
       // Fallback: fetch live RSS
       const feeds = FEEDS[idx];
