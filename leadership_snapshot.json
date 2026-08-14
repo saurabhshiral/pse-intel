@@ -1,18 +1,297 @@
 {
-  "checked_at": "2026-08-13T00:00:00Z",
-  "changes": [],
+  "checked_at": "2026-08-14T04:26:52.074766+00:00",
   "people": {
-    "Mary E. Kipp": { "title": "President and Chief Executive Officer", "source": "leadership" },
-    "Aaron August": { "title": "SVP, Chief Customer and Transformation Officer", "source": "leadership" },
-    "Kim Collier": { "title": "VP, Chief Human Resources Officer", "source": "leadership" },
-    "Josh Jacobs": { "title": "VP, Clean Energy Strategy and Planning", "source": "leadership" },
-    "Lorna Luebbe": { "title": "SVP, Chief Sustainability Officer and General Counsel", "source": "leadership" },
-    "Jamie Martin": { "title": "SVP and Chief Financial Officer", "source": "leadership" },
-    "Ryan Murphy": { "title": "VP, Gas and Electric Operations", "source": "leadership" },
-    "Jon Piliaris": { "title": "VP, Regulatory Affairs", "source": "leadership" },
-    "Craig Pospisil": { "title": "SVP and Chief Development Officer", "source": "leadership" },
-    "Matt Steuerwalt": { "title": "SVP, External Affairs", "source": "leadership" },
-    "Simon Upton": { "title": "Chief Information Officer", "source": "leadership" },
-    "Michelle Vargo": { "title": "SVP, Energy Operations", "source": "leadership" }
-  }
+    "Bertrand Valdman": {
+      "title": "",
+      "source": "board"
+    },
+    "Jerry Divoky": {
+      "title": "",
+      "source": "board"
+    },
+    "Adam Friedrichsen": {
+      "title": "",
+      "source": "board"
+    },
+    "Christine Gregoire": {
+      "title": "",
+      "source": "board"
+    },
+    "Julia Hamm": {
+      "title": "",
+      "source": "board"
+    },
+    "Grant Hodgkins": {
+      "title": "",
+      "source": "board"
+    },
+    "Tom King": {
+      "title": "",
+      "source": "board"
+    },
+    "Mary E. Kipp": {
+      "title": "",
+      "source": "leadership"
+    },
+    "Stuart Lee": {
+      "title": "",
+      "source": "board"
+    },
+    "Chris Parker": {
+      "title": "",
+      "source": "board"
+    },
+    "Diana Birkett Rakow": {
+      "title": "",
+      "source": "board"
+    },
+    "Aaron Rubin": {
+      "title": "",
+      "source": "board"
+    },
+    "Steven Zucchet": {
+      "title": "",
+      "source": "board"
+    },
+    "Confirmation": {
+      "title": "",
+      "source": "leadership"
+    },
+    "QUICK LINKS": {
+      "title": "",
+      "source": "leadership"
+    },
+    "RATES": {
+      "title": "",
+      "source": "leadership"
+    },
+    "RESOURCE PLANNING": {
+      "title": "",
+      "source": "leadership"
+    },
+    "HYDRO LICENSING": {
+      "title": "",
+      "source": "leadership"
+    },
+    "Aaron August": {
+      "title": "",
+      "source": "leadership"
+    },
+    "Kim Collier": {
+      "title": "",
+      "source": "leadership"
+    },
+    "Josh Jacobs": {
+      "title": "",
+      "source": "leadership"
+    },
+    "Lorna Luebbe": {
+      "title": "",
+      "source": "leadership"
+    },
+    "Jamie Martin": {
+      "title": "",
+      "source": "leadership"
+    },
+    "Ryan Murphy": {
+      "title": "",
+      "source": "leadership"
+    },
+    "Jon Piliaris": {
+      "title": "",
+      "source": "leadership"
+    },
+    "Craig Pospisil": {
+      "title": "",
+      "source": "leadership"
+    },
+    "Matt Steuerwalt": {
+      "title": "",
+      "source": "leadership"
+    },
+    "Simon Upton": {
+      "title": "",
+      "source": "leadership"
+    },
+    "Michelle Vargo": {
+      "title": "",
+      "source": "leadership"
+    }
+  },
+  "changes": [
+    {
+      "type": "added",
+      "name": "Aaron Rubin",
+      "new_title": "",
+      "old_title": null
+    },
+    {
+      "type": "added",
+      "name": "Adam Friedrichsen",
+      "new_title": "",
+      "old_title": null
+    },
+    {
+      "type": "added",
+      "name": "Bertrand Valdman",
+      "new_title": "",
+      "old_title": null
+    },
+    {
+      "type": "added",
+      "name": "Chris Parker",
+      "new_title": "",
+      "old_title": null
+    },
+    {
+      "type": "added",
+      "name": "Christine Gregoire",
+      "new_title": "",
+      "old_title": null
+    },
+    {
+      "type": "added",
+      "name": "Confirmation",
+      "new_title": "",
+      "old_title": null
+    },
+    {
+      "type": "added",
+      "name": "Diana Birkett Rakow",
+      "new_title": "",
+      "old_title": null
+    },
+    {
+      "type": "added",
+      "name": "Grant Hodgkins",
+      "new_title": "",
+      "old_title": null
+    },
+    {
+      "type": "added",
+      "name": "HYDRO LICENSING",
+      "new_title": "",
+      "old_title": null
+    },
+    {
+      "type": "added",
+      "name": "Jerry Divoky",
+      "new_title": "",
+      "old_title": null
+    },
+    {
+      "type": "added",
+      "name": "Julia Hamm",
+      "new_title": "",
+      "old_title": null
+    },
+    {
+      "type": "added",
+      "name": "QUICK LINKS",
+      "new_title": "",
+      "old_title": null
+    },
+    {
+      "type": "added",
+      "name": "RATES",
+      "new_title": "",
+      "old_title": null
+    },
+    {
+      "type": "added",
+      "name": "RESOURCE PLANNING",
+      "new_title": "",
+      "old_title": null
+    },
+    {
+      "type": "added",
+      "name": "Steven Zucchet",
+      "new_title": "",
+      "old_title": null
+    },
+    {
+      "type": "added",
+      "name": "Stuart Lee",
+      "new_title": "",
+      "old_title": null
+    },
+    {
+      "type": "added",
+      "name": "Tom King",
+      "new_title": "",
+      "old_title": null
+    },
+    {
+      "type": "changed",
+      "name": "Aaron August",
+      "old_title": "SVP, Chief Customer and Transformation Officer",
+      "new_title": ""
+    },
+    {
+      "type": "changed",
+      "name": "Craig Pospisil",
+      "old_title": "SVP and Chief Development Officer",
+      "new_title": ""
+    },
+    {
+      "type": "changed",
+      "name": "Jamie Martin",
+      "old_title": "SVP and Chief Financial Officer",
+      "new_title": ""
+    },
+    {
+      "type": "changed",
+      "name": "Jon Piliaris",
+      "old_title": "VP, Regulatory Affairs",
+      "new_title": ""
+    },
+    {
+      "type": "changed",
+      "name": "Josh Jacobs",
+      "old_title": "VP, Clean Energy Strategy and Planning",
+      "new_title": ""
+    },
+    {
+      "type": "changed",
+      "name": "Kim Collier",
+      "old_title": "VP, Chief Human Resources Officer",
+      "new_title": ""
+    },
+    {
+      "type": "changed",
+      "name": "Lorna Luebbe",
+      "old_title": "SVP, Chief Sustainability Officer and General Counsel",
+      "new_title": ""
+    },
+    {
+      "type": "changed",
+      "name": "Mary E. Kipp",
+      "old_title": "President and Chief Executive Officer",
+      "new_title": ""
+    },
+    {
+      "type": "changed",
+      "name": "Matt Steuerwalt",
+      "old_title": "SVP, External Affairs",
+      "new_title": ""
+    },
+    {
+      "type": "changed",
+      "name": "Michelle Vargo",
+      "old_title": "SVP, Energy Operations",
+      "new_title": ""
+    },
+    {
+      "type": "changed",
+      "name": "Ryan Murphy",
+      "old_title": "VP, Gas and Electric Operations",
+      "new_title": ""
+    },
+    {
+      "type": "changed",
+      "name": "Simon Upton",
+      "old_title": "Chief Information Officer",
+      "new_title": ""
+    }
+  ]
 }
