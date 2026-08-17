@@ -1,21 +1,14 @@
 {
-  "generated_at": "2026-08-16T14:28:35.010648+00:00",
+  "generated_at": "2026-08-17T14:33:17.022195+00:00",
   "lookback_days": 7,
   "briefs": {
     "Mary E. Kipp": {
       "title": "President and Chief Executive Officer",
       "source": "leadership",
-      "briefing": "Mary E. Kipp, President and Chief Executive Officer at Puget Sound Energy, has been recognized as one of the Most Admired CEOs in 2026 by The Business Journals. This recognition is a testament to her leadership and achievements in the industry. The specific details of her accomplishments were not provided in the available snippet.",
-      "sentiment": "positive",
-      "article_count": 1,
-      "articles": [
-        {
-          "headline": "Most Admired CEOs 2026: Mary Kipp - The Business Journals",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQVFRnRW5fLWRsRzlOb2VOdzRhZ2pVYkJiLWNFV3NDbVhCOHJBY1BndjhWTWNIVVItb29RRTZTTE1oazczYjRnaGtjOERLb3ZXUGlrRlVNMHcyWkY4MTdCUXpheDNmLWphRTQ0ZS03eW56cDJIRDdURGpSTFFDOTBSQktnbXJ0TjBfT0QyTWY2Wjkza1g4djFwNmdFS3J3eFF6MnBvRWMyOA?oc=5",
-          "pub_date": "2026-08-10",
-          "source": "The Business Journals"
-        }
-      ]
+      "briefing": "",
+      "sentiment": "none",
+      "article_count": 0,
+      "articles": []
     },
     "Aaron August": {
       "title": "Senior Vice President, Chief Customer and Transformation Officer",
