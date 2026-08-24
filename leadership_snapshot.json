@@ -1,8 +1,12 @@
 {
-  "checked_at": "2026-08-17T15:22:58.651532+00:00",
+  "checked_at": "2026-08-24T15:37:00.940723+00:00",
   "people": {
     "Mary E. Kipp": {
       "title": "President and Chief Executive Officer",
+      "source": "leadership"
+    },
+    "Raied Stanley": {
+      "title": "Senior Vice President and Chief Information Officer",
       "source": "leadership"
     },
     "Aaron August": {
@@ -39,10 +43,6 @@
     },
     "Craig Pospisil": {
       "title": "SVP and Chief Development Officer",
-      "source": "leadership"
-    },
-    "Simon Upton": {
-      "title": "Chief Information Officer",
       "source": "leadership"
     },
     "Jamie Martin": {
@@ -98,5 +98,18 @@
       "source": "board"
     }
   },
-  "changes": []
+  "changes": [
+    {
+      "type": "added",
+      "name": "Raied Stanley",
+      "new_title": "Senior Vice President and Chief Information Officer",
+      "old_title": null
+    },
+    {
+      "type": "removed",
+      "name": "Simon Upton",
+      "old_title": "Chief Information Officer",
+      "new_title": null
+    }
+  ]
 }

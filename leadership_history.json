@@ -138,5 +138,19 @@
     "old_title": "",
     "new_title": "Board member",
     "date": "2026-08-14T06:25:17.938465+00:00"
+  },
+  {
+    "type": "added",
+    "name": "Raied Stanley",
+    "new_title": "Senior Vice President and Chief Information Officer",
+    "old_title": null,
+    "date": "2026-08-24T15:37:00.940723+00:00"
+  },
+  {
+    "type": "removed",
+    "name": "Simon Upton",
+    "old_title": "Chief Information Officer",
+    "new_title": null,
+    "date": "2026-08-24T15:37:00.940723+00:00"
   }
 ]
