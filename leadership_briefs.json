@@ -1,9 +1,17 @@
 {
-  "generated_at": "2026-08-24T14:48:38.439801+00:00",
+  "generated_at": "2026-08-25T14:52:06.397097+00:00",
   "lookback_days": 7,
   "briefs": {
     "Mary E. Kipp": {
       "title": "President and Chief Executive Officer",
+      "source": "leadership",
+      "briefing": "",
+      "sentiment": "none",
+      "article_count": 0,
+      "articles": []
+    },
+    "Raied Stanley": {
+      "title": "Senior Vice President and Chief Information Officer",
       "source": "leadership",
       "briefing": "",
       "sentiment": "none",
@@ -76,14 +84,6 @@
     },
     "Craig Pospisil": {
       "title": "SVP and Chief Development Officer",
-      "source": "leadership",
-      "briefing": "",
-      "sentiment": "none",
-      "article_count": 0,
-      "articles": []
-    },
-    "Simon Upton": {
-      "title": "Chief Information Officer",
       "source": "leadership",
       "briefing": "",
       "sentiment": "none",
