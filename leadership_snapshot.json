@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-24T15:37:00.940723+00:00",
+  "checked_at": "2026-08-31T20:39:01.798070+00:00",
   "people": {
     "Mary E. Kipp": {
       "title": "President and Chief Executive Officer",
@@ -98,18 +98,5 @@
       "source": "board"
     }
   },
-  "changes": [
-    {
-      "type": "added",
-      "name": "Raied Stanley",
-      "new_title": "Senior Vice President and Chief Information Officer",
-      "old_title": null
-    },
-    {
-      "type": "removed",
-      "name": "Simon Upton",
-      "old_title": "Chief Information Officer",
-      "new_title": null
-    }
-  ]
+  "changes": []
 }
