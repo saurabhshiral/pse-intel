@@ -1,6 +1,56 @@
 {
-  "generated_at": "2026-09-11T17:40:51.135731+00:00",
+  "generated_at": "2026-09-12T16:52:48.373427+00:00",
   "articles": [
+    {
+      "fetched_date": "2026-09-12",
+      "pub_date": "2026-09-12",
+      "section": "sector",
+      "utility": "NV Energy",
+      "source": "Nevada Appeal",
+      "headline": "Update: Liberty Utilities joins NV Energy safety outage cancellation - Nevada Appeal",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNc1V6S0NKNDlpRGlSaEtfVjFTVWVoWVNZWVVXTkNSSTlHZURXZU9vQm1XbjRxNmF4eXdqSjhZck9jdnp0SVFPNFQ4WjBrUDdyZkV1UVBvY3J0aFcyalh1eEV4Zmd3VDVOa1R2Zm5GQnloNVZPTEFxQ1gwODBFLXJvZWJOa2pUa1lqOHU5Uzh0X2dma0hUVTNvaDhVTEczR0FUazg0cUozNnFKdU02cmc?oc=5",
+      "snippet": "Update: Liberty Utilities joins NV Energy safety outage cancellation&nbsp;&nbsp;Nevada Appeal"
+    },
+    {
+      "fetched_date": "2026-09-12",
+      "pub_date": "2026-09-12",
+      "section": "sector",
+      "utility": "NV Energy",
+      "source": "KLAS 8 News Now",
+      "headline": "NV Energy defends daily demand charge comparison tool - KLAS 8 News Now",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQi1DcWxRNzlDVDJ0UkJPQzQ0aHl4M2JheEdqRkQ0UTk5T05Edkc5MmRETVQwYTZ4NzRsRnI1Wk1NRk1aQVQ4WktuaDZ3NlpMNmwxRWxPVEZtQ1l0TnpzUFRzaFRrd19JMkJqcGFmWTNfcmZzalctUlhQejVyajFmUVV4aWQxWm9RVXhzRVBOcENtdlF5N3UwaV9EMNIBoAFBVV95cUxPZjhxUnNqa3AwQzRVb1BUYThHc2ZTLWthNEZpQVF3bUpyWXZ6eUdxcjZIa19QWUxCQ2FmdE54dlJCM004M0tIVUEyNjE5TjBrQWRZSm96X2JPa0FQVy02ZXJnT0ZhaWUyQ2pNNWs2ZGIwZU1sN1Q2MGJJWVRrU2JNTTJpZThBTVc4blByX1JvUlNHcHRlRG9nNWpvRVJzajJf?oc=5",
+      "snippet": "NV Energy defends daily demand charge comparison tool&nbsp;&nbsp;KLAS 8 News Now"
+    },
+    {
+      "fetched_date": "2026-09-12",
+      "pub_date": "2026-09-12",
+      "section": "sector",
+      "utility": "Xcel Energy",
+      "source": "CBS News",
+      "headline": "Colorado volunteers show up for Xcel Energy's Day of Service - CBS News",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOQ2NVWEdCTVU5WFNadDJuWTByeG5vdmpMckZNaWNTZTY5Mlk2UnptbDVFY3E4cXU4YVFmVlY3b2tER0VlazV4WFl4VjkxanVGdi1Ic2hiWUUtaC1VZTF1UUhLM2p2QlkxOXNPclBVTlFGYmVoWkVRWWxEOE84eVpSM0JpZ0NsajhyUUE?oc=5",
+      "snippet": "Colorado volunteers show up for Xcel Energy's Day of Service&nbsp;&nbsp;CBS News"
+    },
+    {
+      "fetched_date": "2026-09-12",
+      "pub_date": "2026-09-11",
+      "section": "company",
+      "utility": "",
+      "source": "The Business Journals",
+      "headline": "Bellevue bakery operator files for Chapter 11 bankruptcy - The Business Journals",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQeDg5QlZoYmJENTlnMi1aZDZ1Y3BLTnkzUXk1V3ZwQ2xyUDBEekg1aVF1Vk1SVUVuc1dzUjdSQnZZNU9BYTRUSWJFZTVScmRISEc4U1ZyRzdRMGhXYkRnVzJRTDg0Z1ZFUWdKWnpTZUU3QThnYWgxMjFRUFZBdm10bDliWV9uUGdmaTRPSk95ekxDRnRsM3k3dTA3YmRJMWRxb0wxeDE1MkQ?oc=5",
+      "snippet": "Bellevue bakery operator files for Chapter 11 bankruptcy&nbsp;&nbsp;The Business Journals"
+    },
+    {
+      "fetched_date": "2026-09-12",
+      "pub_date": "2026-09-11",
+      "section": "sector",
+      "utility": "Xcel Energy",
+      "source": "simplywall.st",
+      "headline": "Xcel Energy (XEL) Rides Clean Energy Story As Fair Value Debate Stays Open - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOMGtMR3V1d1ZBcGlzUkw1S0MyeEtmQ1FoVWlDcDhZRjA4Z21CTDhrOTBHNU9oSU80VmZsRzhJQ3lQZ2dkTmZ5Z2JpWE9uUF9sU2YyZ2tCTzhyRFg2SEJOVmhsd0xTbVBYM1ZGc25NSEFydGdjTllYUG1lX2RFUEo2VFprWWtvV3h0b2htOFpNOVBZQWRMcGIwbXFVN3I3TXltdzZrMGZfRzgzX3ROYUJBd1NlemxSdnF5dGE5T1htTTBMblNmUGlZTnpR0gHPAUFVX3lxTE1VQTB1ZzBELV9yT3dKTmxud2tzUERCVEh4bTc5ZVVrVlpOQVR3Mno3alF4d0ExNGJ3ZU5tOVB3MHQxQzJMVVRxY1k2SjJSNks5V2EtOFp1TzRZQzJUU1oyckxJX2xSRXNXblpxa3pMalh2S1gwR3ROT1U4bkZ4dFlTQ21nM28tQk1qUXFDeGNhb2RmTmZhTGRSZzhRa2FUeVN6aUhKcERlV18tWi1YcmxhakZCOTN5dEhVTTVCb2E1NHhTSjI0Tl9SMC1Wbk00VQ?oc=5",
+      "snippet": "Xcel Energy (XEL) Rides Clean Energy Story As Fair Value Debate Stays Open&nbsp;&nbsp;simplywall.st"
+    },
     {
       "fetched_date": "2026-09-11",
       "pub_date": "2026-09-11",
@@ -10,6 +60,36 @@
       "headline": "Idaho Power: The Dilution Is Accretive, The Wait Is The Trade - Investing.com",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUFlXTTBvNURUWmd1TEloME1NQ3F5am41X3ZndFhvQ09DcGVUc2pJX1ZOTy1rMkxMcUNyZWZEVVVtem5DM1kwRkFXak9oQmVwRGhSYVlrSjROczZIaFdVZWgwRFJweUJvNkRoYkd1TXlDM3ZhVFFIT09ZaV9odHQtamcwTDE5OThXenlYQm9COVY2RFBGeWpWVFNrV2JqcXNrVUFSeFpnNA?oc=5",
       "snippet": "Idaho Power: The Dilution Is Accretive, The Wait Is The Trade&nbsp;&nbsp;Investing.com"
+    },
+    {
+      "fetched_date": "2026-09-12",
+      "pub_date": "2026-09-10",
+      "section": "leadership",
+      "utility": "",
+      "source": "KOMO",
+      "headline": "Microsoft, Starbucks, Costco, Alaska Airlines call for Seattle public safety improvements - KOMO",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPbXN1STlrdjdRWkRUTUkwV2IwOWFDMTNtOWVIaGRmLXBMRS04VnlOdlIzb1p2eDJRTldYVHd3T1BUWHJEYVZVRzZrSGZ6c3RLckF5Ni1yZHRBMkVnNkw3aW1nVXR5M2d5WnlvUFpockRQTW1HUXlDMFltSzF0cjNBeEppSTRXUllhLTEyQk9FVktMTUlDdnFRcHBQNnZIbWQ4RGFoemdzWnctYk1yVU1ESTdhZjJpUk82TVYxd3UxRG1pRG1SSk11dHBIblUyOHkwdUQ3LTMxNXZYUWQ4bzN5Uk1OSTFrSFR2dHJNYWhLWjBmRGh6czlDM0V3?oc=5",
+      "snippet": "Microsoft, Starbucks, Costco, Alaska Airlines call for Seattle public safety improvements&nbsp;&nbsp;KOMO"
+    },
+    {
+      "fetched_date": "2026-09-12",
+      "pub_date": "2026-09-10",
+      "section": "sector",
+      "utility": "Portland General",
+      "source": "simplywall.st",
+      "headline": "Will Grid Compliance Filings Change Portland General Electric Stock Narrative - simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOd3dRZ3AxbmlLenlWdVhCQmI3T0NKUy1oeHZFeUVpa3Q4Ym1SLXBkNmpjT1ZkTU55MlJYblZSZDhuYWtITmY0NHB5Z0pqX3l4Y0lLRENJazZ0SXd6Tm5jM1c2SE9tWXJTbmFTWjFHRldkelVsZWQ0ZHB2S2lQSnVndTJLQlFJNDJMaHE1OUJKUWx1WGdzdUlkNWxodWVKRzJQSUdISHI0bkFEWndackk2aGxENy15N1VpWU1MR24xQ1hXdkNZU2MyUG9fVVdFZ2pucFg5WVZSeEVYZ9IB3wFBVV95cUxOdGlJUE41OVdicjVEN0RSTmFXRGY3Y05id21YN1U1VTl6Q1ViZ1RHeVpaVEFBdWNOZnpQbEJ6RTNsTDlWaUtFWjNjZUpPbFQwM3gwNG44SXFmaFBubk5JamhuaDljcDNkTmx6NENQTkwxVU5neWFOcEd5SkF1VzRBanFWSHNaRndXbGFCUmltVC0tRkQ4cVEwUllkMWM4WlE4dUZEUGJfbzhXdWtWd3NwTmFkNHh1QjZFRkFDUlJkMkJtaXc2ZzNBdGZCR2VZNEVRY1dZLWNXQ09YUzZXVWt3?oc=5",
+      "snippet": "Will Grid Compliance Filings Change Portland General Electric Stock Narrative&nbsp;&nbsp;simplywall.st"
+    },
+    {
+      "fetched_date": "2026-09-12",
+      "pub_date": "2026-09-10",
+      "section": "sector",
+      "utility": "Portland General",
+      "source": "capital.com",
+      "headline": "Portland General Electric Co (POR) Stock Price Quote Today & Current Price Chart - capital.com",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRHV5bFNWZTNoOHJrcWN6VGlEOFBSZ2RHVnFBb2JpNHAyNHlaV1hqZmctVGRwbllqYWtSM0VmaV8xYnNLR1N6SjJ2SzJrdnZ0TDY5V3cwQ1VHcTNtNHBHSG5icTh2cnpCTjhtUGpCODZGNGUtMHhHRkVJNFNOT2VXcnhUOEc5OEMw?oc=5",
+      "snippet": "Portland General Electric Co (POR) Stock Price Quote Today & Current Price Chart&nbsp;&nbsp;capital.com"
     },
     {
       "fetched_date": "2026-09-11",
@@ -5290,36 +5370,6 @@
       "headline": "PacifiCorp to Power Down Bigfork Dam Unless Buyer Steps Forward - Flathead Beacon",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNd3Z1Q3R0RVdEVzhqQmUzT1RjU25NZ25jaEl5dlFVR1ZPakV1Y1lwc3lNdmk5M2V0LXByc2FuSldrVGRmY1dfc1pfdFRrbWpZa3d6UXJSdUFQMHlZdHBadS1BVEJCWnR1SWUyMlFPbmtESGxRWGRDZUM5bGY2X0NvVEt4QVVrOTVQcFRSa196RFNFdE1PdW1PbTBtTmpwUDlBaE1oaA?oc=5",
       "snippet": "PacifiCorp to Power Down Bigfork Dam Unless Buyer Steps Forward&nbsp;&nbsp;Flathead Beacon"
-    },
-    {
-      "fetched_date": "2026-09-06",
-      "pub_date": "2026-06-13",
-      "section": "sector",
-      "utility": "Arizona Public Service",
-      "source": "Journalaz.com",
-      "headline": "Arizona regulators weighing electric utility’s request for a 14% increase - Journalaz.com",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRjVaaUgtdi1UaWdQWHZnV0cybHJFRUpNdDI4QjJIVzQ1LWtOU1ZnNmU4WktRcFJFeDZWdjVlTVhvOW0wWVVldDE3VU5GV0ZYdnplQjY4aEYyNTRWdzZCS3E4V2Y3MS10Zm9OQTU0RGlZMzR3ZEFmMG16TUJfbDFnc2NENjA5T2NhZktMcnB1a0xiU0xESTVlQjl6bWZ2TVh3T0RFdVZNOGXSAagBQVVfeXFMUEY1WmlILXYtVGlnUFh2Z1dHMmxyRUVKTXQyOEIySFc0NS1rTlNWZzZlOFpLUXBSRXg2VnY1ZU1YbzltMFlVZXQxN1VORldGWHZ6ZUI2OGhGMjU0Vnc2QktxOFdmNzEtdGZvTkE1NERpWTM0d2RBZjBtek1CX2wxZ3NjRDYwOU9jYWZLTHJwdWtMYlNMREk1ZUI5em1mdk1Yd09ERXVWTThl?oc=5",
-      "snippet": "Arizona regulators weighing electric utility’s request for a 14% increase&nbsp;&nbsp;Journalaz.com"
-    },
-    {
-      "fetched_date": "2026-08-14",
-      "pub_date": "2026-06-13",
-      "section": "company",
-      "utility": "",
-      "source": "Whatcom News",
-      "headline": "UPDATED: Power outage stretches across Bellingham neighborhoods, business district - Whatcom News",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNG9aR09nMTFDTjdocjdlTXE5aGRWNlZXRlBVaDQ1NFV3Q3E0TUYxZzBGeUxpTV9zdFAyR3Z0NmJsYUNnb3RwV1o1b1dwck5ZTlNTay04QW50a0xETEJpb0V4NDFMZHU5TWstQUt6TW1xZlQ4eXNNTWkzYjhKOE53MWtXSWdHTGg2ZU9vX19nMVRaQ2tfdnlxRG5QU21yS3J4RmFVTC1BdXA?oc=5",
-      "snippet": "UPDATED: Power outage stretches across Bellingham neighborhoods, business district&nbsp;&nbsp;Whatcom News"
-    },
-    {
-      "fetched_date": "2026-08-14",
-      "pub_date": "2026-06-13",
-      "section": "sector",
-      "utility": "PacifiCorp",
-      "source": "Lake County Examiner",
-      "headline": "Lakeview's Pacific Power customers slated to be transferred to Surprise Valley Electric - Lake County Examiner",
-      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNTmVPNXpmUW1hQ21lVTk4RHlIVTBobWJMdnFfZ3BCbHl5c2ZTMDgtRk42Y3ZSM0d1YkliWFRQdXp2enktQ2lDbnhZVWE3aUd0VzZRbVd0TGJkdXhqUkZIb0pFNGlUdGoxUktpQWw2LXFLWjhoUDZxSHVBM3J5NzJOb0dQeFFUTGVOeVFQOEdDNnEyR0V0TkM4RnctU05JVlNlVFNaUXlGcmxFcGw3dnpiTnNHd2JVUjB1SW9iaGlTT2QzQ1lXeEdCd2VvLVpnQ2J2S2xQSnlpXzJjTVRwS2xFbjZYZ2xkSUV1dmdTYjRLelBHZXpPczVEMUhOczNpTmtxUGNmeVJ2andKaVZzajhLdUw2cHo?oc=5",
-      "snippet": "Lakeview's Pacific Power customers slated to be transferred to Surprise Valley Electric&nbsp;&nbsp;Lake County Examiner"
     }
   ]
 }
