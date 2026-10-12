@@ -1,6 +1,76 @@
 {
-  "generated_at": "2026-10-11T18:43:35.479231+00:00",
+  "generated_at": "2026-10-12T22:01:35.312112+00:00",
   "articles": [
+    {
+      "fetched_date": "2026-10-12",
+      "pub_date": "2026-10-12",
+      "section": "leadership",
+      "utility": "",
+      "source": "The Business Journals",
+      "headline": "Meet 100 executives who are shaping the Puget Sound region - The Business Journals",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9NeU1jbmV5OHRMTm5USml1VHFvYUtXZDVfaFBNM1ZmR2RiVlpCV3ZmcGJoc29HMVQtZHo1YnBOTnpzNG9JeGd1NTZ3ejFFS0ZwcFhNd3RJSmg1ZUxKY1dXRkdRUm5nVkwydXlJRE9fV3VDNHlIX0pPcmFn?oc=5",
+      "snippet": "Meet 100 executives who are shaping the Puget Sound region&nbsp;&nbsp;The Business Journals"
+    },
+    {
+      "fetched_date": "2026-10-12",
+      "pub_date": "2026-10-12",
+      "section": "company",
+      "utility": "",
+      "source": "KING5.com",
+      "headline": "PSE customers could see rate hike - KING5.com",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdHlXZ2JSYVJOUXV5MU43RThtTjdmN1hCQlhJelRDb1o3VXZMOWlFUHJUVXF5TVg4VVQ1MFdUWTk3YWRoRllaT2hlY1NFbmpnSi12S1RxTjFOanJtWmoxbDlla1J5cnR4M0RpZ0d1MWNiM0JfN3BhdDBKdTVZSHgwTXNwbzdNUWZMem83eFRWQVFyd3VOWXVIa1hwSkNDOVJKdTROT1hEU2VwTWs?oc=5",
+      "snippet": "PSE customers could see rate hike&nbsp;&nbsp;KING5.com"
+    },
+    {
+      "fetched_date": "2026-10-12",
+      "pub_date": "2026-10-12",
+      "section": "company",
+      "utility": "",
+      "source": "Whatcom News",
+      "headline": "Bellingham power outage impacts almost 2,600 Monday - Whatcom News",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPX1dwRmJNY0N2Ul9UOTVFSktacnRJN3JjdFZvM1NvcDdOR3VVaXk4d1JuUGE1Rm5KSks4Q1g4bHVJU25iSHJmNGJUNGZJZE5EQWVRaGR1S1luRWVrNXFwMzZlVkdHMHZpYjNRXzU4aE4wWW8xOGdqSHBydEFZUXJSVm9WSm9sYXJhUWk0?oc=5",
+      "snippet": "Bellingham power outage impacts almost 2,600 Monday&nbsp;&nbsp;Whatcom News"
+    },
+    {
+      "fetched_date": "2026-10-12",
+      "pub_date": "2026-10-12",
+      "section": "sector",
+      "utility": "Arizona Public Service",
+      "source": "Industrial Info Resources",
+      "headline": "Capex Plan for Arizona Utility Shows Broadening of State's Econom... - Industrial Info Resources",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPTVZVSWJlakJYUmQ3REc0OTVrck05RWVwUlVwSXVLS1JDdzhOS21haVJlQWZDTWFCZ0hWeHRTQkxieDJIY0w0VU84VEM1LVYyVTVkSHpOODhDZnBIblI2SEZ5LXZaQWRoYmR5d3V0bHdidExKaXRIU3E0OFNPUTN0aWFTVFpmNGR5bndURjFzRS01WWlLTnlJaU5NX2FrTzFBUWtzNHd5YWczMmFHTjZvaDZPcVloek5V?oc=5",
+      "snippet": "Capex Plan for Arizona Utility Shows Broadening of State's Econom...&nbsp;&nbsp;Industrial Info Resources"
+    },
+    {
+      "fetched_date": "2026-10-12",
+      "pub_date": "2026-10-12",
+      "section": "sector",
+      "utility": "Arizona Public Service",
+      "source": "KTAR News 92.3 FM",
+      "headline": "APS customers to receive $14.70 bill credit in November - KTAR News 92.3 FM",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE43MUl0T2lmVllJUnEtN3FHR3M2YU1mT3F6dG8xVVB6R3FLbUU2R3NpOTFJSU9tc004Qmt4bGd4V3ViTGlwUE9CaUptTWlDTEFBUlY3ZXh4RWlPdXJHdmVxWk9zdUY?oc=5",
+      "snippet": "APS customers to receive $14.70 bill credit in November&nbsp;&nbsp;KTAR News 92.3 FM"
+    },
+    {
+      "fetched_date": "2026-10-12",
+      "pub_date": "2026-10-12",
+      "section": "sector",
+      "utility": "Xcel Energy",
+      "source": "Bring Me The News",
+      "headline": "Xcel Energy plans to keep electric rate flat through 2028 - Bring Me The News",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVWhiSGRDZnNRQjh3eXRXZVNGNFp0enlsbFdlbTZpVWg3NnRJR3N6OGN4M3ZDY2QwM0gyQy1tdm9KNmFzVHctV1daUXdzLXhCaGpwSVJXb2ZDSXhqMFJibmpBYWZiX1lWS2dsQW9BUmo2NW83Zi1jLWNDMWtnOWpIRWhmVmtNVEkyTHVHZVZhMDFpMDN1ajh1MHIwZV9WX2NW?oc=5",
+      "snippet": "Xcel Energy plans to keep electric rate flat through 2028&nbsp;&nbsp;Bring Me The News"
+    },
+    {
+      "fetched_date": "2026-10-12",
+      "pub_date": "2026-10-11",
+      "section": "company",
+      "utility": "",
+      "source": "The Olympian",
+      "headline": "WA agency apologizes for racist remarks during Puget Sound Energy rate hearing - The Olympian",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ING9NSXJudVFsYk9wUHJsOERWbl95cU1HMkZZYU8tbEdJVk1CbGpSb3dSUF9vc2ctNUUtMG5TdmJXZEZLVkgxLWN6bF9iZ09kbWhIMVZlTG9ydXRTQ0c0ZVB1X3ZvMTgwS1Jud9IBbEFVX3lxTFBscGc1SFZWVTViejNaanAzeG1OaS1Wdk5pN3dxQk43VC15S1pUX29mOUJvMnFQNkZzV1N2NmJENmxjSkE4UWlVN21EamEwSGFyWG56Rmxqa1E4cWc5MWNRMDRmdnNkbnMzMFZqMg?oc=5",
+      "snippet": "WA agency apologizes for racist remarks during Puget Sound Energy rate hearing&nbsp;&nbsp;The Olympian"
+    },
     {
       "fetched_date": "2026-10-11",
       "pub_date": "2026-10-10",
@@ -370,6 +440,16 @@
       "headline": "More than 1,700 Arizona consumers speak out against excessive electricity rate hikes - Consumers Union",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNMWtkREJNTkxaY1dYMVJVSklLWkd3eUM3S1lOS2FWemFoMmg2eko4QlEzZjVhdV9FaWFaYm9VcUdCSXNFWjNwSHJNWjdrV1AzNS1RVmxJRDEzNFh3X0RLcHd6YWlUVENGeTMwaXRocmJRd0NmYlR5a1RPM3gxTDdpTXl2aU1OMl9PTno3ZkFSeHBLZ2hxbnJUalVqOExFWVNOcnBzYVdUWWh0LWM3M1pUVTRLWndhdmZSRHhDMkpvc1czVDdKTzFfclhTR0E5TWFL?oc=5",
       "snippet": "More than 1,700 Arizona consumers speak out against excessive electricity rate hikes&nbsp;&nbsp;Consumers Union"
+    },
+    {
+      "fetched_date": "2026-10-12",
+      "pub_date": "2026-10-06",
+      "section": "sector",
+      "utility": "Evergy",
+      "source": "Utility Dive",
+      "headline": "Virginia hearing examiner tells Dominion to release memo on FPL investigation - Utility Dive",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQM1FWUklLLUNkOWlSQmtvQjQ5cW00WUFtVmtwR2pCSENEVno1Y3Nnb3dLRU1wY3ZvWWp4VXlSdU1QVkI1bUppNzl1RFY3OTF2VWh1WGJsT2dwTWliVC1zYlJUMmtxVldpT2lVRS00cy1EaUtnY3NFakVUR1JkaWpaZnBFY0xTS3k4SVFrQkVpMmZ1Z3ctTklnS09LQzhRNDBjNm1oMGtUN2hnZG5uYkhuazJyNlNOQ3M?oc=5",
+      "snippet": "Virginia hearing examiner tells Dominion to release memo on FPL investigation&nbsp;&nbsp;Utility Dive"
     },
     {
       "fetched_date": "2026-10-10",
@@ -5502,6 +5582,16 @@
       "snippet": "Sei Investments Co. Acquires 62,099 Shares of Portland General Electric Company $POR&nbsp;&nbsp;MarketBeat"
     },
     {
+      "fetched_date": "2026-10-12",
+      "pub_date": "2026-07-31",
+      "section": "sector",
+      "utility": "Portland General",
+      "source": "News From The States",
+      "headline": "Portland General Electric proposes more rate increases - News From The States",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQV1BGVnZlSnV4bERNaGllTHJMRFhYMDlKaDRGREU5TElBb3E0aXA1MTFVMmQ3bWJDck1fVmllWFVTYnF6S0p2SXp6UjdmX3kxWVZlZDZfQm9aWFhUOHRlT21YcFFUNEQxNkZZc094OHZlYTVqbWliWFRxRHp2aGp4TjJna0J5N0F5UmV4WXVBczJFRUZqNmZtbWpTcXQ?oc=5",
+      "snippet": "Portland General Electric proposes more rate increases&nbsp;&nbsp;News From The States"
+    },
+    {
       "fetched_date": "2026-10-09",
       "pub_date": "2026-07-31",
       "section": "sector",
@@ -7170,36 +7260,6 @@
       "headline": "Why Arizona customers are opposing APS' rate increase request - KJZZ",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPVmRKdi1iM0kyT1I2b01IZS1IQUJyczY0U1QtSmc3dXI5dHNGWFg4LVAtYXNuUmNYalJ1REhJaFdhNXEySk9NenQ3ZkNiVlE2NUd2bUxxX1ZhcnpaelZ6SkpNS3R3OExicHQtRUZHeHFjLVpYdnM4Z085MW80VThqcjk2TFNMamtodmtNRklITDMyN2l0Ry1MUnRCV19qUWtEMnZN?oc=5",
       "snippet": "Why Arizona customers are opposing APS' rate increase request&nbsp;&nbsp;KJZZ"
-    },
-    {
-      "fetched_date": "2026-08-17",
-      "pub_date": "2026-07-13",
-      "section": "sector",
-      "utility": "NV Energy",
-      "source": "KTVN",
-      "headline": "Power outage affecting more than 5,000 people largely resolved - KTVN",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQTU4xNkFULVgtbjRtNmdHZHAwSTlIZVIwcElEZ3ZxcG1ZR2tpY3hsUENJUG4xWHNaZnhGVDNhdFotZXFnOVJpdTVBZk1rb3h3UzFuOHNzQUVWMV9VcERoaEpfX2U0WUNhUUFlM2o3b191dDZMRUdFYWRKaFRudDFrSUNGTUpBZHZIdUV6MTZIbGtWbTY0ekQzNzV6TUZHUkRiUUxCT2pfWHdvbzQzRVJRR21XUTdacFhXajZOQmF5MUlkY0d4NllOV0wwdW9RVHNYOGVWMmRQQVFYck1saEE?oc=5",
-      "snippet": "Power outage affecting more than 5,000 people largely resolved&nbsp;&nbsp;KTVN"
-    },
-    {
-      "fetched_date": "2026-08-15",
-      "pub_date": "2026-07-13",
-      "section": "sector",
-      "utility": "Portland General",
-      "source": "Axios",
-      "headline": "PGE deal revives Forest Park tree removal plan - Axios",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSzIxN1EwbENmaGc1TDVOMGRGQjhZLWVYRXMzNkl5RDdrSFl3VzJ5VnZTNThXOGNYbnNrQmFuUTRUbFFuLWs2ZVk0M0hvTmFlRk1mZ3pVa1NBdjFxR3ROaXhYUk5hYWxJQy1abE5fclVPbnBhTktfMi1YcnV5R3h3eVE1NFEwNUh6UldpcDJWX1BWRTRLV1FuZk1B?oc=5",
-      "snippet": "PGE deal revives Forest Park tree removal plan&nbsp;&nbsp;Axios"
-    },
-    {
-      "fetched_date": "2026-08-14",
-      "pub_date": "2026-07-13",
-      "section": "sector",
-      "utility": "Arizona Public Service",
-      "source": "State Affairs Pro",
-      "headline": "Arizona Commission Ends Intense APS Rate Case Hearing - State Affairs Pro",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSXhFcXN5NHZxR2J6UjEySWg1dUFqLXBHR1U3S3JYUnFlWXBSN0RDQmhwdmw3ZHlkcjJUR0k0U1VGVUwxLTFxcWJtWEZiUHJHQS1ZWFdBUW5XN21QcGtXSmhNMXczU0I2MU50OTBGV2cyQjlZRm5hX1dNdjduRjlZdjl1a216M252OGxqU2FfcE1qZzFqaFpfdXBHdzRoY0pmZE5pOHp3?oc=5",
-      "snippet": "Arizona Commission Ends Intense APS Rate Case Hearing&nbsp;&nbsp;State Affairs Pro"
     }
   ]
 }
