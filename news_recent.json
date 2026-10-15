@@ -1,6 +1,136 @@
 {
-  "generated_at": "2026-10-14T18:25:28.747968+00:00",
+  "generated_at": "2026-10-15T18:07:44.016135+00:00",
   "articles": [
+    {
+      "fetched_date": "2026-10-15",
+      "pub_date": "2026-10-15",
+      "section": "company",
+      "utility": "",
+      "source": "MyNorthwest.com",
+      "headline": "‘It is an extraction machine’: 24-year-old state House candidate takes aim at Puget Sound Energy - MyNorthwest.com",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1IRUx2bDhrU3JrY2pseVdlNTUxcDlqVmNHSTlYYkJTZ2VKcS1RZlBwRmZQRE1yZk51Qi14RXlkTmI4VzYyOUxJSkJKbEpsbWdGQmRQNDZqZldjMFNpTG5HVU1xSVhxX0hHaUxnQnJLRktmbEZjUnREYQ?oc=5",
+      "snippet": "‘It is an extraction machine’: 24-year-old state House candidate takes aim at Puget Sound Energy&nbsp;&nbsp;MyNorthwest.com"
+    },
+    {
+      "fetched_date": "2026-10-15",
+      "pub_date": "2026-10-15",
+      "section": "company",
+      "utility": "",
+      "source": "The Manila Times",
+      "headline": "Puget Sound Energy announces development of new solar project - The Manila Times",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOc09wbWp1eDZsbEtGWWZob0FkODFTcGNrREZ4NlhoZnE4SHduTjlEdldIQVdDVWJVYk00RXdOYlVqVHpmdmpYOXJ6NW9IOWFqWHE1cGVxWk5BYlRGVDNxS0ozTGpWYk1GX1hRbTY0OV9ZRGJQak9LWk0tZUsyczEtbFptR0c5LXIwZHJ5TThua3NoVjNxaXlNc3UtbmJfTFJ2d3M4OE1EZWw4MXJjR19DY0NNaTl3bzNWQi1JX1FqYXoxQWprOERuUjJJRloyemtvV0VkRlVR0gHWAUFVX3lxTE5zT3BtanV4NmxsS0ZZZmhvQWQ4MVNwY2tERng2WGhmcThId25OOUR2V0hBV0NVYlViTTRFd05iVWpUemZ2alg5cno1b0g5YWpYcTVwZXFaTkFiVEZUM3FLSjNMalZiTUZfWFFtNjQ5X1lEYlBqT0taTS1lSzJzMS1sWm1HRzktcjBkcnlNOG5rc2hWM3FpeU1zdS1uYl9MUnZ3czg4TURlbDgxcmNHX0NjQ01pOXdvM1ZCLUlfUWphejFBams4RG5SMklGWjJ6a29XRWRGVVE?oc=5",
+      "snippet": "Puget Sound Energy announces development of new solar project&nbsp;&nbsp;The Manila Times"
+    },
+    {
+      "fetched_date": "2026-10-15",
+      "pub_date": "2026-10-15",
+      "section": "sector",
+      "utility": "Portland General",
+      "source": "Simply Wall Street",
+      "headline": "Portland General Electric (POR) Filed A Pelton Round Butte License Amendment - Simply Wall Street",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQekpPc0lDU0tma3pzN2JVbkcwdzRWVXI4Nm5ZQ1VxTWF5c0Rkd0p2QUV6MDJuVnhXMmNEeE5YWl9id2NNZUljMDh1cUZxWjN0UTdjNkZMVGNUS1R1OFA5NzZHeE5KNk1wYjFrNEYzVmpKSkVlN2NVcVZDYTlBbFJ0WEpWRzFqSFVmbnJyM1prVDNIVnhLbDUwZm11NE5wZU9mREYtc1owdTg5Vk1CSW9nS0RjZWExRFhpWk1tWDhDMUQ3U09CSktpeHZRRHJaQ2dscTYtTk8zMUFnd9IB3wFBVV95cUxNb1ZoUFl3NkN5eWs0aG92MGJ1U2xRMFFKaEdmMTVkcFpKWk9mLXY5bzZJaGFqRFJMWnNKN0J5TEtVVmJmTEZCdUxQT25IY1N6ejU4cFRlU29hMkd3NU51b1J6TjBfeDRBbkJxMV8wZjBKSHFmQUY1ZkVCU3hsN2FFMmdkVlp6OXdydndmTjVXa2RkZUkxeXduVk5iLUtMTDQ2MW9MSXBSSTlfOFh5TTNNSU5sNTU5MUk1TVJaUURiTWpmNnJYV3BjQkNCU056QkNpdXpoaHlTNkNzUENyelBV?oc=5",
+      "snippet": "Portland General Electric (POR) Filed A Pelton Round Butte License Amendment&nbsp;&nbsp;Simply Wall Street"
+    },
+    {
+      "fetched_date": "2026-10-15",
+      "pub_date": "2026-10-15",
+      "section": "sector",
+      "utility": "Arizona Public Service",
+      "source": "azcentral.com and The Arizona Republic",
+      "headline": "APS customers will see one-time savings on November bills - azcentral.com and The Arizona Republic",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSms0UE9vc3lRNGlYYXJqQVExaGFMVHY3U29DUVl6MUkwejNHVDF0elFJTUxuMTRSdFNhR1Z4c3ljSWlqUEIxaG1Sa21DR3ZycUVueFlnS3Q0dy03algzS1dkUm1kZEZHeVpkUnpJalZTRUZqTTBEbzVWNm4yYVhnd3dKdTNXZHdRQnFkOVBGWGtteUgwZnk2ZkF3YTdaWXFmc2hCVzdRbmROcmVR?oc=5",
+      "snippet": "APS customers will see one-time savings on November bills&nbsp;&nbsp;azcentral.com and The Arizona Republic"
+    },
+    {
+      "fetched_date": "2026-10-15",
+      "pub_date": "2026-10-15",
+      "section": "sector",
+      "utility": "Xcel Energy",
+      "source": "MinneapoliMedia",
+      "headline": "MINNEAPOLIMEDIA NEWS | Xcel Energy Seeks Two-Year Minnesota Electricity Base-Rate Freeze Using Federal Battery Storage Tax Credits - MinneapoliMedia",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZ3B2TmJSTVQ2QXJmZ3BRaVFLelAwWF9QZnJoV205ZHVCd3lwZmw3YzFuLWJjNGx6cXhPQlBnSG8wV3piaVF4Z0ZHUkhrbHY1VWNoOVZQNUdqR0FvNzl1M09qUDI1RDMwNVF1dFVsODFfUXE1YXhwSGtTTDRLbFBqRHZSa1FrLVNSUUp2S215X0dsOUUzSlRRU0IwQVRWTDRDcWRnbHhHb2JkXzJJc3hmNzBhWmpzcHZuT0JHb216ZXZYS2xaVTBoZw?oc=5",
+      "snippet": "MINNEAPOLIMEDIA NEWS | Xcel Energy Seeks Two-Year Minnesota Electricity Base-Rate Freeze Using Federal Battery Storage Tax Credits&nbsp;&nbsp;MinneapoliMedia"
+    },
+    {
+      "fetched_date": "2026-10-15",
+      "pub_date": "2026-10-15",
+      "section": "sector",
+      "utility": "Xcel Energy",
+      "source": "Patriot News MN",
+      "headline": "Xcel Energy seeks rate stability for customers through 2028 - Patriot News MN",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOOS1mZzVlc2pEaU52QzBUOWx6dXdNUVJRSEFkcmhPdkVaN0FtYjA2S2JVYlZ5d01udlR5Tm9zc09ZVDZQMS1xVElwMDBwaThUWVY4dmhWYUNNd1BrcFFiaFlKVEtJY1NZSkhyaXk0eldTQmk1N09BemxlZ0NKTXdTV1BCX1U3OHhES0Z2MVc1MkZYWEs1ZFNyVzZIR2U0WVdZakQ3N3ln?oc=5",
+      "snippet": "Xcel Energy seeks rate stability for customers through 2028&nbsp;&nbsp;Patriot News MN"
+    },
+    {
+      "fetched_date": "2026-10-15",
+      "pub_date": "2026-10-14",
+      "section": "company",
+      "utility": "",
+      "source": "Yahoo",
+      "headline": "Kirkland, WA power outage: 2,300 customers lose electricity - Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQRExkZktmRk5NYUZjVlotZXpRalRNa3VXY2phY24xQWoyVTY3TE0zYjVZaGNLZHByTk5PdzFUcUpjdXg4blFiZ1l2eEduZlBnYWFIRjJJVGRhODB2VTBtV09LaElKQnBuNS04VUFyTURaQmxsNHZzRzRGRnJ1MDBMYXA5UQ?oc=5",
+      "snippet": "Kirkland, WA power outage: 2,300 customers lose electricity&nbsp;&nbsp;Yahoo"
+    },
+    {
+      "fetched_date": "2026-10-15",
+      "pub_date": "2026-10-14",
+      "section": "sector",
+      "utility": "Portland General",
+      "source": "KATU",
+      "headline": "Group rallies against controversial PGE transmission line project in Forest Park - KATU",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOWUpaTERGV1FQc0JfMVp1dVpYNE9CdFVZS2NNTDhGb3BoTEZabWlFaGRpRy1jdElFcWlnX1FaWGdoaTJkSUY2eGNiZS1vc0ZrcXlLNHBLVks2cTNESTFKNjdhNHNtcXgzTFVic2JhMGZpMUhSYWdhNk14ZGF1VllkMjJ0QVZtNDJoOHZKeDVPdG9sRUN3TDVpbTZlQ0NUSU52VENMWVc2REJHSXFYOTd3VHV5S1lJMEljaWdIZ3ZTbS15WEYxVzRKSUpWQW9EamM0UVRSU2hwY2Z5MXV5ZFpwbTB5NzdkZ1BlMjgxNmVsSV8yZ2Q5RHdzdFlmRjNLRnJvUGctSjZKQVhkVkE?oc=5",
+      "snippet": "Group rallies against controversial PGE transmission line project in Forest Park&nbsp;&nbsp;KATU"
+    },
+    {
+      "fetched_date": "2026-10-15",
+      "pub_date": "2026-10-14",
+      "section": "sector",
+      "utility": "Portland General",
+      "source": "KPTV",
+      "headline": "Forest Park advocates urge city to deny PGE power project permit - KPTV",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQ0lxbXhnR2VtVnB4OWZ6dlZ0N1NMNHlhWFJZbk5YRm90RmlnWUdueXMtM0pycDA1ZW44MFpqYkNDckRvZllma2dxZWk2aXM0T1lJRjRtOHpRZ0VIMGVzaVAxYUJGRWZGQXFtQlhQbTM5RTNYZTBTcVVzdnVwVkk3ZlVaUWdaemhsUU1Jdml1eUdZM3ZBLWZUdGJB0gGuAUFVX3lxTE5KcHNOUWZoSTRHSU8tQXgxNWJJMzVKeExVTUNRNFp1N1pNa3hjLWFocFExRmFCUWVfdDRQWFcxa0RHakM0dEx4N2ctbGxobGFnMEp6UFFUNVMxRFFtdERRV1RYd215OVIyVURkLTdMYWZVLUZoenctOU5kZEk3LVJEa2hiOUZKY0g3eVlfVW5kZ1l4T0s4TkMxVEdSUkt4d21yNUN2ZWJEcDQzai1RQQ?oc=5",
+      "snippet": "Forest Park advocates urge city to deny PGE power project permit&nbsp;&nbsp;KPTV"
+    },
+    {
+      "fetched_date": "2026-10-15",
+      "pub_date": "2026-10-14",
+      "section": "sector",
+      "utility": "Arizona Public Service",
+      "source": "RTO Insider",
+      "headline": "Arizona Utilities Outline Reasons for Markets+ Support - RTO Insider",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPaGxrUU9tUkhZOUN6WTJDT1lWNUgwbmJ2amIzdkJ1U1JtazFmdU5SY21LdDY5MjBsU0J5b1U0WTBPeXpxdEtQUGYtQ0NmYW52RjQyckJxVThIdUljMWtmSW12YnljTjZyYU10b0RlYVRILVc4VnFpdG13aXJfYjNFMnR0WDdMVEktWGZCXw?oc=5",
+      "snippet": "Arizona Utilities Outline Reasons for Markets+ Support&nbsp;&nbsp;RTO Insider"
+    },
+    {
+      "fetched_date": "2026-10-15",
+      "pub_date": "2026-10-14",
+      "section": "sector",
+      "utility": "Xcel Energy",
+      "source": "KNSI",
+      "headline": "Xcel Energy Asks State Regulators to Hold Electric Base Rates Flat for Two Years - KNSI",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNODhZa2FRd0o1UXNOWEdaelFTdFBfeFdwY09qeENRajk1Y3dzeGhENWRGUUtsQVBoLURzYVFhTnJPU3BDU25jTlJPUk9mOWtBaGtsYkZmdlNvWWlwbEphYjlPUFd3TW9hdzg1S1BMRE8xaUhrSlppVFlTQl9JVjlLZ1pTOERpZ1dtckFaZFRZcFB2UldHTENUWmlSS1hDWDdRMUJwQU1aTExCV0ttdl93SDNhYXM?oc=5",
+      "snippet": "Xcel Energy Asks State Regulators to Hold Electric Base Rates Flat for Two Years&nbsp;&nbsp;KNSI"
+    },
+    {
+      "fetched_date": "2026-10-15",
+      "pub_date": "2026-10-14",
+      "section": "sector",
+      "utility": "Xcel Energy",
+      "source": "Star Tribune",
+      "headline": "A new Xcel proposal would pause rate hikes for two years - Star Tribune",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPeW84TTBtUmdueHZJeXJ0bkE4LUh2R21IU0tTdG9oN1drd21nN0QwV0Nybk9JQlNaVmF3SXlCRHN1OU5YMk5qb3hHLWZLUXVuSi00UzR3VHZxYlVRSlRBTlFZb2hZTUV4UGtRYkdfUG1Bc191OVZvVUhZY0piemhFMjI1SG1FS0EyNkNQdVE3MU4zUl9Rd3ZNTkln?oc=5",
+      "snippet": "A new Xcel proposal would pause rate hikes for two years&nbsp;&nbsp;Star Tribune"
+    },
+    {
+      "fetched_date": "2026-10-15",
+      "pub_date": "2026-10-14",
+      "section": "sector",
+      "utility": "Xcel Energy",
+      "source": "Daily Energy Insider",
+      "headline": "Xcel Energy requests two-year customer rate freeze in Minnesota - Daily Energy Insider",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOekRmeGsxOVJyQU1IZll0X3JoeXgwRHgwODlBUHdjYmRORjl1T0tlZ3RLME04RXVLbUhDeW1xSDZjWk5JWXBJeWRqVXVCUFVNb1h4bkZJWUZldVY2MWVWODAxWUF2c1AyajFNajJ6SDBvckRrZ1lGdEw5Zm5aSjJ1NG4wSmxRbHVhMFdNY1FaZE1jVWZzV2tRNVNUYjZFNXdjZUloMWppdU1FQQ?oc=5",
+      "snippet": "Xcel Energy requests two-year customer rate freeze in Minnesota&nbsp;&nbsp;Daily Energy Insider"
+    },
     {
       "fetched_date": "2026-10-14",
       "pub_date": "2026-10-14",
@@ -30,6 +160,16 @@
       "headline": "Kirkland power outage: 2,300 customers lose power - FOX 13 Seattle",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9DUnkxRm1ub0Q3YUdCMXlwQk5QVFpONUdwbzFUV1F2VmZndG9IclRucXU2dTBNUTBEVGJzeVc2b05YckZTSngwcGdXZDJReHlhZHA2VUtHNlNOZ0RuLTJhVkJjSkFtMVhqMFhiZW1sMk9UT0kzMGc?oc=5",
       "snippet": "Kirkland power outage: 2,300 customers lose power&nbsp;&nbsp;FOX 13 Seattle"
+    },
+    {
+      "fetched_date": "2026-10-15",
+      "pub_date": "2026-10-13",
+      "section": "sector",
+      "utility": "Xcel Energy",
+      "source": "Austin Daily Herald",
+      "headline": "Minnesota regulators to investigate affordability of gas, electric rates - Austin Daily Herald",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOOFoxYVppaEUzWjdtbkl4NldtZ1U5cW1UTmhoV2RTdEJ4WS1ueENpQTZxbVB6WXFZaVZPaGwtU0NUUm1VYXVhaW5HZnhKMGgzbXlVUHl4bkZtWGVWSmRWdDRIYWxVOGRuSTNnMFJNYzVfSFF4dF85R2l2anZqaVdHVUxSTUxCVVV6UFhZalJVaUdyNkdBN29wbFpPSElPczc1NjBycWRyOW8zMUpJdDhITmh5c2trd1QwRFhR?oc=5",
+      "snippet": "Minnesota regulators to investigate affordability of gas, electric rates&nbsp;&nbsp;Austin Daily Herald"
     },
     {
       "fetched_date": "2026-10-14",
@@ -140,6 +280,16 @@
       "headline": "Will Rising Customer Demand Boost IDACORP's Long-Term Growth? - TradingView",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOeDJKbldaUFE3RGV1blltYkQ0ZFFyaDhQWC1qVUlyWkhEaXhhU1BXU0FCbW02aWVxVmNWZExXYWxsWUd5eG5Vb3daNUtBLXlLUnktRmJLT2xKV0x2dUxRSEFFUFEwTUZqSnVPa1RYZVI4YXdoOHhfUmNVenlyUVowd0VMelZpcVNVY054UkZvSTVvTlVUTDM2ZUZ4RFhrckFWM2pDS2hvWm1YVE14REwyMXQ2cy1UZ3c?oc=5",
       "snippet": "Will Rising Customer Demand Boost IDACORP's Long-Term Growth?&nbsp;&nbsp;TradingView"
+    },
+    {
+      "fetched_date": "2026-10-15",
+      "pub_date": "2026-10-12",
+      "section": "sector",
+      "utility": "Portland General",
+      "source": "Moomoo",
+      "headline": "BTIG Maintains Portland General Electric(POR.US) With Buy Rating, Maintains Target Price $58 - Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVVVmUUxSN3lKM25xQUdyM3RjSi10NFpaZm0xbnBDSjlUNE5jZXJBQnEzYks1WDU3ajJaOFdkREtXR3hrOW5HbnRNMEZCUXN6SUltUl9SNGxoUk93dG90WTBRSFdwd1VFOGhBb0c5YnN2RTNuRHVLRkdFVjJOaUpiWGhLYnk0M1JpZUFkU25sNDZMNl9USmQxWHI4bDcwcjNiLWRFSm9XaHdkS081aExaZ2tIVndmM2c?oc=5",
+      "snippet": "BTIG Maintains Portland General Electric(POR.US) With Buy Rating, Maintains Target Price $58&nbsp;&nbsp;Moomoo"
     },
     {
       "fetched_date": "2026-10-13",
@@ -1700,6 +1850,16 @@
       "headline": "Will Dividend Strain Change The Case For Portland General Electric Stock - simplywall.st",
       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOTVZIbDR2VFlqSFhXQTZXNDZyWVhtZnMyTjVtVmZUcU1vR1A2cXd5S0xaUmhBY0pTZkJPZkpYYVVqaHR1MHEtaVNGNGJDalpzZDVXYWdmZEdYdnVkTVZQOFY5Y2xnbUJvaTlTUGpHMUZrVUdOTF85TUhfdGt2cndoa2ZCRENzY0dfS2FncVFRSWFneFRFZC1JRFRBT3ZKdjlYeFQyZVhsN3YyQjdDSl9rd2lIMVR6bXdKcU5FdDNsUVpBdFNhaDh4cUMxbjhBRnlFNTdRT0ZuZkVaZ9IB3wFBVV95cUxPa05Xc2M2LTdOWUwyeTAtLU9lSjBBMWdXOFE0V21QTXRFbXRzb0REUks0aGkzbElzaC05aGhicHFzUDVkNzNvcW5LSnFXaEdvX0diZ1NNLW1zT19qc2NiVERRNXRmRktWOTNUaVVtMXliM1RjZ3pGeWM3OU50TkFUY0VjYkt2Y2w3RHFNT29ZVzBSZ3BUUklOLXBlenhxdWFGVXotNm5NaWVXb3NuNEpZS1B5bmRtbGZCYmIxM05wX1VNdFpqN1BqVlJXNWhvd21iUExHRmNOQjFGWldmX0lz?oc=5",
       "snippet": "Will Dividend Strain Change The Case For Portland General Electric Stock&nbsp;&nbsp;simplywall.st"
+    },
+    {
+      "fetched_date": "2026-10-15",
+      "pub_date": "2026-09-26",
+      "section": "sector",
+      "utility": "Evergy",
+      "source": "MLive.com",
+      "headline": "Consumers Energy schedules 8-hour outage for utilities update in mid-Michigan - MLive.com",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZnRZUzQxWDVzSzVJSFJBNkV6ckdCd1FjVlRnMFZ3dVJLWkItM2RLbldrcGdxUVk1bTgxb0RyNUlXZUFPd0FyN1g1MW0wRFQ2TmhZdGV4SHh5QVNEajROM1NhVXBjampFZzVPdGFERHhWQ3NPaVJsZkt0SkNlNjlaTUxldndhdkxaUS1vU2oyaVNScFY2RzRPX19FVEZIOWlGbEpsNjFDamRfZGZPR1pESnZUbDVfZDVHQ2hURDNZUXRTX2lyaXpVY0oyeEl4dkk?oc=5",
+      "snippet": "Consumers Energy schedules 8-hour outage for utilities update in mid-Michigan&nbsp;&nbsp;MLive.com"
     },
     {
       "fetched_date": "2026-09-26",
@@ -6332,6 +6492,16 @@
       "snippet": "Data centers want a closed-door deal. Nevada’s electric utility is suing to stop it&nbsp;&nbsp;Straight Arrow"
     },
     {
+      "fetched_date": "2026-10-15",
+      "pub_date": "2026-07-29",
+      "section": "company",
+      "utility": "",
+      "source": "Kitsap Daily News",
+      "headline": "KPUD places public power authority measure on November ballot - Kitsap Daily News",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZ2QwTmoyLWI4TUxfUW9zVllYOTM5THpHRjZyT2IwZzQ5R2ZqQkRyQ0VacG5HaGZVY3gtWXZfN2MteDY4OXdnZ29mLVhmcDBfa2d5WDBabV9oZlZWUEkzVy0xNzlTLXdvS05XRlJtS2xJdDg3amUzR1g2d3NvdjR3X1NzcTJBY211bmd6cTBQdTBkTlBfNTFFaHhCVnpTVUlMcEdYVG5ZN18?oc=5",
+      "snippet": "KPUD places public power authority measure on November ballot&nbsp;&nbsp;Kitsap Daily News"
+    },
+    {
       "fetched_date": "2026-09-11",
       "pub_date": "2026-07-29",
       "section": "sector",
@@ -7152,6 +7322,16 @@
       "snippet": "APS funds fossil fuel front group advertising in Arizona&nbsp;&nbsp;energyandpolicy.org"
     },
     {
+      "fetched_date": "2026-10-15",
+      "pub_date": "2026-07-23",
+      "section": "sector",
+      "utility": "Evergy",
+      "source": "Utility Dive",
+      "headline": "DOE’s new power export rule at odds with ‘energy emergency’ findings: Public Citizen - Utility Dive",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZXFCQW1lb2lyX2RWUXBPdjV3RXNoeHNuOVdScVREV1hDT294dV9jbUM3eXI5YUFDSjI5ZlVDVGNaekZvNERld2Q2Yi14NTROOWkwZkp5MHhnT2dtWkZWel9QMWRMTVliS014a0hSNzFRdUZCUHhReUdQaEFaSTZvb054b3dlOXJZR1FXNjRxbElIWTlocm1LaWJ3?oc=5",
+      "snippet": "DOE’s new power export rule at odds with ‘energy emergency’ findings: Public Citizen&nbsp;&nbsp;Utility Dive"
+    },
+    {
       "fetched_date": "2026-08-27",
       "pub_date": "2026-07-23",
       "section": "sector",
@@ -7370,76 +7550,6 @@
       "headline": "NC attorney general fights Duke Energy Progress rate hike - 828 News Now",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVmFwVUFTUk9WdHlCMTFsOFdZTWt0NXFXVUZWNF9CNGpvNlJVbDZlb2hPcFJQei0tOW40WWZ1YnA2RjgtTGp5QlVKYVcyV2NvaXN0eVlHclJSRkVLamxJNGdLWjctS1gxcWdkRjRDeDlHYzNmM2pZNEdLOGZ5VU9UUnlxN2dic05mN0x3TDJwTFF0MXRrem9VVQ?oc=5",
       "snippet": "NC attorney general fights Duke Energy Progress rate hike&nbsp;&nbsp;828 News Now"
-    },
-    {
-      "fetched_date": "2026-09-04",
-      "pub_date": "2026-07-16",
-      "section": "sector",
-      "utility": "Portland General",
-      "source": "koin.com",
-      "headline": "Lightning storm sparks fire at PGE substation, causing power outages: What to know - koin.com",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeXI1ekd4TDFMT2pKQ3JMN05xemdvQkx0M1lmNWYzemcyckRVRjVtV016bnpibHpGeHkxLWhIU3AxdlNVY3JXNml0eWM0ajdoRGdBczB1UDZmcG5XMFpzNWdqODNZSTRaREJZdUhVTWdpa1pKTE02LUtPeVdLcjVlSjJuX2ZRaHp5Z2FTRUpDLTR5cy1sVkIwODlsZnBkYUpMQ1VDWjl4eUR2bzBf0gGyAUFVX3lxTFAtY2lWNE1pUm1PcHh3ZEQ4U0hoRy1iSGwtX0k0OEUzNDcxTDV1S0habkR5RndmVE9MWFJkcGZEenQ1SF9yRVowaXVQRUxBQVhnQlpjMlJHbFhBMUFDUm56cHhielpqZmEwcDNLTnBDTm04MUZVZHRPWHdpSjZPZXhTX0FKNmtXTDREaUdSdGxZLWh1enNNRE1mbWZuRkRwbk84QV8zY1Rrd3pneFgwbXdvdFE?oc=5",
-      "snippet": "Lightning storm sparks fire at PGE substation, causing power outages: What to know&nbsp;&nbsp;koin.com"
-    },
-    {
-      "fetched_date": "2026-08-25",
-      "pub_date": "2026-07-16",
-      "section": "sector",
-      "utility": "Portland General",
-      "source": "KPTV",
-      "headline": "Lightning causes fire at Cornelius substation, hundreds without power - KPTV",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPRFJRWVRtblB1NE9rQklDM2Nxc1hzMjNoZzBUMlJ1czlvZmVSSlNuR0dLeDZRM2h4cV9ZMkdaMDZ2anhvQWwxZ3JCQlR4VW1hejZVUThtVVFSU3FHQ1ctQ050aTVHX1hDSmVVbTZHTmUyUGpqSzl4NTMtWWE3SkoydjhLNURQakREU0p3MGVzNjY3TUNJaU43YWllZ0hNTXdyMUpiSGt2WQ?oc=5",
-      "snippet": "Lightning causes fire at Cornelius substation, hundreds without power&nbsp;&nbsp;KPTV"
-    },
-    {
-      "fetched_date": "2026-08-22",
-      "pub_date": "2026-07-16",
-      "section": "company",
-      "utility": "",
-      "source": "Daily Energy Insider",
-      "headline": "PSE says clean energy surpassed 50% of power supply in latest compliance report - Daily Energy Insider",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQLXM0a3NLd0tEcFViaE0xUDRzUHVZMExlTmtCQVlQaF92NkZZRzJZMnRZV2VXdUhNWXhtZXkyck82eDRldGJNd3IyZVJPR2oycnp1ZzRWQ1lpc0N4UnRYeW1rTE11YldPM0RkRHg4ZEtLd1hiVEVSUlRyUzBzY3JtdXNrQlBtRExlNUI3VjlzdFEzRGd3bXRYdkoyVjB3TFFZVnl4R3lzMWZrWG5ta2pxN01HWTlZMFNjSjNIc1BB?oc=5",
-      "snippet": "PSE says clean energy surpassed 50% of power supply in latest compliance report&nbsp;&nbsp;Daily Energy Insider"
-    },
-    {
-      "fetched_date": "2026-08-18",
-      "pub_date": "2026-07-16",
-      "section": "sector",
-      "utility": "Portland General",
-      "source": "OregonLive.com",
-      "headline": "Lightning sets power station ablaze in Cornelius; 1,000s without power in Portland area - OregonLive.com",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxObUwtRzRqQnlVdlhkR1NjRV9xY0JyajFidkhGd0M1UnJsZDJ6NndFREtwUmUtUGZ0WWtwX2hmR1NzYWVUbUpVNU5vcUdvZWxYR2xfaTFWeDJOWEJnc3piRmNTbVZtT0N1ejdQZVlTajNlazliUXZJVmU2SU56ZlZ1c3VRb0Jid09XNTNKNHo4SXNlQ1VJTUtid1hjbzlySVBtWUJPMjNVVjJYRGZjb0kwUExGeDk5Wkx4MDBEYkFKUkpQOHlDRTVJSmJicDZuLXdKbWVINHlZUdIB6wFBVV95cUxNZW5ZUnN0Q21LWGxJTUxHbUxXN2FxVDM3TC02WjhPRS14dzBIdzJqZ3hGOW84ZjdSLUNUbF9VSnpoTTlCa2o0a19RN2xwNi1faE1Db2Z3OVRLQ0llQXF4bjBhWmJJT1JGdjZSQ2pHS1FUZmdNX2UtSlNYdlRfSkxTRTJFTFdDTU1UMEFhOXBHNWlKM1J0RDhlNjZVUDJBQWNWdG51WEhFLXVkZ2dvZ1BsZEtMX2d0UExCWDdiYzBobWZyN1hDSklINGJQeEpuLWdhUVZ1UXpBcURKbHd6aXV4NkhlT0hURng4amdZ?oc=5",
-      "snippet": "Lightning sets power station ablaze in Cornelius; 1,000s without power in Portland area&nbsp;&nbsp;OregonLive.com"
-    },
-    {
-      "fetched_date": "2026-08-17",
-      "pub_date": "2026-07-16",
-      "section": "sector",
-      "utility": "Idaho Power",
-      "source": "Business Wire",
-      "headline": "IDACORP Schedules Second Quarter 2026 Earnings Release & Conference Call - Business Wire",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOVUtWZlJmSG1YQkhpZDBPSnllVG5oMFN2ZkZJa3BFcnFYVGdKWm9ROVNmNkduaGtNVGZlTHJxWkFXNjhaTHVPM0hZQ3I1QUthd0REdWJpMmoxbTd4c3JNVFpwYl80R3V1YUdSS0pPTV9BS0RCYnBNb2d2RFd0c2VEVDd6VlhCWlhHM3JrU3l3Z19PNUVMejF2LWFkajUxQkk2b0JXVFBWLVZtZmlsY3EyemMzaDBiT3ZTRmhFdmMycEpyMmg2RHc?oc=5",
-      "snippet": "IDACORP Schedules Second Quarter 2026 Earnings Release & Conference Call&nbsp;&nbsp;Business Wire"
-    },
-    {
-      "fetched_date": "2026-08-14",
-      "pub_date": "2026-07-16",
-      "section": "sector",
-      "utility": "Arizona Public Service",
-      "source": "yourvalley.net",
-      "headline": "Arizona Public Service offers Paradise Valley teachers the chance to supply their classrooms - yourvalley.net",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQcFVrVEpiekVaYVFlS2F3aDlockxFbFpSZWwxcElObTd4WTJUelI4Z3Bnek54djU3cXNZeDh3N1lNajhxX1g1ejlyLXo2TWV2ZnBObGVmWkpqZ2w2T0JrQkpwQ3VFX1JPaVBpWGdLYXpxNUJLWU4tOEpCdlRjeU53Q2hCMzhLMkdVUTh1S2xTZjVjSmRYcUY2bXdrNVYzUGRqWXVKQ2lWVmZUNEg2UWVoQlNZbW95akFsRVZZaUtnZWh3ZnRxWkxMVHBoTmNtYTlQTWxnQnNRUGhNUnZfNW9SeFQtUTFGYnd4MTNNb0ZKSFVua2Jn?oc=5",
-      "snippet": "Arizona Public Service offers Paradise Valley teachers the chance to supply their classrooms&nbsp;&nbsp;yourvalley.net"
-    },
-    {
-      "fetched_date": "2026-08-14",
-      "pub_date": "2026-07-16",
-      "section": "sector",
-      "utility": "Portland General",
-      "source": "KGW",
-      "headline": "Lightning strikes set fire to PGE substation in Cornelius - KGW",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNSHVrWEw4V2xhTjhua2hRSTFmM0ZJZzB0U0I1R3djVVM3cVZOc2RsbHBwb0tScW9NMEJaaHFGcFdDV3cyWlZra09sak1OdVgxd3p6WnNTYTV1SzR0MXlzOGFvVlowU0FqZ2todDJabVdpMklBRFBMUVJfOHIybEdRRVpLd3ZpT2V0NHEzMll4SnlBdHFta1J2MGRRemxQSHpjWUZ2cWY3NDlaMkpYRkFoTHE0TmpFU2w5cE1sVFJHVXlmZENVSDRJbWVGSQ?oc=5",
-      "snippet": "Lightning strikes set fire to PGE substation in Cornelius&nbsp;&nbsp;KGW"
     }
   ]
 }
