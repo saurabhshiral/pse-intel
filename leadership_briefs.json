@@ -1,21 +1,14 @@
 {
-  "generated_at": "2026-10-18T17:11:17.933033+00:00",
+  "generated_at": "2026-10-19T19:44:21.556122+00:00",
   "lookback_days": 7,
   "briefs": {
     "Mary E. Kipp": {
       "title": "President and Chief Executive Officer",
       "source": "leadership",
       "briefing": "",
-      "sentiment": "neutral",
-      "article_count": 1,
-      "articles": [
-        {
-          "headline": "Power 100: Mary Kipp - The Business Journals",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPY0xUVU1yYUJ4M0VCTGg5MEZscXpkRF82aGVPR3hFc1hZcE5yMU85MktKMDdoVjIwZ1kyV3djems3YXYyUTZzSHV6eUNfOUxENEw1ajhod0J5R1pxN29TZTBaY2VhRjluTTA1MzJCNWoyMGsxVVhhMGdwNmxVcFh3QkVLdV9Ja0xmTzFhQVRQejRQa0RhWkRIVHBpQ2I?oc=5",
-          "pub_date": "2026-10-12",
-          "source": "The Business Journals"
-        }
-      ]
+      "sentiment": "none",
+      "article_count": 0,
+      "articles": []
     },
     "Raied Stanley": {
       "title": "Senior Vice President and Chief Information Officer",
