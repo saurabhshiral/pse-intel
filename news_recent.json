@@ -1,6 +1,136 @@
 {
-  "generated_at": "2026-11-03T20:27:23.423998+00:00",
+  "generated_at": "2026-11-04T20:42:47.747689+00:00",
   "articles": [
+    {
+      "fetched_date": "2026-11-04",
+      "pub_date": "2026-11-04",
+      "section": "company",
+      "utility": "",
+      "source": "The Seattle Times",
+      "headline": "Kitsap County voters reject Prop 1 for public power - The Seattle Times",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVnNmYmswX01iWWlfelNxc1lNVTJ5b0JmbGl0WV8wYzEzWHBDOTd5YmVPQ01xSEs3SFllXzRTMEd5QjVjZjgyd2ZnMTI3QWtJTTBUb1oyZUFhNzJSZ2xZVWpoTlV2ZmtXVEk3Q1A5MnFSdUFrTV9xaG5EX1NHNEMyM2QtOGtfeVFGUFZmYnlib0lQc0Y2RE9VOEtyYVRSSzBzdDd5ZXdfUHY0bjR2bXAw?oc=5",
+      "snippet": "Kitsap County voters reject Prop 1 for public power&nbsp;&nbsp;The Seattle Times"
+    },
+    {
+      "fetched_date": "2026-11-04",
+      "pub_date": "2026-11-04",
+      "section": "sector",
+      "utility": "PacifiCorp",
+      "source": "Statesman Journal",
+      "headline": "Oregon Supreme Court hears multibillion PacifiCorp wildfire case - Statesman Journal",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcS1zM0hvSEwyTmtIWkNOMWRuTWp0TFJNWEpBR00xTHFXel9VbHpRTGc0U1paODg4S2ZySE4wOGE1REpOVjhOLUNDS05sdnJjVHc5QkZaRm9veDgzcEpJTElTNFBobUEydC1wdm5pTXdEczdDSW4tbTVXbnRuZjZjMndpQVppRXBzZDRsN2tHQ0Fza3h1amJZdXZnRUFtLWlMNWZFaU5SRGhVcXU0TmZ5ZDNUZ3ctRm9FWHZ5aG9iWUs?oc=5",
+      "snippet": "Oregon Supreme Court hears multibillion PacifiCorp wildfire case&nbsp;&nbsp;Statesman Journal"
+    },
+    {
+      "fetched_date": "2026-11-04",
+      "pub_date": "2026-11-04",
+      "section": "sector",
+      "utility": "Portland General",
+      "source": "KATU",
+      "headline": "Public invited to comment on Portland General Electric's proposed 4.8% rate hike - KATU",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPdnNKVWkzb2VjbkZGUlI5VUJobWVvU1FRREtBRDhPRnJfS3JUVUQtYTVOd3JWSTlYckZPbEFHSFJDTEZIWmFvRWtQNndtd1hCTHE4TF9JN0hrdjd3cU9sdzlFVU5HYXhVdEJ0MVJ0VzJFUElpSU1hUWxWNjRnSGFGZ3ZBRjZJRkZfRnI1MTdnaWJPazNtdFZCZEp5anhWRXJGSTBLTFhXYy1IaDlkY2hfSWh1b2NqRHZTYmpGRWRrczBVQ1FDM0psZEpEVEJXNlRpdHhBQ2Y5ckd6cFZWXzdXaC0ydHVMdTNRUXBkVU9iLTRPOG56QkhTZFZBbw?oc=5",
+      "snippet": "Public invited to comment on Portland General Electric's proposed 4.8% rate hike&nbsp;&nbsp;KATU"
+    },
+    {
+      "fetched_date": "2026-11-04",
+      "pub_date": "2026-11-04",
+      "section": "sector",
+      "utility": "Portland General",
+      "source": "Data Center Dynamics",
+      "headline": "DCD Studio: How to power data centers without impacting consumers with Maria Pope, Portland General Electric - Data Center Dynamics",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPTG0xNVRhcmswdldNTlpXLWxVWWlpMGRia3oyd1F4MGdOdXRzMjJTUzFxUkI3VnFyNjZOb0UzZy1vdTVzZWZORlNOcjhmeHNNbnB4X2VYNmg1VUltdVBBd0JPRTJWOHJkdFJHbTdyMnZRRFBfVE5FSmY2YndUT0NDX1dKaGt4b2t3SEYxSF8xOGVkNE4wamhLaEx5ZXRHZ0xQNThuSkx2Q25lT0pqWjZ6dHRLV0ItZmxxZzBZUXdMTDVzQkhvekNSdVpibXdqWGpLcU1OMko2bVRfTWZFWnh5b1U2cmZBVUE?oc=5",
+      "snippet": "DCD Studio: How to power data centers without impacting consumers with Maria Pope, Portland General Electric&nbsp;&nbsp;Data Center Dynamics"
+    },
+    {
+      "fetched_date": "2026-11-04",
+      "pub_date": "2026-11-04",
+      "section": "sector",
+      "utility": "Arizona Public Service",
+      "source": "Utility Dive",
+      "headline": "APS expects sales to double by 2041, plans extending coal use to 2038 - Utility Dive",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPd05WNWpraWlodUxHbG9McmREVjlPWUdZTTJIVEZmVHBZMU82ZTdlUHRoM0RiT0Y3WFhMMTBtY01RUW9IZDZPSUdRMG1xZXRNajI5LXdfc29EcmJyU1M2S1liY0dGdVpRZU9PYUQzelBjcUNkSmRpMWZmUDV3bk5TelV0aTllOHg3bTJDMVdrWjM3R0UyQ2YzUGdrT1hCZ2VPMl8w?oc=5",
+      "snippet": "APS expects sales to double by 2041, plans extending coal use to 2038&nbsp;&nbsp;Utility Dive"
+    },
+    {
+      "fetched_date": "2026-11-04",
+      "pub_date": "2026-11-04",
+      "section": "sector",
+      "utility": "Xcel Energy",
+      "source": "Denverite",
+      "headline": "Denver voters on track to approve Xcel Energy franchise agreement - Denverite",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORnBST2lGVm9WQ1JSNklLSm15X2lIdHZsX1FTa1ZlX2QxNkNSNjdSc2FETE0yRmU0ZkN4QkdrVnpvREQ3eWI1MkY0WTV5NFhncUlKV3VGRGpQSDQyRk5PeGlGTU5vTW5IWXg5SldCQVhCSWpYZGdHMWlwUkIySmx0Um8tRk0?oc=5",
+      "snippet": "Denver voters on track to approve Xcel Energy franchise agreement&nbsp;&nbsp;Denverite"
+    },
+    {
+      "fetched_date": "2026-11-04",
+      "pub_date": "2026-11-04",
+      "section": "sector",
+      "utility": "Evergy",
+      "source": "The Michigan Daily",
+      "headline": "Ann Arbor voters reject Prop E, DTE to remain city’s energy provider - The Michigan Daily",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbGVvci1NTWVOSXR1TVh1NUhqeDhGTnA0X2pjQ2w0OTBseUI2cE5Ya3V1akh6c0dKckVqTFpZbmJHSDAxVTBWQ0RHS0dTSW1aZ0Ezb2FFelpzaWctOEd5c0toMUdnZFRNTFhaY3VBZkhZLU1hTDR1TlFRcWJNNjhjMzE0aHc4QVFiZVlGazRWLWcwcERUNFlWMHNOXzNMeWdLNTdCRlg0MEpXSkdISjJOZDRn?oc=5",
+      "snippet": "Ann Arbor voters reject Prop E, DTE to remain city’s energy provider&nbsp;&nbsp;The Michigan Daily"
+    },
+    {
+      "fetched_date": "2026-11-04",
+      "pub_date": "2026-11-04",
+      "section": "sector",
+      "utility": "Evergy",
+      "source": "TradingView",
+      "headline": "4 Utility Stocks Set to Outperform Q3 Earnings Estimates This Season - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPX3EzTDN6LUFVa1l2QUtQUER0MDJsWGhRQXJxXzRCQnZKYjlyLUxoNDJHd1JzUlFQZjVSRm9MQ1ZBVFhBd29KNVRqNU1XNXZYX2l2eGhsTk5JREZjQ21TU3h5X01wM0JJdFNtb2JtQUk5Q0htT3lsSlVqOVEzbEdHOXFfSHlJS0dJaW9GQV9CMHZWdGlILU5rYmItT1pVUHMyejJBYTFrRmhEQzFQMFdNejZuTUFvNjJoNkFQbll1UjZnZw?oc=5",
+      "snippet": "4 Utility Stocks Set to Outperform Q3 Earnings Estimates This Season&nbsp;&nbsp;TradingView"
+    },
+    {
+      "fetched_date": "2026-11-04",
+      "pub_date": "2026-11-03",
+      "section": "company",
+      "utility": "",
+      "source": "Enumclaw Courier-Herald",
+      "headline": "Enumclaw enrolls in PSE community solar program - Enumclaw Courier-Herald",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQUZ6Q2hhVTZMX1hwT0pzM1FYa3NNanZNVnFfd3RHOWdveWFhc1c0Z0xOa3VvbTVCSnZLYjVoMWFhMUxDS2VHTTBpZnFaR3RoMlpiSlBpZTNoMklNVnMtUS1aclVjZDFTcHlxMU1mVE5MNkoteUJzazNCYXowVGZUcndfN2RjamJJb3FSYm5QVTBZeFE?oc=5",
+      "snippet": "Enumclaw enrolls in PSE community solar program&nbsp;&nbsp;Enumclaw Courier-Herald"
+    },
+    {
+      "fetched_date": "2026-11-04",
+      "pub_date": "2026-11-03",
+      "section": "company",
+      "utility": "",
+      "source": "Kitsap Sun",
+      "headline": "Kitsap voters reject KPUD electric authority Prop. 1 - Kitsap Sun",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZ0RQMFY3dkk2aE5FdWhiTjVYLUtoSE1lNXgtYy13Y0RxUWdmaFNjSThrX1ZBbXBHZ1RfN2wwcHRfVEs3ZTZWa1QyU2VaT2dhSmJrNndJZEZ1ZERmR1R4R0dUZ2lCdWJKUVVtNEt6bWgxeVNiWnc2blYyY2ZsZGtYR19kX01sN01DMWNfdERqQ19TX05sZDBZOXlSRGgyTVREeDhBa3c2NXVIMXdiWWVlUjc4eS10T0xadzE2M2hrYmRuZ2kzMkZXWg?oc=5",
+      "snippet": "Kitsap voters reject KPUD electric authority Prop. 1&nbsp;&nbsp;Kitsap Sun"
+    },
+    {
+      "fetched_date": "2026-11-04",
+      "pub_date": "2026-11-03",
+      "section": "sector",
+      "utility": "PacifiCorp",
+      "source": "Claims Journal",
+      "headline": "Berkshire-Owned Utility’s Wildfire Lawsuits Head to Oregon Supreme Court - Claims Journal",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE52WVk0ZDdoUGVkdGdNSHdudzJ2OU5EOG4zMnJyV2RfdS1rNDk1b2MtekRwTWFxc1B6ZE1zZHFOaFlVRHVYMG1IQzVNeFp2VmtoU01FRHlRN2p0cTY4d015M2Q2Vk9iSFllNXk2YWt6LUxEZGs?oc=5",
+      "snippet": "Berkshire-Owned Utility’s Wildfire Lawsuits Head to Oregon Supreme Court&nbsp;&nbsp;Claims Journal"
+    },
+    {
+      "fetched_date": "2026-11-04",
+      "pub_date": "2026-11-03",
+      "section": "sector",
+      "utility": "Xcel Energy",
+      "source": "Recharge News",
+      "headline": "Wind leads Xcel Energy’s $70bn expansion as utility targets gigawatts of new power - Recharge News",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPUjUxY3FOenZiOWJid09BaE5OcXlMZmc5emZzX0h5TDZUUndnOXptRnFFemNxZkh2c1BfWlN2Tzd1bU9MZ0s2T2JWQi1DZmF3V251bnpvUFRWNWpPY3F1Zkk4TVhBVUhEM3dMOWtKLXByb0JCQUVWUmlxUUllZzhPcWpyWktnVm10NXZ2bTAwTkk0ODBUdGpVWVg5MVhxZ1RnRWZueG0xa1Z4WnFxVFk4UHhId0M2RzYxYWJyZURHTG9fTklqbGxJVFpCZU5ZbmxH?oc=5",
+      "snippet": "Wind leads Xcel Energy’s $70bn expansion as utility targets gigawatts of new power&nbsp;&nbsp;Recharge News"
+    },
+    {
+      "fetched_date": "2026-11-04",
+      "pub_date": "2026-11-03",
+      "section": "sector",
+      "utility": "Xcel Energy",
+      "source": "The Denver Post",
+      "headline": "Thousands of Denverites have power restored after Election Day outage - The Denver Post",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE8zVm5kMWk2aHluMlBRU0c0MUNwSFdTQXJqUUJYWWpmTlk2MlRQMk16Z1R1UldycWYtNThDd0hBdU5VX1RYZmZXMHlMYTdFUm1mdWxZVmpvektqckRaN0YxOFN1ZTB1SGZpTDBURHBQeVlDLVo4UlRiNWlydw?oc=5",
+      "snippet": "Thousands of Denverites have power restored after Election Day outage&nbsp;&nbsp;The Denver Post"
+    },
     {
       "fetched_date": "2026-11-03",
       "pub_date": "2026-11-03",
@@ -242,6 +372,16 @@
       "snippet": "Earnings call transcript: Xcel Energy tops Q3 2026 EPS estimates, lifts outlook&nbsp;&nbsp;Investing.com Canada"
     },
     {
+      "fetched_date": "2026-11-04",
+      "pub_date": "2026-10-31",
+      "section": "sector",
+      "utility": "Portland General",
+      "source": "Yahoo! Finance Canada",
+      "headline": "Portland General Electric Company (POR) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5HT3B2UzkzZGl3Sm9hMUZ5RHZqQWpRQTY0RUxsMzlSbktiZGszMXhWSEpJaG9QVHhILTI0Ui1jR2ZLVlc0NlpNbU03NDFCeFBM?oc=5",
+      "snippet": "Portland General Electric Company (POR) Stock Price, News, Quote & History&nbsp;&nbsp;Yahoo! Finance Canada"
+    },
+    {
       "fetched_date": "2026-11-03",
       "pub_date": "2026-10-31",
       "section": "sector",
@@ -330,6 +470,16 @@
       "headline": "Xcel Energy (XEL) Q3 Results Spotlight Financing Strain Behind Growth - Simply Wall St",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNM21QZ0JaSlZIcUhYUkJSZ2xLNUNSU1Ftcm9qcTh4ZHU5QW00Uk5rTnVTeFVobW1PQzRORHJIV1NBQjVpWE4zNk9DTG03RnhSZmZ3VFkxdzRwRDVSeVFmaHJqUjhpTHlXZ0FCa2pMbFF5R2l5aFRFYUJ3d1owSmxCdUtHbGlOcXp1QkVsTTZYZ29UOEQ4NHRTYklhR0NJamFpaWo1LWU5ay16Vi1FTS1oM3FmTTFjMHRiYlFYRTVvVWRCSzh3Uk5WeVZR0gHPAUFVX3lxTFByQUsxRlVWbzBkLUZKNFBLd1hhVkdvdzQ1dVRUZklGdkloQTVMYUtURmMyLUpyTElZTW15Z2xhZVpSTjFGZnlwYk10UWRPMFFtUTcyVS1fNkNPNl9XdURqMEMweDZhUWlmTk5hTk5MWlpxc1NYMS13MFZ6ajRfVmh1bWM3VTVKcmR5TEc0b1BLU1pneGZhUXdxV05jUmJDeE9RSVNZazBNQVBMcUs4TTdxM3E5YzFTQVlBX0tiM2tKSEp0cXRWOWVlbVBPU3NWMA?oc=5",
       "snippet": "Xcel Energy (XEL) Q3 Results Spotlight Financing Strain Behind Growth&nbsp;&nbsp;Simply Wall St"
+    },
+    {
+      "fetched_date": "2026-11-04",
+      "pub_date": "2026-10-30",
+      "section": "company",
+      "utility": "",
+      "source": "KIRO 7 News Seattle",
+      "headline": "Port Orchard residents warned of upcoming nine-hour power outage - KIRO 7 News Seattle",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZjM1eFNSbEFRRWpLNVYzR3lnNTF2dzJzcDJxMWNEU09pYUg3cFE4ZDYybUJFVUEtTkVhN0pnRlM2UGxTUjhUOWxpSUt6ejdvN3lhbU11TzdJQ3c5UTlMZmJQX1Q5NGh5VE0wWlNNRldhOTQzVksybzFaczM0a0twaTl1S2pqOW5SQnYxbHlyZXBDNjFRMF9LNHI0Ni0td1JfdDdMSGxJWlh2NlVrNUVkOWM0ZEE4NkhtNHcxLU5Xcw?oc=5",
+      "snippet": "Port Orchard residents warned of upcoming nine-hour power outage&nbsp;&nbsp;KIRO 7 News Seattle"
     },
     {
       "fetched_date": "2026-11-03",
@@ -8560,36 +8710,6 @@
       "headline": "Portland General Electric (NYSE:POR) Upgraded to Hold at Zacks Research - MarketBeat",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQMF9kWWRsYW9ZLUhkbEpPQWgyeEtRRVhGdnVEUm9NVnlfVXVGYk8zSG95WVFOYmdWVm0wZnZxOTFJcTZ2cHoxbUZ3RHlRd3ZzdlJUTkMwbVlTWnJqZjhwVHpMVXJ4bzEySTdLT0RSRFJSVEVXZ25zaXBBaUpMMEF3NUVhLURzNm9PWEVZY2M0ZnRPd0owRjVyTnZ1MVY4SzloNVdaWVJDWVpnbzhBeDVwX3Q3V1U1ajRCMlM0MklLUQ?oc=5",
       "snippet": "Portland General Electric (NYSE:POR) Upgraded to Hold at Zacks Research&nbsp;&nbsp;MarketBeat"
-    },
-    {
-      "fetched_date": "2026-09-05",
-      "pub_date": "2026-08-05",
-      "section": "sector",
-      "utility": "Arizona Public Service",
-      "source": "KTAR News 92.3 FM",
-      "headline": "APS breaks peak energy demand record again as air conditioners blast across Valley - KTAR News 92.3 FM",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE85SFR2blF0U2pJQWZpY08teUl2Q0lfVm43bC1lVVpycDh4SkQ1ZFJSc29tN1BSWGo3T0RISmg3bHV6MWk2Y25jQTFnY3R6UWJjaXBKeVZfRllwS091X1JULXNDc2dzcmZkWktCRXdTOTNuMWpGaUlneTVpUFk?oc=5",
-      "snippet": "APS breaks peak energy demand record again as air conditioners blast across Valley&nbsp;&nbsp;KTAR News 92.3 FM"
-    },
-    {
-      "fetched_date": "2026-08-21",
-      "pub_date": "2026-08-05",
-      "section": "sector",
-      "utility": "PacifiCorp",
-      "source": "OregonLive.com",
-      "headline": "Oregon utilities cut power in some areas affected by wildfires - OregonLive.com",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTDdBVTg1ZnV1T25BN0Q4VmlOdXlySlhrM1N5LWRSUzZabzU5R3FCNHRvNFMzb0QzcjNVbl9sTl85VU5XV3lIcVJaRFYwM3RYMXBRSTF4WHlFUzVZS0JlYjFkT0RZZGxRSU5kSE5FcVk1SDAzQWhYTDFYd3kxcW1DYXVjM0FaTGY4cmFGLThSRDNQNkY1WHlNd19pVmJ1czQ4aFpKRUN0Q1RhaHg4OFFGUTBn0gHGAUFVX3lxTE1PM3RtQ0s1TWlhSnB5cGVndVVES2ViXzU1ZXlOdmk5MHJOSk5MVDJMSUFHdmRJYlZ3X2lFbFlyREs0Sk1jRjNLaUluX1J5NUcwNURENzUzTmlvU2dhN2V6dGVKOFMxcnBDR1NNWGY5ZTNxMHozOTNxR081dlpBa0tuMmxiVGo4My1OWURMamM5Q1FZdXJPeU1jNWg0OFBmblNiT0VCM1doRXd1V1B5NjJFSUJUSm5FUklDMnhzODFIc1lsODh4Zw?oc=5",
-      "snippet": "Oregon utilities cut power in some areas affected by wildfires&nbsp;&nbsp;OregonLive.com"
-    },
-    {
-      "fetched_date": "2026-08-21",
-      "pub_date": "2026-08-05",
-      "section": "sector",
-      "utility": "Evergy",
-      "source": "KXAN Austin",
-      "headline": "Governor Abbott proposes ending Austin Energy’s ‘monopoly’ as power provider - KXAN Austin",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNeXBuTlR4cVBDWlowcDUwZjBxaUk4RFhMNm1xWnhkZm9UdExxSzJrTmx6b2xXOHpuN3hOMXlVdFA5STZmV2FkUjVVUGZFN3R3ZXNNWUpoXzNVc2NXa1BhUE1FTEMzc3hZRnVDbXZBVVBfTmZuNHNiRFAxRWU3dDlMeVp5UUtWMnY2U1BPcnlLSXdmREdYUVRDVkJkMmhVTGt4NjJkdjB3dE81QdIBrwFBVV95cUxOcm5IdDhiVHBvVFk3ZWlLQ0lrbFUwRDM2enJJWFhmOWxvUW9SVFduTW9hRW9sVGJxMENvTUJPRGFOdl9LU2tIY0FGcTRmN24zWU5ZNmJoSTVNQkZKcHFENjhMLTVlelBtRlZ5RnM3SVFNSVRjRENPcEFmNXQ4cXE0MzE3dVpZWXFMUjc3U3VBZzVydGhHT0M2NzlCVXByR2wzODBIOVJ3Mkx2TndTYm1B?oc=5",
-      "snippet": "Governor Abbott proposes ending Austin Energy’s ‘monopoly’ as power provider&nbsp;&nbsp;KXAN Austin"
     }
   ]
 }
