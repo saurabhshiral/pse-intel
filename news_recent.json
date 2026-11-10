@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-11-09T23:19:58.930495+00:00",
+  "generated_at": "2026-11-10T20:44:22.135566+00:00",
   "articles": [
+    {
+      "fetched_date": "2026-11-10",
+      "pub_date": "2026-11-10",
+      "section": "sector",
+      "utility": "Portland General",
+      "source": "Axios",
+      "headline": "PGE wants to raise electricity bills again - Axios",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOa0VCOTVQRmdrOTlMbWFQYTVBN21ybjlsVzJ6am43U3dBVGREd0FBdUxOTzdZczk4U015dVNRRVFIVlFmSXdrdnhCV3d4aVN0ZjVzODdhNi13aHI5cS1QRjQxYlVpS29zV0h4c1RiR3E2NHAyeWVpZ1VPOW9iYTE3TmhvWHQ?oc=5",
+      "snippet": "PGE wants to raise electricity bills again&nbsp;&nbsp;Axios"
+    },
+    {
+      "fetched_date": "2026-11-10",
+      "pub_date": "2026-11-10",
+      "section": "sector",
+      "utility": "Portland General",
+      "source": "Yahoo Finance",
+      "headline": "Portland General Electric (POR) Files To Intervene, Is It 12% Below Fair Value? - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdElXMzBJV1BPQkxpTHpOYmhzVW9PVU1vRXdwbnhIWk1RS1NDa09iV3h1YWVISW1CdmVwRFNDR1pBZi1XeEQwNUJlU3hZQXpBalFDR3h1NGxoMGp4aWMwYlluMHlYSWdZRVpXZmptOFhRSVlOM2lIWGZGWDZCSEJLcENvMUY3eGI2Um9JMXliUlZtbUw4b202WGJsMVVaRkNUcmc?oc=5",
+      "snippet": "Portland General Electric (POR) Files To Intervene, Is It 12% Below Fair Value?&nbsp;&nbsp;Yahoo Finance"
+    },
+    {
+      "fetched_date": "2026-11-10",
+      "pub_date": "2026-11-10",
+      "section": "sector",
+      "utility": "Portland General",
+      "source": "Yahoo Finance Singapore",
+      "headline": "Portland General Electric (POR) Stock Looks Fairly Valued For Dividend Investors - Yahoo Finance Singapore",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZWU0eTJvc3BRdS0zb2dRU2FTTFB1S2F4UzF6MWVEbEJZanpyRURkcnRrbjFOMTZKOGNreF9qWDh3Q3N1T29jUlVLU2V2bWFtcThwalN3UDk2VGRBdGZLZ09jV3IySVVoamV0V29DUDczRU85M21XbUJ6VHhVeU1ac1F0STVHRzdUMDY2Vg?oc=5",
+      "snippet": "Portland General Electric (POR) Stock Looks Fairly Valued For Dividend Investors&nbsp;&nbsp;Yahoo Finance Singapore"
+    },
+    {
+      "fetched_date": "2026-11-10",
+      "pub_date": "2026-11-10",
+      "section": "sector",
+      "utility": "Portland General",
+      "source": "Simply Wall St",
+      "headline": "Portland General Electric (POR) Stock Looks In Line With Fair Value As Kraken Rollout Begins - Simply Wall St",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPSER2TU14aVJwb19EbmVHR1Fsa2JiR2ZmM25uOEtKd0gwNUMzaHNMSEhsVlRWUFNBa2ZpUl8waVZBN29HR2NuTlRnNzJobEE1XzZzaVE0SHlJdW9kVi1UbG94XzktRzBoLXVpbmhxdktkLXhzc1pFXzBIQzVmTEpFZ01zbjJzYTNoWmRNUGFjWjNHMlNTbVktSjN0WXJUUVMyZ0ZqQ0VULTZMbzA3elZ4UjQwbkEtOEZyeE1sVkRwaXNVWjM3UWNPaE56MHdFMjJ5UHNuOGF2Vl_SAd4BQVVfeXFMUDNkSEpoLVdiZGxOWVJxZWxrNXIyVlZaMTJ6bzdCU3BxVW5xMGFKQ1ViSmxMUEtOeEtKb3BlRjBUZndEMFdaTGY2aWVtN0JQdXk0bUoyT0RqLVpHWjhscEZzZlpaQ0REc2s4eVh1NHUtWkxMVUdDby1BNV9keDZ1c2RuZWFjd0VGeHBWR3dxSGs0b1J6YVBIVTQ3NElmZjBFODYwS3A0VXFVVHduSzlBMElkT0NsTW5XQnJyVUZUTkdDb3hnZmh0ZVJQTFJURTRrVE5mMTFla2pjNEpfTU1B?oc=5",
+      "snippet": "Portland General Electric (POR) Stock Looks In Line With Fair Value As Kraken Rollout Begins&nbsp;&nbsp;Simply Wall St"
+    },
     {
       "fetched_date": "2026-11-09",
       "pub_date": "2026-11-09",
@@ -40,6 +80,16 @@
       "headline": "What Xcel Energy (XEL)'s Raised 2026 Guidance Means For Shareholders - Simply Wall St",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNc01oYU9Ga2RRekxoZHpZUXB6OEdaZmJ1dWRId0hCLUxSTUtpbFdxZkJPbEtpZU9zNHE2M290UVRkVkJ6Z2RsbUJ4Z1QzRnBRaFUzd1Z5WXhnUkFIWTg2UjdZRHBJLVU5NHJDVms4MVprd05fRlliLThTVjY4YVNHbDdsRWZqSVpDdC10cnZ2MlV0X255cTFGcXRnVVd6c1gtSUR3cklkNWdaYUh6REtJQVU5Z21XT2NqcUxvMEJyUU1UU3daU2dqVGNR0gHPAUFVX3lxTE0xQ1g5LUlZN0tPcUhJU3loVEdFV0FUOXdKZFF4cmQzdEl5ZDd1RE5ZbnpwVlBrSXY2c0NTN2lEM2x6OXl5OEhJc01MdG1rYlFKNFRhLWctaWh4Nmd3cllGbDM5UE5iVVh1ZkhmWWZVQldQU3lKb0xmM0k3bzhPNmtxdk1MbjEtSV9NeUpDOUV1NXA4T2hHbVVoX0VxYWQ1dE9RNE90aVRzRDZfUExxNk1kZXBuaTh1eVRLYzc0dm51Z0dTbUw2bl8ybW9STWZNQQ?oc=5",
       "snippet": "What Xcel Energy (XEL)'s Raised 2026 Guidance Means For Shareholders&nbsp;&nbsp;Simply Wall St"
+    },
+    {
+      "fetched_date": "2026-11-10",
+      "pub_date": "2026-11-08",
+      "section": "sector",
+      "utility": "Evergy",
+      "source": "Futurism",
+      "headline": "Trump Admin Caught Illegally Canceling Billion-Dollar Solar Project That Would Have Helped Lower Utility Bills Across the Country - Futurism",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQOHJVTWVqVUhzalJXNlBLSU12MUZtX3FPbkZwOEMxWktjUWVxM2ZFbEFtczA5RGlNZVJIZ2FTbE1wdk5zazFyWGNjc2dhSXRIM0VfTlZETTVJelkwaWdySWE4R0lRMzJralh3aWxxT05wODh3VE5SUTZ1Q2xLY1hGOVNzaUNYZw?oc=5",
+      "snippet": "Trump Admin Caught Illegally Canceling Billion-Dollar Solar Project That Would Have Helped Lower Utility Bills Across the Country&nbsp;&nbsp;Futurism"
     },
     {
       "fetched_date": "2026-11-09",
@@ -230,6 +280,16 @@
       "headline": "East Ash Street In Mitchell Closing for Northwestern Energy Utility Improvements - Mitchell Now",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOa2dtX0hsODgwaERPZTZObzFibXc4SHFCMWg0RnVIcU9obGI1Q1BWWU9lb0xVZmZmQ2R4QTE3Vllna2w1S1BSR1F3U0RJampJV1U3TmFiRmthdzRaa3ZuMm10em9TaXFYaTI3UE9jbVhfQTVZdG5sRVlaS2t1SDhlaDNDS3VGSzNiWS1qbnF4bmJIekRJYVNSLVhSRS15UEdGWjFMY1ZpVXZqYnJKQnp1MWk0a2V5VkZp?oc=5",
       "snippet": "East Ash Street In Mitchell Closing for Northwestern Energy Utility Improvements&nbsp;&nbsp;Mitchell Now"
+    },
+    {
+      "fetched_date": "2026-11-10",
+      "pub_date": "2026-11-05",
+      "section": "sector",
+      "utility": "PacifiCorp",
+      "source": "Oregon Journalism Project",
+      "headline": "Appeals Judge Who Wrote Opinion Favorable to PacifiCorp in Landmark Wildfire Case Formerly Represented the Utility Giant - Oregon Journalism Project",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOYmFicnVxcWdLb21ScHFMaEZObVJQTEVVQ1hDejVJRzJvM19VaE1KNUROckFSNkoyMXUxbHhmbXlnazRCSDZLb3JkaV9FMW9JOUNKclZwajBYQkRydWgwdVJRb3dtaDJQU0psNGVOaVJVWEZ1d3RzSndDVTdmRHlCUWFvRW5kUEo4U1BEZmVjM0xLb1BXOV9nMVg4UFBhVnBOdko2STN4OGYyQ2RNWlZmNG1xS3ROTzllZVdwOG9pSWVSbFZ0bnZmS0FfanNtcjlBTFpFcmFESQ?oc=5",
+      "snippet": "Appeals Judge Who Wrote Opinion Favorable to PacifiCorp in Landmark Wildfire Case Formerly Represented the Utility Giant&nbsp;&nbsp;Oregon Journalism Project"
     },
     {
       "fetched_date": "2026-11-06",
@@ -3090,6 +3150,16 @@
       "headline": "Xcel Energy (XEL) Funds Electric School Buses, Is It Still A Bargain? - Simply Wall Street",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNUzZvai0zZ3k0R0c0akJVcmhBRXdnTTI0cnhzcklrcVdxYnZZcVMxdDJRSGhld2VicXdEZmdTTDhiX3A0eHY1YmJzeDJpLWY5eE1HdFNIMUJISE1NTzFrendrY3NXQXF1TVNHMGhTUEpoSHpRM2lEZGlkcm5HTWw4VDd6MjhVbnd3V3JVZGd0Y1I2SnhuQzdrX0x0dURPX0NrMUFVNXVoMzBkY2pEbFozWDZJZ3RoMmdhV1ZxZndzMzQzemo3TlYzYnln0gHPAUFVX3lxTFB0QnhOeDBXQU5sN0JySTlPeUY0UGdId0V6SGUtbjM4dWFDU1BsQzZYekwxcm5jVUdtLW01SUJ2V0p1RDZNekNXWEVkcEwydXhsaE02MGlQR3hrZ2VYMUs0OVU3OVhIeTc1dkgzTzhnWHNxNTBEdTN4WklSQm5BT1J6SWNoblYxZndVN1lwREtGWVN0UUs4UjFudWtKVWNVdkEwTnJpS1hSZzRzZ1hrSjNHaHVHWWFBaERqNEl1aFI5d3lxT2VKczF2TndMUDczUQ?oc=5",
       "snippet": "Xcel Energy (XEL) Funds Electric School Buses, Is It Still A Bargain?&nbsp;&nbsp;Simply Wall Street"
+    },
+    {
+      "fetched_date": "2026-11-10",
+      "pub_date": "2026-10-08",
+      "section": "company",
+      "utility": "",
+      "source": "KIRO 7 News Seattle",
+      "headline": "Puget Sound Energy customers weigh in on proposed double-digit energy rate increases - KIRO 7 News Seattle",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdjNHRlBTTEZ3WVBzTTBwZC1iT1BZOWpDeW1DRS12NVFGZUVxTlgyT1p6dnRndjF0dmRrZWQtUTJSNTUzS19UMmo3dWljYTRSa1RqZE9RQjdMY0Q2a1ZpaEphX0Z6NXVKY043YkhBMUcwRjJFcE0wa19OTl9IX2R2QlRwYzQyZFpkcUlVckVGemFHczcxY284M2hkOGJHa3EwbTM4c3RvV2p4UEFKazdkR0pub2dsSzVvT3pLTUtBOHFuSXFtRUEwVUhpUUplaUlCd1MzYzN3?oc=5",
+      "snippet": "Puget Sound Energy customers weigh in on proposed double-digit energy rate increases&nbsp;&nbsp;KIRO 7 News Seattle"
     },
     {
       "fetched_date": "2026-11-03",
@@ -8740,76 +8810,6 @@
       "headline": "Oregon PUC invites public to comment on Idaho Power proposed service area sale to OTEC - Elkhorn Media Group",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMGl4YlRCald0bmI0a0owbHlSTkVqeXhELVQ0aUpTeVVheDdBVENmcV9jSW5zNXNJSjdTWk1NODJvOHdMSHFOMWhJWUFmSlBLaE40cVQyUkZ6dE9PM2pGNXBYcWtWZ3g1djRBOUtZWTdpWVZKTGY4NjE4M2JLWEw1bnd4d2M4WXBZY21pSVJSWVBEa2lJNzdPNmtfWkNCU1pFal9lVURnWHg5VHBBbnNhOGVwRFd6aEtF?oc=5",
       "snippet": "Oregon PUC invites public to comment on Idaho Power proposed service area sale to OTEC&nbsp;&nbsp;Elkhorn Media Group"
-    },
-    {
-      "fetched_date": "2026-09-18",
-      "pub_date": "2026-08-11",
-      "section": "sector",
-      "utility": "Evergy",
-      "source": "MLive.com",
-      "headline": "Regulators call on Michigan to stop ‘endless’ cycle of yearly utility rate hikes - MLive.com",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQkJhdEw2S3VRdXJFcHBnZHZZUkJFYVNUaHgwSUt5VGY0THhFeUM2N3p1V1pNOE5IZTR6SEhfSWRwWUo3TkFaWGUxZGJCTzFyTXNrZGhfZEtUVEpQNUM3WElfWHg5X1VQVndMQ1kyOVg1VlNFZWpYT3F2N1lUeGhBcHBsbllMZThWb0tXNW83b21tVUxvNUFSZnhoZXF6WFY0b3RCZl8yc01iTTlzS3RUUnFsYTIwLWIzRVE?oc=5",
-      "snippet": "Regulators call on Michigan to stop ‘endless’ cycle of yearly utility rate hikes&nbsp;&nbsp;MLive.com"
-    },
-    {
-      "fetched_date": "2026-08-14",
-      "pub_date": "2026-08-11",
-      "section": "sector",
-      "utility": "PacifiCorp",
-      "source": "The Laramie Reporter",
-      "headline": "City councilors object to PacifiCorp’s retreat from renewables - The Laramie Reporter",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOYzktenY5TndZMC1mOWhDZGpLZHYyblFCSC1kWUdPZzNWMjJiZVlvdmhwd1BZXzVSV1hxVFEzTE91TS16NE5LZVo0YTl2Q3JMcU4walJPOWNoZjBsMGtwQ3JjX3FCaDh3QUQwYk1NM09WcnJGNnZSVE1rME9tMmZzV2pn?oc=5",
-      "snippet": "City councilors object to PacifiCorp’s retreat from renewables&nbsp;&nbsp;The Laramie Reporter"
-    },
-    {
-      "fetched_date": "2026-08-14",
-      "pub_date": "2026-08-11",
-      "section": "sector",
-      "utility": "Portland General",
-      "source": "simplywall.st",
-      "headline": "Portland General Electric (POR) Could Be 8% Below Fair Value After Mixed Earnings - simplywall.st",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPY3ZobzVtcF9DRm8wYWU1c015ZF9NTVVXYkdtOUpFQ2FSQ3Z1dzJHMmdFVG1NNmlwZG1MQk1NWUxCSFpQc1NsUnhkYTRyZ2pYbHYyY3hnTkJPak92S1hUSTlxblZoQ2s0ek8ta3gtdkJHc0xvYnhOQzVuSmJOLTFtRk1ELU5TWHp0a290R0ZXUm5scHhHbERISkhsckx4aWNyLVV0U3J0cThMUDM5M0lvLTgzQ3FwWlpHVTBCTVR5aVhuZHE0SWttY3lieFU4c2xBWVE0cVNrMzlCQdIB3wFBVV95cUxOdmN4Yk9GX3cyVndRZVdndEJDNlBYeXRrUGIzS2lxbEpPejN6NDJwc3E5NXh3SzY0Vk92RlVSbGNjYUdSa2xjeUhvMTZxbF80WXFYYzRZWlV3SFpjMk02MGVIcXROSHRQNXJZUnpfX1pNTXkzcEJldkZ1NkhxVVlOX0hjekNQLXlBNVRnWlhPeENuRTlHVXpaY0IwZm1pcVc2enFtVHgzNzJYUUxMdW1PTWxaMmJhdjViYmlBUDdkcVhpdXJuendYUTVUMnZIMVM3dWx0MWJ2TURKdG1NeG9F?oc=5",
-      "snippet": "Portland General Electric (POR) Could Be 8% Below Fair Value After Mixed Earnings&nbsp;&nbsp;simplywall.st"
-    },
-    {
-      "fetched_date": "2026-08-14",
-      "pub_date": "2026-08-11",
-      "section": "sector",
-      "utility": "Portland General",
-      "source": "MarketBeat",
-      "headline": "Renaissance Technologies LLC Takes Position in Portland General Electric Company $POR - MarketBeat",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOX1NFMDRqX0RDdWxJLVFxT050YjlBd3hjOUJUX0NvZ1gyRVdVaFFzQTc4ekx2QWFmNS15YWdRbmFCOVdoTHRERjhiMFlpWEVzSUtQMGhiSUg3QXdBdHJ4MFdVdmdLX1U2bVUwdzRNQkloMnhWbENfdXZwT0R3ZFFESVlWUXo1Tm5jcEJMLTI1aDFzYW81UmJBcmh3QnJHMXVObldzNkdIZlZISEhYRFY4NHZ5MmpueHJONnN4WFlXbW5PU2ZpS3pWRTFnUFA2SE5Xa2p2U3pMM29ySzZ4YlE?oc=5",
-      "snippet": "Renaissance Technologies LLC Takes Position in Portland General Electric Company $POR&nbsp;&nbsp;MarketBeat"
-    },
-    {
-      "fetched_date": "2026-08-14",
-      "pub_date": "2026-08-11",
-      "section": "sector",
-      "utility": "Arizona Public Service",
-      "source": "ElectricChoice.com",
-      "headline": "Arizona Electricity Prices per kWh (August 2026) - ElectricChoice.com",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBKZ3Y4UnNJMGptODhSV1U5a09qdF8xMGVsUlg0bVh3M19VMEtPaHRua1hhUVktYTFGQXM0VS16VjFzUlFsNEUtUDc5YnJKUFdUZHpMR1ZDM0FBeVJxOHhnRmNkNTE4ZGYtZzRxU0Q3cWpKUUNxWVE?oc=5",
-      "snippet": "Arizona Electricity Prices per kWh (August 2026)&nbsp;&nbsp;ElectricChoice.com"
-    },
-    {
-      "fetched_date": "2026-08-14",
-      "pub_date": "2026-08-11",
-      "section": "sector",
-      "utility": "Evergy",
-      "source": "Utility Dive",
-      "headline": "Evergy has 3 GW of large loads signed and a 5-GW generation pipeline - Utility Dive",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSU9XTURYYlpYX0ZmVm94cnktaFJ5RElHMHpTNlhwTUVmMDZ3LVViOER4V1ZWNkJtQi1GYXVFV2UyNDcwNUZ6MEVTd1YyOG9taVlhLTNpMC1FS3lmelRkREVSZTQzTlJzNXNjSGc4OGhWNC1nQnpWOHRBaTQxWVlZbk5mUm1wSW9KdWc?oc=5",
-      "snippet": "Evergy has 3 GW of large loads signed and a 5-GW generation pipeline&nbsp;&nbsp;Utility Dive"
-    },
-    {
-      "fetched_date": "2026-08-14",
-      "pub_date": "2026-08-11",
-      "section": "sector",
-      "utility": "Evergy",
-      "source": "MLive.com",
-      "headline": "Regulators call on Michigan to stop ‘endless’ cycle of yearly utility rate hikes - MLive.com",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQkJhdEw2S3VRdXJFcHBnZHZZUkJFYVNUaHgwSUt5VGY0THhFeUM2N3p1V1pNOE5IZTR6SEhfSWRwWUo3TkFaWGUxZGJCTzFyTXNrZGhfZEtUVEpQNUM3WElfWHg5X1VQVndMQ1kyOVg1VlNFZWpYT3F2N1lUeGhBcHBsbllMZThWb0tXNW83b21tVUxvNUFSZnhoZXF6WFY0b3RCZl8yc01iTTlzS3RUUnFsYTIwLWIzRVHSAc4BQVVfeXFMT2UxcjlzbzNTV0JXY0JDc0t3YzZGYVlaekhLcFV2c2s0MDFod2VqbEFuNFpTN2ZGLTVGQVlrbm81QUJmOWhuVlN6WWdFOHRDeTNyMXdfXzdjY0hZakdmUHc3V01HZ0k1RGZ0bTJFWjFnTHBHZy1MUEdleEhwelFIY0x5WEEtZUZWcDltcGhITU05eE9aMUIwMWJVazBNZ2h3RGQxc0NSQUFtNVlRMkg2OHNUQ29aLUsxeDdxV1pGTTVhM1dHaTFmdm9mcDFIc1E?oc=5",
-      "snippet": "Regulators call on Michigan to stop ‘endless’ cycle of yearly utility rate hikes&nbsp;&nbsp;MLive.com"
     }
   ]
 }
