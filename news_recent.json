@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-11-22T20:37:43.992696+00:00",
+  "generated_at": "2026-11-24T01:33:19.816010+00:00",
   "articles": [
+    {
+      "fetched_date": "2026-11-24",
+      "pub_date": "2026-11-23",
+      "section": "sector",
+      "utility": "PacifiCorp",
+      "source": "Record Searchlight",
+      "headline": "Pacific Power wants 57% rate increase for Shasta, Siskiyou customers - Record Searchlight",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPTWtaZV9vVmppc2F6cGJCa0lUOXI4NXhmdmVfYkF5ZVcxRUFsZVN4RVBmUGUzOEg3alhIX2lUS1Ewb3V0OWVCeWpIZm5CU2xVMy0yS2liaG1CeGhvd3JQbXcyVWdvR3FjVHV0Mi1CUjUwU0NvWm80Y1U3UUswamt0YkVtUkVaX2J2YVItUDhLcXB3NndrT3FWdlVVNDgtWGJTQXZNOVJiMkxBTXNPUm1nTVNRR25xVVJBa19RNldQWEdLOW5jcGtXRW90bjktdU40?oc=5",
+      "snippet": "Pacific Power wants 57% rate increase for Shasta, Siskiyou customers&nbsp;&nbsp;Record Searchlight"
+    },
+    {
+      "fetched_date": "2026-11-24",
+      "pub_date": "2026-11-23",
+      "section": "sector",
+      "utility": "PacifiCorp",
+      "source": "Grants Pass Tribune",
+      "headline": "Oregon Supreme Court Reopens Major Legal Questions in PacifiCorp Wildfire Case as Billions in Claims Hang in the Balance - Grants Pass Tribune",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOdE93bGU1WGlyZ1dBM19fbzN6Z3Z4SDVHZWpEaXpxMHNramJwdy1TOUtDQl9acnFrMmVFRnZqXzAxVXRYVllVUmVyVnp6WlpodDhQSUpPalNHM1J3ZWVTMFYwQkUxQVgxTzQ4S3J0N2NkMHhhbTZaM3FxUGlkaW45aXZDMXRuWEFGSlFWWFZtNE85Mnh5TWg0WURnWUx6T1N3VElYZFVGN2ZUbVdrd1p3ZXN6cDdRNkdJcFJPMk84QXlVVm15TEFuTlNEdDZNXzV5aGNCUERiMTkxVFEyYlZxcmpoS2loNWVJb29j?oc=5",
+      "snippet": "Oregon Supreme Court Reopens Major Legal Questions in PacifiCorp Wildfire Case as Billions in Claims Hang in the Balance&nbsp;&nbsp;Grants Pass Tribune"
+    },
+    {
+      "fetched_date": "2026-11-24",
+      "pub_date": "2026-11-23",
+      "section": "sector",
+      "utility": "Portland General",
+      "source": "Stock Traders Daily",
+      "headline": "How Portland General Electric Co (POR) Affects Rotational Strategy Timing - Stock Traders Daily",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNT2E1MXhReVhpUWJ5d2dBNWY1X25mYWNlZ2ZvYkNwRkRHRm83S0dUNHhoR0ZHc3lza3pmTjhHbnFQN2pGTzBOeWdQbV9RcEVSVS1XVDBpYi1ncnlZN0VjSWUyLWtXVUFfRlhCTHViX2NUdkx3ZUhNdThfYXNQOHBncms3TFY3VGEySHRPeGktRno3dXZkal9JVTh4NEFMS3ZzRUhmeGF1Y0V2R2ZUbWo4ZVBjVXdWdjBiM3F3UlhtSDhjU05iMUFmczFxcU1vTnFsNEplTDhkUlFtQ3NyaVk3azl4ODJQUQ?oc=5",
+      "snippet": "How Portland General Electric Co (POR) Affects Rotational Strategy Timing&nbsp;&nbsp;Stock Traders Daily"
+    },
+    {
+      "fetched_date": "2026-11-24",
+      "pub_date": "2026-11-23",
+      "section": "sector",
+      "utility": "Evergy",
+      "source": "ad-hoc-news.de",
+      "headline": "Evergy stock in focus after Metro bond issuance - ad-hoc-news.de",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPd05meEhYaE02bHRHZHNRanNIdXFTdERveERZc21ndUhCb2doMFAyRnNwektZQzZ6YXpNUDRVU1hNT0h3Vk1DZXRfRzZsOXdMbV9Xamx1V1FqUVBLTWNQSkN1UURmcDQtN3FCTDlUcm1ndzh3b3ltLTdSb3kzcHlaVFhKbjRvTHBjQ21aS0FiVVR6enotWWdhZDQ2Y2hUbFFRZDhGV1hjT0FrZw?oc=5",
+      "snippet": "Evergy stock in focus after Metro bond issuance&nbsp;&nbsp;ad-hoc-news.de"
+    },
     {
       "fetched_date": "2026-11-22",
       "pub_date": "2026-11-22",
@@ -20,6 +60,16 @@
       "headline": "Colorado Public Utilities Commission considers new rules for Xcel Energy power shutoffs during wildfire risks - Denver7",
       "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNNjhBSFFtanJDZ2N2SnN4NTJPcDR3ZS1DM1hWN3RQaDE0TjNEdWJva24zNEl3ODZXdDJNamVFbWpEVEtnczhRaG5aYzRBMzdqMk51UWE1Mkx4MV9xUG5sMDlUeTFqcFlyYnpWdElVOEFFNDFMVFoyNkhFbnpkUlRuN09BVEg3NXUydWZpdGNWRks4N1VpM3FzT2c0OEJoZzRmLW43Wk5tQklKYlI5ZW1hME9aVV9sRTZJY1FkWWU1ZU1rX1N3emtVOVc2SnlIbTlHMzBvNVhFOGh5d0FsdV90U1M3bw?oc=5",
       "snippet": "Colorado Public Utilities Commission considers new rules for Xcel Energy power shutoffs during wildfire risks&nbsp;&nbsp;Denver7"
+    },
+    {
+      "fetched_date": "2026-11-24",
+      "pub_date": "2026-11-21",
+      "section": "sector",
+      "utility": "Xcel Energy",
+      "source": "MinneapoliMedia",
+      "headline": "MINNEAPOLIMEDIA NEWS | Minnesota Orders Independent Audit of Xcel Energy After Years of Billing Errors and Customer Complaints - MinneapoliMedia",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPS2NqWW1nUDFfWlJqcV9HTkk3bDdWWDlyekRSeGlpX2NpczQtWEpGcHNCb1dGa0JibnhqUUdJZktJLVBBN1J4Uy01NXdQYmNiTDdaZElKTlVWNVNPWklEQ1VRalVvLTZ6ZTVweHRJM21lSFRySVJ6WXBqZVZDeWxTYllwcTFOajZBeEMwR2d2anRKR1J0eVlqd1hZQWhwb2wtS0ZWaGRtRlZKTS1qa1dXbEFBYzJKUjZpbzdFeG1JRHFneFhDd3p0NDZKT1N4UQ?oc=5",
+      "snippet": "MINNEAPOLIMEDIA NEWS | Minnesota Orders Independent Audit of Xcel Energy After Years of Billing Errors and Customer Complaints&nbsp;&nbsp;MinneapoliMedia"
     },
     {
       "fetched_date": "2026-11-22",
@@ -560,6 +610,16 @@
       "headline": "Why Is Xcel Energy (NASDAQ:XEL) Attracting Favorable Rating Firm Views? - Kalkine Media",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQaGhpa015UzZ3V1ZweU8wSUVKcTFtMmtCSlFiMFNxRmZNLUdxYTM0SlE5M3pUYTFrUGE1ZkhYOW9hazJxSTlvbjU2TkI5V2R4RUhZczFVODVlQnR1M3JkLWdVWUJzXzQtRXlscTJFYXZtelBfbDNiUWdvV1hYbDRmcklxSTJPX3J0cE05TEd0cFJUc2YyR21hTkdZenlpRUdoNnZaTERhMk1FZnFJSXQw?oc=5",
       "snippet": "Why Is Xcel Energy (NASDAQ:XEL) Attracting Favorable Rating Firm Views?&nbsp;&nbsp;Kalkine Media"
+    },
+    {
+      "fetched_date": "2026-11-24",
+      "pub_date": "2026-11-17",
+      "section": "sector",
+      "utility": "Avangrid",
+      "source": "News-Times",
+      "headline": "Connecticut gas utilities want $212M more. Critics say no - News-Times",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNLW5UNk1MbGwwVHFqSHM5NmZ0WVotVUR0UDBxZmpDY1d5bllIYjFIZk1iZ2I0YzIwRXE1NXB0bkxiR3Z0Ui00ZDdLdE1aajJOUWJsYXNjNExzajh2a1d0Q3dSZ04zQU12WVFuQXFtYTB5WWdoR2NCaTVmUWx6YUZ4dGFLVlR3UXo5eXhwSTh4bW9FTEE?oc=5",
+      "snippet": "Connecticut gas utilities want $212M more. Critics say no&nbsp;&nbsp;News-Times"
     },
     {
       "fetched_date": "2026-11-20",
@@ -1350,6 +1410,16 @@
       "headline": "East Ash Street In Mitchell Closing for Northwestern Energy Utility Improvements - Mitchell Now",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOa2dtX0hsODgwaERPZTZObzFibXc4SHFCMWg0RnVIcU9obGI1Q1BWWU9lb0xVZmZmQ2R4QTE3Vllna2w1S1BSR1F3U0RJampJV1U3TmFiRmthdzRaa3ZuMm10em9TaXFYaTI3UE9jbVhfQTVZdG5sRVlaS2t1SDhlaDNDS3VGSzNiWS1qbnF4bmJIekRJYVNSLVhSRS15UEdGWjFMY1ZpVXZqYnJKQnp1MWk0a2V5VkZp?oc=5",
       "snippet": "East Ash Street In Mitchell Closing for Northwestern Energy Utility Improvements&nbsp;&nbsp;Mitchell Now"
+    },
+    {
+      "fetched_date": "2026-11-24",
+      "pub_date": "2026-11-05",
+      "section": "sector",
+      "utility": "Xcel Energy",
+      "source": "Hunton Andrews Kurth LLP",
+      "headline": "Hunton Advises on Xcel Energy, Inc.’s $2.5B Convertible Senior Notes Offering - Hunton Andrews Kurth LLP",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWFFzNlNocXRVNEdVODg5M1FRQ3QxMU1JbjZYcGZZNWg5VHoyVzNYaW16SEFtSi0xeGxrdkNqZ1dmbkF4RDBZVGxoUzZzeUlCSTNSc0NKdFI4STQ2eVBPYTFoUXFTcy1TMHJJbXFkejVqeGFNeFdwdjZSYnMybDRHY3FpdnU5RjE3WHdqQkdNcGV5eW9SMVBpV0htMHhISlVDTEpBVg?oc=5",
+      "snippet": "Hunton Advises on Xcel Energy, Inc.’s $2.5B Convertible Senior Notes Offering&nbsp;&nbsp;Hunton Andrews Kurth LLP"
     },
     {
       "fetched_date": "2026-11-10",
@@ -5112,6 +5182,16 @@
       "snippet": "Minnesota AG warns of Xcel Energy rate hike from proposed Google data center in Pine Island&nbsp;&nbsp;CBS News"
     },
     {
+      "fetched_date": "2026-11-24",
+      "pub_date": "2026-10-01",
+      "section": "sector",
+      "utility": "Evergy",
+      "source": "PR Newswire",
+      "headline": "Dandelion Energy and Vermont Gas Break New Ground with First-in-Nation Geothermal Partnership - PR Newswire",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQSFF5QnNGaFgyZGQ5WU05NE4ya3R3ZjBnRmF1X0xqc0NKbzFzeGpVNGJmTXRheU1Od2oxMjRJczNBY0NiRTkxaWVkTzNCUzRxVmZ3ZmNCWndjMmZJQnAtMEkybHpEcHlKa2pwTHB5endIYUVUb3dsaklKZS1jeko5cWdReUk1QkJGTHNzaWtYWWozWm9LdVZQa21aamJzQzg0eTkwOHYxcGRlUXJ0dEFVdld0dzBrRFlkZmpvNElhUnducHk0TEUyMnBCSDFuZkVZdGd5NFd0Vnl3TWlYdG0tSU1qbw?oc=5",
+      "snippet": "Dandelion Energy and Vermont Gas Break New Ground with First-in-Nation Geothermal Partnership&nbsp;&nbsp;PR Newswire"
+    },
+    {
       "fetched_date": "2026-11-20",
       "pub_date": "2026-10-01",
       "section": "company",
@@ -7102,6 +7182,16 @@
       "snippet": "Xcel Energy Inc's Dividend Analysis&nbsp;&nbsp;GuruFocus"
     },
     {
+      "fetched_date": "2026-11-24",
+      "pub_date": "2026-09-14",
+      "section": "leadership",
+      "utility": "",
+      "source": "The Business Journals",
+      "headline": "BoardReady founder Oppenheimer expands board leadership network - Bizwomen - The Business Journals",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOV0ItTnlabG51cnp5VDUyRV8wcExfVUVSTllhNkNvYVNaQnhnNWg3ejNXZ0kzenVWUDV0cElHbS1CdHk2dEQ1UDhHOFVWb2Q1ekg5RjJJd0FYZmJBZGhZU0RkVXdFeXlVWUxCVE1raUFWcUlaRjB5SUgxVUIyMHJzM0hJMGlKbjdzZWF2RjRDb291VzhCejllaTVudlJCbWZXZFZnemo5WWdSN2xFMXJOdGx0UGdxTERMNVdFWndnWF9lRGJFYzl3SFVzUlVuMzg5ZHZ0NA?oc=5",
+      "snippet": "BoardReady founder Oppenheimer expands board leadership network - Bizwomen&nbsp;&nbsp;The Business Journals"
+    },
+    {
       "fetched_date": "2026-10-27",
       "pub_date": "2026-09-14",
       "section": "sector",
@@ -8412,6 +8502,16 @@
       "snippet": "Xcel Energy stock holds at $77.68 as Q2 earnings growth and data center plan draw scrutiny&nbsp;&nbsp;Ad-hoc-news.de"
     },
     {
+      "fetched_date": "2026-11-24",
+      "pub_date": "2026-08-26",
+      "section": "sector",
+      "utility": "NV Energy",
+      "source": "KSNV",
+      "headline": "NV Energy launches daily demand tool ahead of 2027 rate change, aiming to cut bills - KSNV",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdjNaNERLMWZIbDZpVEN0NU1zdVVyOWJ4NWRwSDFZdDlpNTkxcVQteTZXemY1R1UyN3M0cldPR2QzejVPMm01NVFUWU1BMy1DNWJDUVQxR1dTM2JvcGc4d09pQjFHTU1mMkFLeUJaSDhDcHhlczFWSGlscmNaQjN0WFJuaWEyczFVbElqbjBxdkhvQ0NKR3FabWY4Vl9kMlhDY1hCbnRCS05Jczd1VTJfNHBXaw?oc=5",
+      "snippet": "NV Energy launches daily demand tool ahead of 2027 rate change, aiming to cut bills&nbsp;&nbsp;KSNV"
+    },
+    {
       "fetched_date": "2026-10-30",
       "pub_date": "2026-08-26",
       "section": "sector",
@@ -8540,306 +8640,6 @@
       "headline": "Xcel pole under investigation after fatal accident - FOX 9 Minneapolis-St. Paul",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPZVdPeWE4Y0pnNnZQUmlYa2dDSDFSOFRBeHN4b2NBWm9MSk5lUVEzdENMVWRzdXMtOVdhaVJjazFjdjdGa1d5TXFNTlVoYnNhajBPRDFjZWhvMUs1bm9fRWtyTzdONC1TU2N6UkM0Qjg0RGJBc1g0M29WX19NT2xZMlc0dnlfcW9sWkg3SlJ2TdIBlAFBVV95cUxONmJlYkVBNmY3WV9oc2JPVEs0eGxkVmY2bVNsQ3hGMmlKLWxNZlJ1emlFNDVQQzI3R0pyaTU4d1pkdWZnN3pybkZLM0dPcUVFSFdKa0hRM3gwRWxuUnNYNHphRlNaMGNCU2dXU1hDQkNsWXZYWGIwZTJJRjZ3SV9UNUtDZXBMVHV1dm1RYVpNaGozR25P?oc=5",
       "snippet": "Xcel pole under investigation after fatal accident&nbsp;&nbsp;FOX 9 Minneapolis-St. Paul"
-    },
-    {
-      "fetched_date": "2026-10-24",
-      "pub_date": "2026-08-25",
-      "section": "sector",
-      "utility": "Avangrid",
-      "source": "The Maine Monitor",
-      "headline": "Proposals selected for Aroostook County renewable energy push - The Maine Monitor",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPaEJXdmlYTXFwVUVXX2tKUmJ3ejdjZTFfeklJaVpwYW9rblFHYWd6eks2aUxuZTQtaU91dF80eHV6SzlfQUxsMVE0SF82Z2w3dy1ZdVhiUjFGeDVSYjE4RlVremMxOG00WHVOVnFicmdVaUo2UFZwbF9iNGZ6RVo3Q1pSZ1B1dnBNMFl5NWp5dw?oc=5",
-      "snippet": "Proposals selected for Aroostook County renewable energy push&nbsp;&nbsp;The Maine Monitor"
-    },
-    {
-      "fetched_date": "2026-10-20",
-      "pub_date": "2026-08-25",
-      "section": "company",
-      "utility": "",
-      "source": "Daily Energy Insider",
-      "headline": "Proposed municipalization effort in Kitsap, Wash., could put customers at risk, says PSE - Daily Energy Insider",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOVXczOWNNSDFvZC1IRVo2Nkg1akNlV193czZCYUFhSHd4YkFkWDFhSWVza3l2T0Q1M1RoZEI3djN6MHZqb29mY01GdEVtMm5qTDVPOHRjOWhfQVk2a04yS2kwRF9GVjFNSHUtampQN1lLcHhQN0lodWc0U1NXaVV3SFd0cTBRdHB2NWNTTW9Dam9mczdlTDZqcnM2aUFmM3lRY045blllckV0NThjek5GWnBxeU1LWFFGcW4zNGc4czRtWGl2U3c?oc=5",
-      "snippet": "Proposed municipalization effort in Kitsap, Wash., could put customers at risk, says PSE&nbsp;&nbsp;Daily Energy Insider"
-    },
-    {
-      "fetched_date": "2026-08-28",
-      "pub_date": "2026-08-25",
-      "section": "sector",
-      "utility": "Portland General",
-      "source": "Seeking Alpha",
-      "headline": "Monthly Dividend Idea: Portland General Electric (NYSE:POR) - Seeking Alpha",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOeUNOaDRSLUgzN3AxYlYyVUs4ZnYxTTR1TTMxUjBBc2Zyci1tTE91cXcyVThxODFPcnpYT2RNZEZNRy1XLTZjRVNQdjNnNUZMN3JwdUJVWThTRUNYUENwRHlIN2tNOTJHN0VLaV9xRzlJSzVQeHpZSXgybHZCVFNiUmY4VDJabVFRaUtQSUNXQjVIVnBBMENwdFVjc3AtbkpkTDVOSHgtdHh2V0M3dmJCNW52SjB2U0U?oc=5",
-      "snippet": "Monthly Dividend Idea: Portland General Electric (NYSE:POR)&nbsp;&nbsp;Seeking Alpha"
-    },
-    {
-      "fetched_date": "2026-08-26",
-      "pub_date": "2026-08-25",
-      "section": "sector",
-      "utility": "PacifiCorp",
-      "source": "Utility Dive",
-      "headline": "PacifiCorp to suspend California energy efficiency programs under proposed settlement - Utility Dive",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPOFNxdlZVeGtTZm9BODBlaUlFaUFIOXB5Uy01Q3ZxSGpzbWRYeG5QV1FWSV9LSENwQXZNZ3VoTUtpQnFWbFZJbmIwYUk3ZFUwZ2VXWFBMUDlKazgwblRUZVh0RGozODJjSkVSSGZoN0FkbUw3NlhQU21vaGtMOHJ2UEJ6enhmMnpMdGdaV3B3SzRoWkxfVWVNREVPUmFHUQ?oc=5",
-      "snippet": "PacifiCorp to suspend California energy efficiency programs under proposed settlement&nbsp;&nbsp;Utility Dive"
-    },
-    {
-      "fetched_date": "2026-08-26",
-      "pub_date": "2026-08-25",
-      "section": "sector",
-      "utility": "Xcel Energy",
-      "source": "Star Tribune",
-      "headline": "Ellison challenges Xcel rate increase as customer frustration surges - Star Tribune",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSk1uaENoaXpET3h4enRfNTFrYlNJRDh0SDk5OERSc2dWM2VBc09CaUJNVWNLMUlPaEZpejRVUGZhTXl3YnNIWFQ3dEJNVzFJZWtSQ3o4eGtrZkxvQTA5WUU0cVNud3l6ODFUTTV2eDE4WEN1STc5WV9JSE1pTHBWVmxKaV9uR0pibXBuN3UyUFo5WTEyd2U2NFF1d0lXNU9va1FEU3QxNVBvUQ?oc=5",
-      "snippet": "Ellison challenges Xcel rate increase as customer frustration surges&nbsp;&nbsp;Star Tribune"
-    },
-    {
-      "fetched_date": "2026-08-26",
-      "pub_date": "2026-08-25",
-      "section": "sector",
-      "utility": "Xcel Energy",
-      "source": "Daily Energy Insider",
-      "headline": "Colorado regulators raise Xcel Energy rates for consumers - Daily Energy Insider",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdDZEc1VINVJTTmc0SERyZXdFbk5UX2pCeDF1cm1QcFdveHlqOXJseXYyYmhVVXI4TDlrbkotdFRfVzhjZFdFM2JIQUw3WTBRWXVtUXpIY3ZGc09WS2FuWDVuWFRERi1BblZJbFJzVUR2dDh1R3VSY1Q2b0ltcFJ4M2hXWFU2UVJaeTRNdGVBOEx3NGNQRjI5cmxibDdFZnRuMkE?oc=5",
-      "snippet": "Colorado regulators raise Xcel Energy rates for consumers&nbsp;&nbsp;Daily Energy Insider"
-    },
-    {
-      "fetched_date": "2026-08-26",
-      "pub_date": "2026-08-25",
-      "section": "sector",
-      "utility": "Xcel Energy",
-      "source": "AOL.com",
-      "headline": "Xcel Energy: Utility pole in Hopkins fatal accident met safety standards - AOL.com",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUkN0akZOVHR2VDdKRU9xUzdQU3k1ZnRNeEZjRU16MG40Zzl2MmpZYk9taWtnUXZSUVcwb1ZDVlhDR2NQb0ZtcVhVZUVoUnJxeGFXT0xyci1aR3RCcFUxSjA0dm53NXg5Q3lZbWY1dWtLOGVLUGdzNmpmSllEa0hKaHJn?oc=5",
-      "snippet": "Xcel Energy: Utility pole in Hopkins fatal accident met safety standards&nbsp;&nbsp;AOL.com"
-    },
-    {
-      "fetched_date": "2026-08-26",
-      "pub_date": "2026-08-25",
-      "section": "sector",
-      "utility": "Xcel Energy",
-      "source": "Kalkine Media",
-      "headline": "Xcel Energy (NASDAQ:XEL): What Is the Market Watching Most Closely Now? - Kalkine Media",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORllVU3VpSnpNU0ltT2dZRlZqZHMxaVF6N2xENkRDZlUtNDA4aHp0YTAtakFqNkdueG1QWTVvNEE4Mk8tTW1rNV9ld1RucXBjU3Z3VXl4SWhpcnpCSndkY1B5ZmZfSDlHTkQ4Rm8yNFdWUUJySVVWcGdMUXB4MlpON05sQVh0UDJSY0paclo2VWs4SVlXTVNjZFhqQ0pEZVplYzNhQTJtQ2xnYVBnX1E?oc=5",
-      "snippet": "Xcel Energy (NASDAQ:XEL): What Is the Market Watching Most Closely Now?&nbsp;&nbsp;Kalkine Media"
-    },
-    {
-      "fetched_date": "2026-08-25",
-      "pub_date": "2026-08-25",
-      "section": "sector",
-      "utility": "NV Energy",
-      "source": "This Is Reno",
-      "headline": "NV Energy restores power to 3,000 customers affected by Hawk Fire - This Is Reno",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQQ01GNEhuaFVUdVh2dUttdlp1RFlXM3JyOGM1bk1VaUdQdU5tSVp2TnFwbnpiQUtGT0kzcUhDZ2VnU0s2WmZqQ0pENEl3NldmT3BEV3AzbURQRGRadjhxQ2lSNDlyazk2cmc0a0liU2IzX0huU282ZXRMOENjNU94WUprbVFZTV9mSHc0UHBVeFh3QWVsYUZDaGFRVWQ?oc=5",
-      "snippet": "NV Energy restores power to 3,000 customers affected by Hawk Fire&nbsp;&nbsp;This Is Reno"
-    },
-    {
-      "fetched_date": "2026-08-25",
-      "pub_date": "2026-08-25",
-      "section": "sector",
-      "utility": "Xcel Energy",
-      "source": "Seeking Alpha",
-      "headline": "Xcel Energy: Punching Above Its Weight As Stable Income Play (NASDAQ:XEL) - Seeking Alpha",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOc1dVZ2RvdWtRRjIxZ2JLbWZ3OVhvT2hpUjNueDJzZnoycWhnbEU0OTFPRDlfMUVfNDNxTTEtRExlNUJ4bDdkS0t0OG1MaFVtQktRLUZMR20yNmNzWlVySjJSakxhX0o5NjBVNG1KOERVRnRqZWZ4bzlHWjRsTlVVbjBwVkNjMDhsdXI5RF9FWFJQU1hBWGVLMml6ZTk2eFVJa2c?oc=5",
-      "snippet": "Xcel Energy: Punching Above Its Weight As Stable Income Play (NASDAQ:XEL)&nbsp;&nbsp;Seeking Alpha"
-    },
-    {
-      "fetched_date": "2026-08-25",
-      "pub_date": "2026-08-25",
-      "section": "sector",
-      "utility": "Xcel Energy",
-      "source": "Ad-hoc-news.de",
-      "headline": "Xcel Energy stock holds steady as Q2 2026 earnings support long-term growth - Ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQW9MZXoxLTg5dWJaRXZaeTE2Q2ZsbDFKdm95YnRaUjFHWVNDZ0t2Z1I2aC13TkhWeFowb3Y1cWIzOE9VMlNENWx0ejlFdGlLSURsT3ZlQUREZUFNMG1vbEpjNkZhQ0RpVmd2VUlwYUd1NkFFNXpnUE80QkVJcEZYUi1XNktqc1hoMWgxX3c1YklXRWFMYTFHLUFlTGZVcW05TjM2NzlMd2VVM2lVTEpzZVFoRjFmR0pfSWtDWWlYMllPLVVPZW1UZnVuSQ?oc=5",
-      "snippet": "Xcel Energy stock holds steady as Q2 2026 earnings support long-term growth&nbsp;&nbsp;Ad-hoc-news.de"
-    },
-    {
-      "fetched_date": "2026-09-24",
-      "pub_date": "2026-08-24",
-      "section": "sector",
-      "utility": "Xcel Energy",
-      "source": "Yahoo",
-      "headline": "Xcel Energy investigating after utility pole crashes down, killing one in Hopkins - Yahoo",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPZ0hiNVN2OFBFUUVuLXBkeWpOX0VjZDJPUW1Xb2FoV21FeVd1aEdZWHU1Q3dEYU4wR2pBRHdpbkRkRl9aam4tV1VGYkZCU2syM3BMaWxWdUJVQ0t5SmNwazJGcXVLOVhlZnhhNlhkTFMtNk1Zc19XdnVLVnJQVUd4c21PNW1iSzhMRUY5Z1d6WHdMZFk?oc=5",
-      "snippet": "Xcel Energy investigating after utility pole crashes down, killing one in Hopkins&nbsp;&nbsp;Yahoo"
-    },
-    {
-      "fetched_date": "2026-08-27",
-      "pub_date": "2026-08-24",
-      "section": "sector",
-      "utility": "Xcel Energy",
-      "source": "Yahoo",
-      "headline": "Falling Xcel Energy utility pole kills driver who was in wrong place at wrong time - Yahoo",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTE56OUxzMW14UmY5VjNMLVQ3UjkzcEFZMW5NMWwzSndfcktpeHh1US1ESlp4b3ZxaTUtTGlJNW1iMHJIcThiOE1LTWdQeUtDQUMtWFA0WUlPME1RLWM4dkVzT2tSNUVVWWxKWW4zYjRIZks3SWd2ZjQwVU9VbGxNaGV0dmt1NmF1?oc=5",
-      "snippet": "Falling Xcel Energy utility pole kills driver who was in wrong place at wrong time&nbsp;&nbsp;Yahoo"
-    },
-    {
-      "fetched_date": "2026-08-27",
-      "pub_date": "2026-08-24",
-      "section": "sector",
-      "utility": "Idaho Power",
-      "source": "Your Oregon News",
-      "headline": "Idaho Power to sell its Oregon service territory for $154 million to Eastern Oregon utility - Your Oregon News",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTGx0S01zU0NwUEg1MTh3UGR6NUEya2RFSXdiVXFXNkdqbUIxZDloUGo0OFlIQXNzbE5aQUVrOEI1RzVHTXdDbVk4c2ZyLVp5ZjVBMC1GcWRhVVZIdDU0VmVlM3ZLWVkzUzNGeTdfVWJrLVREbHpONTQtcmE1SG1OWTl2dFlQY2VmS1pxei1KQnZzZWNQZ0NQZDlpNVdudW45YjhET2lRUnZHZFIwWVdnV2xyeS1hSEhIM0dyZWJxMElRSVpRV09Ubw?oc=5",
-      "snippet": "Idaho Power to sell its Oregon service territory for $154 million to Eastern Oregon utility&nbsp;&nbsp;Your Oregon News"
-    },
-    {
-      "fetched_date": "2026-08-26",
-      "pub_date": "2026-08-24",
-      "section": "sector",
-      "utility": "Xcel Energy",
-      "source": "Yahoo",
-      "headline": "Xcel Energy: Utility pole in Hopkins fatal accident met safety standards - Yahoo",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPQnhubDZfQy1HODdYTG1zYjF5YmZsMGtoLUVXXy0wTXp2WDNOVHpHVm9TS0NvLXlGOVBmcVVySzI1eFNWUklKLXZZR0tkTTFYYXJaZlJlX3hyV3NIQmQ0NUFIMUoyczNINFowbEFWUHN5cE9lMXNZVkdfdnZMOHBFa2ZwR0lfblBPV2FJ?oc=5",
-      "snippet": "Xcel Energy: Utility pole in Hopkins fatal accident met safety standards&nbsp;&nbsp;Yahoo"
-    },
-    {
-      "fetched_date": "2026-08-26",
-      "pub_date": "2026-08-24",
-      "section": "sector",
-      "utility": "Xcel Energy",
-      "source": "AOL.com",
-      "headline": "Xcel Energy investigating after utility pole crashes down, killing one in Hopkins - AOL.com",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPUlN5dzM4ODdicFczdE03NG9vbHNFcEJXUjYtS3dQSHpSRm10N0VfcEszV01DWU5rR2ZOV0pfSzc2Vk1ZSmo0Ql9wVFVlaUJXZ290QTd5SzFxbl9EOGoxSjYyZ215bHhlODFSU2xMZkhzUVRjTHpxX0t1aXd2TFY3alVRdTlCS1BPM1E?oc=5",
-      "snippet": "Xcel Energy investigating after utility pole crashes down, killing one in Hopkins&nbsp;&nbsp;AOL.com"
-    },
-    {
-      "fetched_date": "2026-08-26",
-      "pub_date": "2026-08-24",
-      "section": "sector",
-      "utility": "Xcel Energy",
-      "source": "Star Tribune",
-      "headline": "Driver dies after utility pole falls on car and catches fire in Hopkins - Star Tribune",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZ0Y0bVVtUkdNMHRnNnhJMHNDYnVOWUxCWEtMVC00dEFNRjM3SFFSeTR2OThNQzhEcFNXLTFnRjdrOVNtZTkzUzZ2UmZPdW42Z1dHbUhJcFJHN05fYmRya1J0QUxqVTVLM3hvZUxUTmloVHBtdmRGSnl3aFBZVGI5a3FTYm0zXzBRUWpSdng1ZkM5Y3QwZ0UyLV8yeW1WMHVRY0pLUmdHVXpnLUdUcGc?oc=5",
-      "snippet": "Driver dies after utility pole falls on car and catches fire in Hopkins&nbsp;&nbsp;Star Tribune"
-    },
-    {
-      "fetched_date": "2026-08-25",
-      "pub_date": "2026-08-24",
-      "section": "company",
-      "utility": "",
-      "source": "Mshale",
-      "headline": "Puget Sound Energy Working To Restore Power To 386,000 Customers After Windstorm Goa Vs Mohun Bagan (ZEeH3sswcy) - Mshale",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE43MlprTEowcU5Rc1hzbHFQQS1ySnNldElXMkpKeEsxSHZYcnQtVWYtaENCZUxtdlc0OWlxWnltanpJZnNqXy1XeHllT3U0SDM4QldCVVByT1NLcmc?oc=5",
-      "snippet": "Puget Sound Energy Working To Restore Power To 386,000 Customers After Windstorm Goa Vs Mohun Bagan (ZEeH3sswcy)&nbsp;&nbsp;Mshale"
-    },
-    {
-      "fetched_date": "2026-08-25",
-      "pub_date": "2026-08-24",
-      "section": "sector",
-      "utility": "NV Energy",
-      "source": "Nevada Business Magazine",
-      "headline": "United Way of Southern Nevada and NV Energy Assist Over 800 Seniors Through First Two 2026 Project Reach Senior Expos - Nevada Business Magazine",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOOUJQV2g4ZkpHSGlJSFVmUmczc1E4d29xYlVrbWliZllrQ2t6Zkp1VVl4SFVocmdJbTI1NWlnaUIyZVlHNzVmdVhFdDhvRDFSYXA0M1BXQ1ktYlE4WUVhUnNYM0VxZkIzU3U2RTZ6dW1Dbk9kTnc2NHN2WnhYWHF4REVVOUNSSFRyLWJsakV5dVZyOG5LX244YnUwOVZqcEFVOEZ4TTE1UnROWjJzUDRlTG9KdHhiRm95OWhJMUQ2TVNyUkdMNWFyMmRseDhMQU5RazJSaDJfRTA3OG5rZDZWdTFYMktpN3My?oc=5",
-      "snippet": "United Way of Southern Nevada and NV Energy Assist Over 800 Seniors Through First Two 2026 Project Reach Senior Expos&nbsp;&nbsp;Nevada Business Magazine"
-    },
-    {
-      "fetched_date": "2026-08-25",
-      "pub_date": "2026-08-24",
-      "section": "sector",
-      "utility": "Xcel Energy",
-      "source": "St. Cloud Times",
-      "headline": "Why Minnesota officials are fighting Xcel electric rate hikes - St. Cloud Times",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPcHJOdmJJcHdnS2N6Tm5hSDZQeGg1R1Jwc0xodEk1UzF5dTBfSlMzc2xzRlhqS3JMcm5GYUdyRFJ1T3JJRjNjZUowZ1JrQUhnT3BVdk9qSDZSMXYzYmNzMUZTZ3M4S0JlZDBlWFpTMWlvTC1JR01WbnZNOVJWTkVMZFZyVHM0bGNTb21SSjhaNVN3YkdEbmhkd0xSRXYwRi1zTUVTc2x5ZGpJZEtYdE5Zck1Bamd3QkZadHNPZU43YVh4UFlMb01JVjRuWVlxX1RCcW9nR3NiaEE?oc=5",
-      "snippet": "Why Minnesota officials are fighting Xcel electric rate hikes&nbsp;&nbsp;St. Cloud Times"
-    },
-    {
-      "fetched_date": "2026-08-25",
-      "pub_date": "2026-08-24",
-      "section": "sector",
-      "utility": "Xcel Energy",
-      "source": "Bring Me The News",
-      "headline": "Xcel Energy investigating after utility pole crashes down, killing one in Hopkins - Bring Me The News",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPNkRFVF9BTjhUUDFZRk9zY29YRjV3SUtDcVNKdVo4WFlRUi1XOU1GZUNNenROd0h6V0duUmFqLWpKMllkWF9jcDkycm5QUEtRaF9IN19aWV9XVWpHZWMtOFdWRVJwMWZ6QTVpZ2pIUFpUM2tyRThLd2M0WEhETG1hb19kNHdCZnFpRi1qTGZGU1dRUjZuMFJpaDJYQkN4bXBOUDF0SVZWY0xMOXRsTWduaHVqMzZneUplNzdwMS1tZw?oc=5",
-      "snippet": "Xcel Energy investigating after utility pole crashes down, killing one in Hopkins&nbsp;&nbsp;Bring Me The News"
-    },
-    {
-      "fetched_date": "2026-08-25",
-      "pub_date": "2026-08-24",
-      "section": "sector",
-      "utility": "Xcel Energy",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "headline": "1 dead after utility pole falls on car in Hopkins - FOX 9 Minneapolis-St. Paul",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPcXZRaExXY1dnZFdWaWJrTHFnRHM2ZTZKeVBneXVvNTRab0EtMEROT2JVaVRZSmRQZDMzM3pyRVoxTzVxWEw0dlZab1ZIWW1YUjJzZHBHeWsyeE9RS0FxNnNBUlNTWld5Z2FNQ2tTMGJZT3VhUHRwY25OR2RUMTBZaXNnVXhZX0J6dHNHaldTRWtGVFpzTkNVdFVXdVNucUHSAZ8BQVVfeXFMT3F2UWhMV2NXZ2RXVmlia0xxZ0RzNmU2SnlQZ3l1bzU0Wm9BLTBETk9iVWlUWUpkUGQzMzN6ckVaMU81cVhMNHZWWm9WSFltWFIyc2RwR3lrMnhPUUtBcTZzQVJTU1pXeWdhTUNrUzBiWU91YVB0cGNuTkdkVDEwWWlzZ1V4WV9CenRzR2pXU0VrRlRac05DVXRVV3VTbnFB?oc=5",
-      "snippet": "1 dead after utility pole falls on car in Hopkins&nbsp;&nbsp;FOX 9 Minneapolis-St. Paul"
-    },
-    {
-      "fetched_date": "2026-08-25",
-      "pub_date": "2026-08-24",
-      "section": "sector",
-      "utility": "Evergy",
-      "source": "Hunton Andrews Kurth LLP",
-      "headline": "Hunton Advises on Evergy, Inc.’s Offering of $600M Fixed-to-Fixed Reset Rate Junior Subordinated Notes - Hunton Andrews Kurth LLP",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSEprczhsbDF0SHlOYWZWV1lyOG5CSnJMdWpJRmJsYndOQ1d5V0dGWm5SWkRUTTBsNDlONzZRVEpBbFgwUTVFSzNUSjBwa0xuN0pPclB2YkdkOWZ3QklFV1lfc0o2NDU1V1JRM01KakthMkxJOU9VLWR6Vzc0MzU4aGpWWGxSY21RRkdiYTZlTWRrVy1oRGVNLVlPSlREcWxTaC1BREduWGc2NGlwQUhrT0E4RUswYXFkcTZ6bGdJenM5bHdvMHc?oc=5",
-      "snippet": "Hunton Advises on Evergy, Inc.’s Offering of $600M Fixed-to-Fixed Reset Rate Junior Subordinated Notes&nbsp;&nbsp;Hunton Andrews Kurth LLP"
-    },
-    {
-      "fetched_date": "2026-08-25",
-      "pub_date": "2026-08-24",
-      "section": "sector",
-      "utility": "Evergy",
-      "source": "FOX 9 Minneapolis-St. Paul",
-      "headline": "1 dead after utility pole falls on car in Hopkins - FOX 9 Minneapolis-St. Paul",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPUFRTWnlQSnoyNmtkMFUwRXNEUk5mZ2JyX0RqM2xtSzViSkRsS3ZRS3paME85OEpVS3VmM0d4RlVZNUxWMm81QUgxb2dQaDZxNldJa09JQnpfbkUyUFFwVDJaZDlSRnU3Mkl1WjBTRWFEZHhFMVVOcHFJQVY5TVdtUkprRFU5eFdYckd0Z284Y1BIV0Y3ZGJwc2RB0gGfAUFVX3lxTE9xdlFoTFdjV2dkV1ZpYmtMcWdEczZlNkp5UGd5dW81NFpvQS0wRE5PYlVpVFlKZFBkMzMzenJFWjFPNXFYTDR2VlpvVkhZbVhSMnNkcEd5azJ4T1FLQXE2c0FSU1NaV3lnYU1Da1MwYllPdWFQdHBjbk5HZFQxMFlpc2dVeFlfQnp0c0dqV1NFa0ZUWnNOQ1V0VVd1U25xQQ?oc=5",
-      "snippet": "1 dead after utility pole falls on car in Hopkins&nbsp;&nbsp;FOX 9 Minneapolis-St. Paul"
-    },
-    {
-      "fetched_date": "2026-08-25",
-      "pub_date": "2026-08-24",
-      "section": "sector",
-      "utility": "Evergy",
-      "source": "Ad-hoc-news.de",
-      "headline": "Evergy stock holds steady as investors await next earnings update - Ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOempZU21aZUpqY2JINm1LUmVxZTB6LVlkWDA2OXM1aFQ1S1A2V2pUWG5iVWxncHExbHJnSEZtUTJ3X043UHlLQ3hWZnFCdXlIUS1DOWRqb1pibVBhLXpNOHplNVlFN1FOVVViLUtZdXBxLUtzcTBEb292M1NzaFA0dXFoWEtmUkhORDg1bHpkZk05OXJpcGMydlNaTGlsaDRiME5wdGJpbGkzSHk4R1liZlp2Q1dST2VmX0N0MHhsYjFtelA1cUZJ?oc=5",
-      "snippet": "Evergy stock holds steady as investors await next earnings update&nbsp;&nbsp;Ad-hoc-news.de"
-    },
-    {
-      "fetched_date": "2026-08-24",
-      "pub_date": "2026-08-24",
-      "section": "sector",
-      "utility": "Xcel Energy",
-      "source": "Ad-hoc-news.de",
-      "headline": "Xcel Energy stock draws fresh institutional buying as consensus points to solid upside - Ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQQW90dEc1VkoyeXlGd3BiYU9nSEpIYkhzMzdUei05ckc5THR6YjlEU1dHZG5WcFV5NlpnRFhXXzhkZUlDcFU3OHpaSmtxUEh6MnpyRmZJaGlYR2ZENXc2Zkd4My1xdng1Z3hzbnF1RWwyTzBQVDRqV0MzcVc3S2prUHE3dUtsZnlia0NhWTBwTFplVWJtcnZMN1F5Yi1icTJyYlk3dDhzMGRMUDlFTEgtOEVHRzNVNlFvc2NxZWFVT00ybmZPSDhUal9iWEdvQUZyakE?oc=5",
-      "snippet": "Xcel Energy stock draws fresh institutional buying as consensus points to solid upside&nbsp;&nbsp;Ad-hoc-news.de"
-    },
-    {
-      "fetched_date": "2026-08-24",
-      "pub_date": "2026-08-24",
-      "section": "sector",
-      "utility": "Xcel Energy",
-      "source": "5 EYEWITNESS NEWS",
-      "headline": "1 dead after utility pole falls on car, starts fire in Hopkins - 5 EYEWITNESS NEWS",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOeEVHcVJnVk5uTzdHZHBjdzZlQUxkYUNwa2JpWS01NEpjU05COGFDYThKSmdZOHF1SUZUaW5CTWcyaE5hbUxjeUZjZDZscU1yX3VQeWs3b3BrV1hyRXJyMlNOcTdvcHI3ZEh1ZzNtdlVWZTJUZjk2NzJlS0d5ZHJ0NUlHYmZqWmtzX0R4NjFZa3F1YVc3ZFJTejNrdnRZYlk?oc=5",
-      "snippet": "1 dead after utility pole falls on car, starts fire in Hopkins&nbsp;&nbsp;5 EYEWITNESS NEWS"
-    },
-    {
-      "fetched_date": "2026-08-24",
-      "pub_date": "2026-08-24",
-      "section": "sector",
-      "utility": "Xcel Energy",
-      "source": "CBS News",
-      "headline": "1 dead when utility pole falls on vehicle in Hopkins, sparking fire and power outage - CBS News",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTno1QUpTRlN5X0FEWGdEejFEWEU2ZUhQV0EzNmttUmtEQ0RuVGpHWko2QklMZHJ5SnlWUTFGcmZTZWg0d1lwWU53NGY1SWhDTF9hVVRERW9DZENualEzMkM0Z1czLWdOWU4yLWhMU1psZG9GSXlnNlhub3JsR08ybWpuWUZmY3Y0VTN3N0pMakNVSHp6NjhhbnpDRWNldw?oc=5",
-      "snippet": "1 dead when utility pole falls on vehicle in Hopkins, sparking fire and power outage&nbsp;&nbsp;CBS News"
-    },
-    {
-      "fetched_date": "2026-08-24",
-      "pub_date": "2026-08-24",
-      "section": "sector",
-      "utility": "Idaho Power",
-      "source": "Idaho County Free Press",
-      "headline": "Idaho Power to sell Oregon service - Idaho County Free Press",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQb0ZRVlh3Zl9ZSGd1TDVFazRveGVKSktRM1gycVljX0Rlc292aldSbk1Td0R2ZEN4RXpMWG9fTE1QS29VV1NGSU9aVE81STFIY0hJMDBHTUNnS0JfNVBmVzVvdmpKSDJ1SlZEVE84TDk4TmdYYkZrOUdacEVaZk5IdTRzV0FWdnI4d1pneEVNSlMyTkFubXE2RzFvZ2dXWkw1MDhxUko1OTI1dU9jRWd4QUhPU280cS1BTXRMcGRPOU0zbHpwRlFUQ2J6X2wtaDBp?oc=5",
-      "snippet": "Idaho Power to sell Oregon service&nbsp;&nbsp;Idaho County Free Press"
-    },
-    {
-      "fetched_date": "2026-08-24",
-      "pub_date": "2026-08-24",
-      "section": "sector",
-      "utility": "Idaho Power",
-      "source": "magicvalley.com",
-      "headline": "Idaho Power to sell its Oregon service territory for $154 million to Eastern Oregon utility - magicvalley.com",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaFE2cGRXS1N2Q1V2TWUyWUtzQnFTVVQxUGIxUzE0dEJ5enlNamszSkU1d0p0Zkt5dWZsYzRLbi1xSFVsMTQ3MXZCWGpUQk12Z2JZZW9tTmJTckt2ZnJ6dHBrQy1waFNiVmJqbkg4a0VVVnJJbzBqd0xWeDI0bnc3NTlTSFcwWWxpZnhIbA?oc=5",
-      "snippet": "Idaho Power to sell its Oregon service territory for $154 million to Eastern Oregon utility&nbsp;&nbsp;magicvalley.com"
     }
   ]
 }
